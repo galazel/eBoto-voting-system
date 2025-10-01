@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VotersDashboard));
             this.siticoneBorderlessForm1 = new Siticone.Desktop.UI.WinForms.SiticoneBorderlessForm(this.components);
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
@@ -62,6 +62,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.vote = new System.Windows.Forms.TabPage();
+            this.label19 = new System.Windows.Forms.Label();
             this.guidelines = new System.Windows.Forms.TabPage();
             this.siticonePictureBox2 = new Siticone.Desktop.UI.WinForms.SiticonePictureBox();
             this.siticoneShapes13 = new Siticone.Desktop.UI.WinForms.SiticoneShapes();
@@ -82,6 +83,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.settings = new System.Windows.Forms.TabPage();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.iconButton10 = new FontAwesome.Sharp.IconButton();
             this.label15 = new System.Windows.Forms.Label();
             this.iconButton7 = new FontAwesome.Sharp.IconButton();
             this.iconButton9 = new FontAwesome.Sharp.IconButton();
@@ -91,10 +93,7 @@
             this.label14 = new System.Windows.Forms.Label();
             this.iconButton6 = new FontAwesome.Sharp.IconButton();
             this.iconButton4 = new FontAwesome.Sharp.IconButton();
-            this.iconButton5 = new FontAwesome.Sharp.IconButton();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.iconButton10 = new FontAwesome.Sharp.IconButton();
-            this.label19 = new System.Windows.Forms.Label();
             this.siticonePanel1.SuspendLayout();
             this.siticonePanel2.SuspendLayout();
             this.siticoneTabControl1.SuspendLayout();
@@ -205,9 +204,11 @@
             this.siticoneTabControl1.Controls.Add(this.vote);
             this.siticoneTabControl1.Controls.Add(this.guidelines);
             this.siticoneTabControl1.Controls.Add(this.settings);
+            this.siticoneTabControl1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.siticoneTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.siticoneTabControl1.ImageList = this.imageList1;
-            this.siticoneTabControl1.ItemSize = new System.Drawing.Size(180, 50);
+            this.siticoneTabControl1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.siticoneTabControl1.ItemSize = new System.Drawing.Size(180, 90);
             this.siticoneTabControl1.Location = new System.Drawing.Point(0, 0);
             this.siticoneTabControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.siticoneTabControl1.Name = "siticoneTabControl1";
@@ -229,7 +230,7 @@
             this.siticoneTabControl1.TabButtonSelectedState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
             this.siticoneTabControl1.TabButtonSelectedState.ForeColor = System.Drawing.Color.White;
             this.siticoneTabControl1.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(132)))), ((int)(((byte)(255)))));
-            this.siticoneTabControl1.TabButtonSize = new System.Drawing.Size(180, 50);
+            this.siticoneTabControl1.TabButtonSize = new System.Drawing.Size(180, 90);
             this.siticoneTabControl1.TabButtonTextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.siticoneTabControl1.TabButtonTextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             this.siticoneTabControl1.TabIndex = 0;
@@ -245,6 +246,7 @@
             this.dashboard.Controls.Add(this.siticonePanel4);
             this.dashboard.Controls.Add(this.label2);
             this.dashboard.Controls.Add(this.label1);
+            this.dashboard.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.dashboard.ImageKey = "dashboard.png";
             this.dashboard.Location = new System.Drawing.Point(184, 4);
             this.dashboard.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -360,18 +362,18 @@
             // chart1
             // 
             this.chart1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
-            chartArea5.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.chart1.Legends.Add(legend5);
+            chartArea6.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea6);
+            legend6.Name = "Legend1";
+            this.chart1.Legends.Add(legend6);
             this.chart1.Location = new System.Drawing.Point(30, 70);
             this.chart1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series5.ChartArea = "ChartArea1";
-            series5.Legend = "Legend1";
-            series5.Name = "Series1";
-            this.chart1.Series.Add(series5);
+            series6.ChartArea = "ChartArea1";
+            series6.Legend = "Legend1";
+            series6.Name = "Series1";
+            this.chart1.Series.Add(series6);
             this.chart1.Size = new System.Drawing.Size(754, 319);
             this.chart1.TabIndex = 3;
             this.chart1.Text = "chart1";
@@ -507,6 +509,7 @@
             // 
             this.vote.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.vote.Controls.Add(this.label19);
+            this.vote.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.vote.ImageKey = "vote.png";
             this.vote.Location = new System.Drawing.Point(184, 4);
             this.vote.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -516,6 +519,17 @@
             this.vote.TabIndex = 1;
             this.vote.Text = "Vote";
             this.vote.UseVisualStyleBackColor = true;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.label19.Location = new System.Drawing.Point(39, 23);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(483, 33);
+            this.label19.TabIndex = 3;
+            this.label19.Text = "YOU MAY NOW CAST YOUR VOTES";
             // 
             // guidelines
             // 
@@ -537,6 +551,7 @@
             this.guidelines.Controls.Add(this.siticoneShapes1);
             this.guidelines.Controls.Add(this.label16);
             this.guidelines.Controls.Add(this.label11);
+            this.guidelines.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.guidelines.ImageKey = "guidelines.png";
             this.guidelines.Location = new System.Drawing.Point(184, 4);
             this.guidelines.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -550,17 +565,18 @@
             // 
             this.siticonePictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("siticonePictureBox2.Image")));
             this.siticonePictureBox2.ImageRotate = 0F;
-            this.siticonePictureBox2.Location = new System.Drawing.Point(649, 105);
+            this.siticonePictureBox2.Location = new System.Drawing.Point(377, 114);
             this.siticonePictureBox2.Name = "siticonePictureBox2";
-            this.siticonePictureBox2.Size = new System.Drawing.Size(521, 488);
-            this.siticonePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.siticonePictureBox2.Size = new System.Drawing.Size(812, 537);
+            this.siticonePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.siticonePictureBox2.TabIndex = 18;
             this.siticonePictureBox2.TabStop = false;
+            this.siticonePictureBox2.UseTransparentBackground = true;
             // 
             // siticoneShapes13
             // 
-            this.siticoneShapes13.BorderColor = System.Drawing.Color.Transparent;
-            this.siticoneShapes13.FillColor = System.Drawing.Color.Gold;
+            this.siticoneShapes13.BorderColor = System.Drawing.Color.Gainsboro;
+            this.siticoneShapes13.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
             this.siticoneShapes13.Location = new System.Drawing.Point(39, 321);
             this.siticoneShapes13.Name = "siticoneShapes13";
             this.siticoneShapes13.PolygonSkip = 1;
@@ -574,8 +590,8 @@
             // 
             // siticoneShapes14
             // 
-            this.siticoneShapes14.BorderColor = System.Drawing.Color.Transparent;
-            this.siticoneShapes14.FillColor = System.Drawing.Color.Gold;
+            this.siticoneShapes14.BorderColor = System.Drawing.Color.Gainsboro;
+            this.siticoneShapes14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
             this.siticoneShapes14.Location = new System.Drawing.Point(39, 277);
             this.siticoneShapes14.Name = "siticoneShapes14";
             this.siticoneShapes14.PolygonSkip = 1;
@@ -589,8 +605,8 @@
             // 
             // siticoneShapes9
             // 
-            this.siticoneShapes9.BorderColor = System.Drawing.Color.Transparent;
-            this.siticoneShapes9.FillColor = System.Drawing.Color.Gold;
+            this.siticoneShapes9.BorderColor = System.Drawing.Color.Gainsboro;
+            this.siticoneShapes9.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
             this.siticoneShapes9.Location = new System.Drawing.Point(39, 416);
             this.siticoneShapes9.Name = "siticoneShapes9";
             this.siticoneShapes9.PolygonSkip = 1;
@@ -604,8 +620,8 @@
             // 
             // siticoneShapes10
             // 
-            this.siticoneShapes10.BorderColor = System.Drawing.Color.Transparent;
-            this.siticoneShapes10.FillColor = System.Drawing.Color.Gold;
+            this.siticoneShapes10.BorderColor = System.Drawing.Color.Gainsboro;
+            this.siticoneShapes10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
             this.siticoneShapes10.Location = new System.Drawing.Point(39, 372);
             this.siticoneShapes10.Name = "siticoneShapes10";
             this.siticoneShapes10.PolygonSkip = 1;
@@ -619,8 +635,8 @@
             // 
             // siticoneShapes11
             // 
-            this.siticoneShapes11.BorderColor = System.Drawing.Color.Transparent;
-            this.siticoneShapes11.FillColor = System.Drawing.Color.Gold;
+            this.siticoneShapes11.BorderColor = System.Drawing.Color.Gainsboro;
+            this.siticoneShapes11.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
             this.siticoneShapes11.Location = new System.Drawing.Point(39, 505);
             this.siticoneShapes11.Name = "siticoneShapes11";
             this.siticoneShapes11.PolygonSkip = 1;
@@ -634,8 +650,8 @@
             // 
             // siticoneShapes12
             // 
-            this.siticoneShapes12.BorderColor = System.Drawing.Color.Transparent;
-            this.siticoneShapes12.FillColor = System.Drawing.Color.Gold;
+            this.siticoneShapes12.BorderColor = System.Drawing.Color.Gainsboro;
+            this.siticoneShapes12.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
             this.siticoneShapes12.Location = new System.Drawing.Point(39, 461);
             this.siticoneShapes12.Name = "siticoneShapes12";
             this.siticoneShapes12.PolygonSkip = 1;
@@ -649,8 +665,8 @@
             // 
             // siticoneShapes7
             // 
-            this.siticoneShapes7.BorderColor = System.Drawing.Color.Transparent;
-            this.siticoneShapes7.FillColor = System.Drawing.Color.Gold;
+            this.siticoneShapes7.BorderColor = System.Drawing.Color.Gainsboro;
+            this.siticoneShapes7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
             this.siticoneShapes7.Location = new System.Drawing.Point(39, 596);
             this.siticoneShapes7.Name = "siticoneShapes7";
             this.siticoneShapes7.PolygonSkip = 1;
@@ -664,8 +680,8 @@
             // 
             // siticoneShapes8
             // 
-            this.siticoneShapes8.BorderColor = System.Drawing.Color.Transparent;
-            this.siticoneShapes8.FillColor = System.Drawing.Color.Gold;
+            this.siticoneShapes8.BorderColor = System.Drawing.Color.Gainsboro;
+            this.siticoneShapes8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
             this.siticoneShapes8.Location = new System.Drawing.Point(39, 552);
             this.siticoneShapes8.Name = "siticoneShapes8";
             this.siticoneShapes8.PolygonSkip = 1;
@@ -679,8 +695,8 @@
             // 
             // siticoneShapes5
             // 
-            this.siticoneShapes5.BorderColor = System.Drawing.Color.Transparent;
-            this.siticoneShapes5.FillColor = System.Drawing.Color.Gold;
+            this.siticoneShapes5.BorderColor = System.Drawing.Color.Gainsboro;
+            this.siticoneShapes5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
             this.siticoneShapes5.Location = new System.Drawing.Point(39, 685);
             this.siticoneShapes5.Name = "siticoneShapes5";
             this.siticoneShapes5.PolygonSkip = 1;
@@ -694,8 +710,8 @@
             // 
             // siticoneShapes6
             // 
-            this.siticoneShapes6.BorderColor = System.Drawing.Color.Transparent;
-            this.siticoneShapes6.FillColor = System.Drawing.Color.Gold;
+            this.siticoneShapes6.BorderColor = System.Drawing.Color.Gainsboro;
+            this.siticoneShapes6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
             this.siticoneShapes6.Location = new System.Drawing.Point(39, 641);
             this.siticoneShapes6.Name = "siticoneShapes6";
             this.siticoneShapes6.PolygonSkip = 1;
@@ -709,8 +725,8 @@
             // 
             // siticoneShapes3
             // 
-            this.siticoneShapes3.BorderColor = System.Drawing.Color.Transparent;
-            this.siticoneShapes3.FillColor = System.Drawing.Color.Gold;
+            this.siticoneShapes3.BorderColor = System.Drawing.Color.Gainsboro;
+            this.siticoneShapes3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
             this.siticoneShapes3.Location = new System.Drawing.Point(39, 226);
             this.siticoneShapes3.Name = "siticoneShapes3";
             this.siticoneShapes3.PolygonSkip = 1;
@@ -724,8 +740,8 @@
             // 
             // siticoneShapes4
             // 
-            this.siticoneShapes4.BorderColor = System.Drawing.Color.Transparent;
-            this.siticoneShapes4.FillColor = System.Drawing.Color.Gold;
+            this.siticoneShapes4.BorderColor = System.Drawing.Color.Gainsboro;
+            this.siticoneShapes4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
             this.siticoneShapes4.Location = new System.Drawing.Point(39, 182);
             this.siticoneShapes4.Name = "siticoneShapes4";
             this.siticoneShapes4.PolygonSkip = 1;
@@ -739,8 +755,8 @@
             // 
             // siticoneShapes2
             // 
-            this.siticoneShapes2.BorderColor = System.Drawing.Color.Transparent;
-            this.siticoneShapes2.FillColor = System.Drawing.Color.Gold;
+            this.siticoneShapes2.BorderColor = System.Drawing.Color.Gainsboro;
+            this.siticoneShapes2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
             this.siticoneShapes2.Location = new System.Drawing.Point(39, 137);
             this.siticoneShapes2.Name = "siticoneShapes2";
             this.siticoneShapes2.PolygonSkip = 1;
@@ -754,8 +770,8 @@
             // 
             // siticoneShapes1
             // 
-            this.siticoneShapes1.BorderColor = System.Drawing.Color.Transparent;
-            this.siticoneShapes1.FillColor = System.Drawing.Color.Gold;
+            this.siticoneShapes1.BorderColor = System.Drawing.Color.Gainsboro;
+            this.siticoneShapes1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
             this.siticoneShapes1.Location = new System.Drawing.Point(39, 93);
             this.siticoneShapes1.Name = "siticoneShapes1";
             this.siticoneShapes1.PolygonSkip = 1;
@@ -793,6 +809,7 @@
             this.settings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.settings.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.settings.Controls.Add(this.splitContainer1);
+            this.settings.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.settings.ImageKey = "settings.png";
             this.settings.Location = new System.Drawing.Point(184, 4);
             this.settings.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -821,11 +838,28 @@
             this.splitContainer1.Panel1.Controls.Add(this.label14);
             this.splitContainer1.Panel1.Controls.Add(this.iconButton6);
             this.splitContainer1.Panel1.Controls.Add(this.iconButton4);
-            this.splitContainer1.Panel1.Controls.Add(this.iconButton5);
             this.splitContainer1.Size = new System.Drawing.Size(1207, 824);
             this.splitContainer1.SplitterDistance = 431;
             this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 12;
+            // 
+            // iconButton10
+            // 
+            this.iconButton10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
+            this.iconButton10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.iconButton10.IconChar = FontAwesome.Sharp.IconChar.DoorOpen;
+            this.iconButton10.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.iconButton10.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton10.IconSize = 60;
+            this.iconButton10.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.iconButton10.Location = new System.Drawing.Point(36, 530);
+            this.iconButton10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.iconButton10.Name = "iconButton10";
+            this.iconButton10.Size = new System.Drawing.Size(361, 62);
+            this.iconButton10.TabIndex = 13;
+            this.iconButton10.Text = "Logout";
+            this.iconButton10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton10.UseVisualStyleBackColor = false;
             // 
             // label15
             // 
@@ -847,7 +881,7 @@
             this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton7.IconSize = 60;
             this.iconButton7.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.iconButton7.Location = new System.Drawing.Point(36, 322);
+            this.iconButton7.Location = new System.Drawing.Point(36, 232);
             this.iconButton7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.iconButton7.Name = "iconButton7";
             this.iconButton7.Size = new System.Drawing.Size(361, 62);
@@ -865,7 +899,7 @@
             this.iconButton9.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton9.IconSize = 60;
             this.iconButton9.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.iconButton9.Location = new System.Drawing.Point(36, 541);
+            this.iconButton9.Location = new System.Drawing.Point(36, 451);
             this.iconButton9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.iconButton9.Name = "iconButton9";
             this.iconButton9.Size = new System.Drawing.Size(361, 62);
@@ -892,7 +926,7 @@
             this.iconButton8.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton8.IconSize = 60;
             this.iconButton8.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.iconButton8.Location = new System.Drawing.Point(36, 466);
+            this.iconButton8.Location = new System.Drawing.Point(36, 376);
             this.iconButton8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.iconButton8.Name = "iconButton8";
             this.iconButton8.Size = new System.Drawing.Size(361, 62);
@@ -913,7 +947,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(33, 302);
+            this.label14.Location = new System.Drawing.Point(33, 212);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(55, 16);
             this.label14.TabIndex = 5;
@@ -928,7 +962,7 @@
             this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton6.IconSize = 60;
             this.iconButton6.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.iconButton6.Location = new System.Drawing.Point(36, 395);
+            this.iconButton6.Location = new System.Drawing.Point(36, 305);
             this.iconButton6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.iconButton6.Name = "iconButton6";
             this.iconButton6.Size = new System.Drawing.Size(361, 62);
@@ -955,56 +989,9 @@
             this.iconButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton4.UseVisualStyleBackColor = false;
             // 
-            // iconButton5
-            // 
-            this.iconButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
-            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.UserLock;
-            this.iconButton5.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton5.IconSize = 60;
-            this.iconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton5.Location = new System.Drawing.Point(34, 194);
-            this.iconButton5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.iconButton5.Name = "iconButton5";
-            this.iconButton5.Size = new System.Drawing.Size(361, 62);
-            this.iconButton5.TabIndex = 7;
-            this.iconButton5.Text = "Change Password";
-            this.iconButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton5.UseVisualStyleBackColor = false;
-            // 
             // toolTip1
             // 
             this.toolTip1.ToolTipTitle = "Voter";
-            // 
-            // iconButton10
-            // 
-            this.iconButton10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
-            this.iconButton10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.iconButton10.IconChar = FontAwesome.Sharp.IconChar.DoorOpen;
-            this.iconButton10.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            this.iconButton10.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton10.IconSize = 60;
-            this.iconButton10.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.iconButton10.Location = new System.Drawing.Point(36, 620);
-            this.iconButton10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.iconButton10.Name = "iconButton10";
-            this.iconButton10.Size = new System.Drawing.Size(361, 62);
-            this.iconButton10.TabIndex = 13;
-            this.iconButton10.Text = "Logout";
-            this.iconButton10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton10.UseVisualStyleBackColor = false;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            this.label19.Location = new System.Drawing.Point(39, 23);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(483, 33);
-            this.label19.TabIndex = 3;
-            this.label19.Text = "YOU MAY NOW CAST YOUR VOTES";
             // 
             // VotersDashboard
             // 
@@ -1078,7 +1065,6 @@
         private System.Windows.Forms.Label label11;
         private FontAwesome.Sharp.IconButton iconButton7;
         private FontAwesome.Sharp.IconButton iconButton6;
-        private FontAwesome.Sharp.IconButton iconButton5;
         private FontAwesome.Sharp.IconButton iconButton4;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
