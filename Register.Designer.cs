@@ -574,7 +574,7 @@
             this.siticoneCheckBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.siticoneCheckBox1.ForeColor = System.Drawing.Color.Black;
             this.siticoneCheckBox1.Location = new System.Drawing.Point(38, 754);
-            this.siticoneCheckBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.siticoneCheckBox1.Margin = new System.Windows.Forms.Padding(4);
             this.siticoneCheckBox1.Name = "siticoneCheckBox1";
             this.siticoneCheckBox1.Size = new System.Drawing.Size(962, 20);
             this.siticoneCheckBox1.TabIndex = 38;
@@ -590,9 +590,9 @@
             // 
             this.siticoneControlBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.siticoneControlBox3.FillColor = System.Drawing.Color.White;
-            this.siticoneControlBox3.IconColor = System.Drawing.Color.Black;
+            this.siticoneControlBox3.IconColor = System.Drawing.Color.Red;
             this.siticoneControlBox3.Location = new System.Drawing.Point(1079, 15);
-            this.siticoneControlBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.siticoneControlBox3.Margin = new System.Windows.Forms.Padding(4);
             this.siticoneControlBox3.Name = "siticoneControlBox3";
             this.siticoneControlBox3.Size = new System.Drawing.Size(52, 36);
             this.siticoneControlBox3.TabIndex = 40;

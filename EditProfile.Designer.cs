@@ -58,7 +58,7 @@
             this.label16 = new System.Windows.Forms.Label();
             this.password_box = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.register_button = new Siticone.Desktop.UI.WinForms.SiticoneButton();
+            this.edit_button = new Siticone.Desktop.UI.WinForms.SiticoneButton();
             this.SuspendLayout();
             // 
             // birthday_date
@@ -574,30 +574,30 @@
             this.label15.TabIndex = 67;
             this.label15.Text = "Password";
             // 
-            // register_button
+            // edit_button
             // 
-            this.register_button.BorderRadius = 20;
-            this.register_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.register_button.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.register_button.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.register_button.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.register_button.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.register_button.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            this.register_button.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.register_button.ForeColor = System.Drawing.Color.White;
-            this.register_button.Location = new System.Drawing.Point(264, 675);
-            this.register_button.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.register_button.Name = "register_button";
-            this.register_button.Size = new System.Drawing.Size(210, 55);
-            this.register_button.TabIndex = 69;
-            this.register_button.Text = "EDIT";
+            this.edit_button.BorderRadius = 20;
+            this.edit_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.edit_button.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.edit_button.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.edit_button.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.edit_button.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.edit_button.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.edit_button.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.edit_button.ForeColor = System.Drawing.Color.White;
+            this.edit_button.Location = new System.Drawing.Point(264, 675);
+            this.edit_button.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.edit_button.Name = "edit_button";
+            this.edit_button.Size = new System.Drawing.Size(210, 55);
+            this.edit_button.TabIndex = 69;
+            this.edit_button.Text = "EDIT";
             // 
             // EditProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.Controls.Add(this.register_button);
+            this.Controls.Add(this.edit_button);
             this.Controls.Add(this.password_box);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.username_box);
@@ -667,6 +667,6 @@
         private System.Windows.Forms.Label label16;
         private Siticone.Desktop.UI.WinForms.SiticoneTextBox password_box;
         private System.Windows.Forms.Label label15;
-        private Siticone.Desktop.UI.WinForms.SiticoneButton register_button;
+        private Siticone.Desktop.UI.WinForms.SiticoneButton edit_button;
     }
 }

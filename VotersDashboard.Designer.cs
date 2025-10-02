@@ -29,38 +29,42 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VotersDashboard));
             this.siticoneBorderlessForm1 = new Siticone.Desktop.UI.WinForms.SiticoneBorderlessForm(this.components);
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.siticonePanel1 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
             this.label18 = new System.Windows.Forms.Label();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.profile_button = new FontAwesome.Sharp.IconButton();
+            this.notification_button = new FontAwesome.Sharp.IconButton();
             this.siticonePanel2 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
             this.siticoneTabControl1 = new Siticone.Desktop.UI.WinForms.SiticoneTabControl();
             this.dashboard = new System.Windows.Forms.TabPage();
             this.siticonePanel3 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.siticoneButton1 = new Siticone.Desktop.UI.WinForms.SiticoneButton();
+            this.election_department = new System.Windows.Forms.Label();
+            this.election_name = new System.Windows.Forms.Label();
+            this.vote_now_button = new Siticone.Desktop.UI.WinForms.SiticoneButton();
             this.label3 = new System.Windows.Forms.Label();
             this.siticonePanel5 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.label5 = new System.Windows.Forms.Label();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.election_chart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.siticonePanel4 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
-            this.siticoneCircleProgressBar3 = new Siticone.Desktop.UI.WinForms.SiticoneCircleProgressBar();
-            this.siticoneCircleProgressBar2 = new Siticone.Desktop.UI.WinForms.SiticoneCircleProgressBar();
+            this.number_of_candidates_progress = new Siticone.Desktop.UI.WinForms.SiticoneCircleProgressBar();
+            this.label17 = new System.Windows.Forms.Label();
+            this.number_of_voters_progress = new Siticone.Desktop.UI.WinForms.SiticoneCircleProgressBar();
+            this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.siticoneCircleProgressBar1 = new Siticone.Desktop.UI.WinForms.SiticoneCircleProgressBar();
-            this.label2 = new System.Windows.Forms.Label();
+            this.registered_voters_progress = new Siticone.Desktop.UI.WinForms.SiticoneCircleProgressBar();
+            this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.greetings_label = new System.Windows.Forms.Label();
             this.vote = new System.Windows.Forms.TabPage();
             this.label19 = new System.Windows.Forms.Label();
             this.guidelines = new System.Windows.Forms.TabPage();
@@ -83,16 +87,16 @@
             this.label11 = new System.Windows.Forms.Label();
             this.settings = new System.Windows.Forms.TabPage();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.iconButton10 = new FontAwesome.Sharp.IconButton();
+            this.logout_button = new FontAwesome.Sharp.IconButton();
             this.label15 = new System.Windows.Forms.Label();
-            this.iconButton7 = new FontAwesome.Sharp.IconButton();
-            this.iconButton9 = new FontAwesome.Sharp.IconButton();
+            this.about_us_button = new FontAwesome.Sharp.IconButton();
+            this.contact_button = new FontAwesome.Sharp.IconButton();
             this.label12 = new System.Windows.Forms.Label();
-            this.iconButton8 = new FontAwesome.Sharp.IconButton();
+            this.policy_button = new FontAwesome.Sharp.IconButton();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.iconButton6 = new FontAwesome.Sharp.IconButton();
-            this.iconButton4 = new FontAwesome.Sharp.IconButton();
+            this.terms_button = new FontAwesome.Sharp.IconButton();
+            this.edit_profile_button = new FontAwesome.Sharp.IconButton();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.siticonePanel1.SuspendLayout();
             this.siticonePanel2.SuspendLayout();
@@ -100,8 +104,11 @@
             this.dashboard.SuspendLayout();
             this.siticonePanel3.SuspendLayout();
             this.siticonePanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.election_chart)).BeginInit();
             this.siticonePanel4.SuspendLayout();
+            this.number_of_candidates_progress.SuspendLayout();
+            this.number_of_voters_progress.SuspendLayout();
+            this.registered_voters_progress.SuspendLayout();
             this.vote.SuspendLayout();
             this.guidelines.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox2)).BeginInit();
@@ -134,14 +141,15 @@
             // 
             this.siticonePanel1.BackColor = System.Drawing.Color.White;
             this.siticonePanel1.Controls.Add(this.label18);
-            this.siticonePanel1.Controls.Add(this.iconButton2);
-            this.siticonePanel1.Controls.Add(this.iconButton1);
+            this.siticonePanel1.Controls.Add(this.profile_button);
+            this.siticonePanel1.Controls.Add(this.notification_button);
             this.siticonePanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.siticonePanel1.Location = new System.Drawing.Point(0, 0);
             this.siticonePanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.siticonePanel1.Name = "siticonePanel1";
             this.siticonePanel1.Size = new System.Drawing.Size(1399, 64);
             this.siticonePanel1.TabIndex = 0;
+
             // 
             // label18
             // 
@@ -153,39 +161,42 @@
             this.label18.Size = new System.Drawing.Size(167, 58);
             this.label18.TabIndex = 7;
             this.label18.Text = "eBoto";
+
             // 
-            // iconButton2
+            // profile_button
             // 
-            this.iconButton2.BackColor = System.Drawing.Color.Transparent;
-            this.iconButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.ForeColor = System.Drawing.Color.Transparent;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
-            this.iconButton2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.Location = new System.Drawing.Point(1326, 13);
-            this.iconButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(49, 43);
-            this.iconButton2.TabIndex = 2;
-            this.toolTip1.SetToolTip(this.iconButton2, "Voters Name");
-            this.iconButton2.UseVisualStyleBackColor = false;
+            this.profile_button.BackColor = System.Drawing.Color.Transparent;
+            this.profile_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.profile_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.profile_button.ForeColor = System.Drawing.Color.Transparent;
+            this.profile_button.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
+            this.profile_button.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.profile_button.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.profile_button.Location = new System.Drawing.Point(1326, 13);
+            this.profile_button.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.profile_button.Name = "profile_button";
+            this.profile_button.Size = new System.Drawing.Size(49, 43);
+            this.profile_button.TabIndex = 2;
+            this.toolTip1.SetToolTip(this.profile_button, "Voters Name");
+            this.profile_button.UseVisualStyleBackColor = false;
+
             // 
-            // iconButton1
+            // notification_button
             // 
-            this.iconButton1.BackColor = System.Drawing.Color.Transparent;
-            this.iconButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.ForeColor = System.Drawing.Color.Transparent;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Bell;
-            this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Location = new System.Drawing.Point(1259, 13);
-            this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(54, 47);
-            this.iconButton1.TabIndex = 1;
-            this.iconButton1.UseVisualStyleBackColor = false;
+            this.notification_button.BackColor = System.Drawing.Color.Transparent;
+            this.notification_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.notification_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.notification_button.ForeColor = System.Drawing.Color.Transparent;
+            this.notification_button.IconChar = FontAwesome.Sharp.IconChar.Bell;
+            this.notification_button.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.notification_button.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.notification_button.Location = new System.Drawing.Point(1259, 13);
+            this.notification_button.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.notification_button.Name = "notification_button";
+            this.notification_button.Size = new System.Drawing.Size(54, 47);
+            this.notification_button.TabIndex = 1;
+            this.notification_button.UseVisualStyleBackColor = false;
+
             // 
             // siticonePanel2
             // 
@@ -196,6 +207,7 @@
             this.siticonePanel2.Name = "siticonePanel2";
             this.siticonePanel2.Size = new System.Drawing.Size(1399, 836);
             this.siticonePanel2.TabIndex = 1;
+
             // 
             // siticoneTabControl1
             // 
@@ -235,6 +247,7 @@
             this.siticoneTabControl1.TabButtonTextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             this.siticoneTabControl1.TabIndex = 0;
             this.siticoneTabControl1.TabMenuBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+
             // 
             // dashboard
             // 
@@ -245,7 +258,7 @@
             this.dashboard.Controls.Add(this.siticonePanel5);
             this.dashboard.Controls.Add(this.siticonePanel4);
             this.dashboard.Controls.Add(this.label2);
-            this.dashboard.Controls.Add(this.label1);
+            this.dashboard.Controls.Add(this.greetings_label);
             this.dashboard.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.dashboard.ImageKey = "dashboard.png";
             this.dashboard.Location = new System.Drawing.Point(184, 4);
@@ -256,15 +269,16 @@
             this.dashboard.TabIndex = 0;
             this.dashboard.Text = "Dashboard";
             this.dashboard.UseVisualStyleBackColor = true;
+
             // 
             // siticonePanel3
             // 
             this.siticonePanel3.BorderColor = System.Drawing.Color.Gainsboro;
             this.siticonePanel3.BorderRadius = 20;
             this.siticonePanel3.BorderThickness = 2;
-            this.siticonePanel3.Controls.Add(this.label17);
-            this.siticonePanel3.Controls.Add(this.label4);
-            this.siticonePanel3.Controls.Add(this.siticoneButton1);
+            this.siticonePanel3.Controls.Add(this.election_department);
+            this.siticonePanel3.Controls.Add(this.election_name);
+            this.siticonePanel3.Controls.Add(this.vote_now_button);
             this.siticonePanel3.Controls.Add(this.label3);
             this.siticonePanel3.CustomBorderColor = System.Drawing.Color.Silver;
             this.siticonePanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
@@ -272,43 +286,48 @@
             this.siticonePanel3.Name = "siticonePanel3";
             this.siticonePanel3.Size = new System.Drawing.Size(805, 230);
             this.siticonePanel3.TabIndex = 6;
+     
+
             // 
-            // label17
+            // election_department
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(27, 99);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(170, 16);
-            this.label17.TabIndex = 5;
-            this.label17.Text = "College of Computer Studies";
+            this.election_department.AutoSize = true;
+            this.election_department.Location = new System.Drawing.Point(27, 99);
+            this.election_department.Name = "election_department";
+            this.election_department.Size = new System.Drawing.Size(170, 16);
+            this.election_department.TabIndex = 5;
+            this.election_department.Text = "College of Computer Studies";
+    
             // 
-            // label4
+            // election_name
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            this.label4.Location = new System.Drawing.Point(24, 66);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(755, 33);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Philippine Society of Information Technology Students";
+            this.election_name.AutoSize = true;
+            this.election_name.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.election_name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.election_name.Location = new System.Drawing.Point(24, 66);
+            this.election_name.Name = "election_name";
+            this.election_name.Size = new System.Drawing.Size(755, 33);
+            this.election_name.TabIndex = 3;
+            this.election_name.Text = "Philippine Society of Information Technology Students";
+        
             // 
-            // siticoneButton1
+            // vote_now_button
             // 
-            this.siticoneButton1.BorderRadius = 10;
-            this.siticoneButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.siticoneButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.siticoneButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.siticoneButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.siticoneButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            this.siticoneButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.siticoneButton1.ForeColor = System.Drawing.Color.White;
-            this.siticoneButton1.Location = new System.Drawing.Point(30, 145);
-            this.siticoneButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.siticoneButton1.Name = "siticoneButton1";
-            this.siticoneButton1.Size = new System.Drawing.Size(210, 47);
-            this.siticoneButton1.TabIndex = 4;
-            this.siticoneButton1.Text = "Vote Now";
+            this.vote_now_button.BorderRadius = 10;
+            this.vote_now_button.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.vote_now_button.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.vote_now_button.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.vote_now_button.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.vote_now_button.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.vote_now_button.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.vote_now_button.ForeColor = System.Drawing.Color.White;
+            this.vote_now_button.Location = new System.Drawing.Point(30, 145);
+            this.vote_now_button.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.vote_now_button.Name = "vote_now_button";
+            this.vote_now_button.Size = new System.Drawing.Size(210, 47);
+            this.vote_now_button.TabIndex = 4;
+            this.vote_now_button.Text = "Vote Now";
+           
             // 
             // label3
             // 
@@ -318,6 +337,7 @@
             this.label3.Size = new System.Drawing.Size(102, 16);
             this.label3.TabIndex = 2;
             this.label3.Text = "Ongoing Election";
+     
             // 
             // siticonePanel5
             // 
@@ -326,13 +346,14 @@
             this.siticonePanel5.BorderThickness = 2;
             this.siticonePanel5.Controls.Add(this.iconButton3);
             this.siticonePanel5.Controls.Add(this.label5);
-            this.siticonePanel5.Controls.Add(this.chart1);
+            this.siticonePanel5.Controls.Add(this.election_chart);
             this.siticonePanel5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
             this.siticonePanel5.Location = new System.Drawing.Point(35, 342);
             this.siticonePanel5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.siticonePanel5.Name = "siticonePanel5";
             this.siticonePanel5.Size = new System.Drawing.Size(805, 443);
             this.siticonePanel5.TabIndex = 5;
+
             // 
             // iconButton3
             // 
@@ -341,14 +362,15 @@
             this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton3.ForeColor = System.Drawing.Color.Transparent;
             this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.ArrowRight;
-            this.iconButton3.IconColor = System.Drawing.Color.Black;
+            this.iconButton3.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
             this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.Location = new System.Drawing.Point(745, 393);
+            this.iconButton3.Location = new System.Drawing.Point(696, 393);
             this.iconButton3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(40, 47);
+            this.iconButton3.Size = new System.Drawing.Size(89, 47);
             this.iconButton3.TabIndex = 3;
             this.iconButton3.UseVisualStyleBackColor = false;
+
             // 
             // label5
             // 
@@ -358,25 +380,27 @@
             this.label5.Size = new System.Drawing.Size(89, 16);
             this.label5.TabIndex = 4;
             this.label5.Text = "LIVE RESULTS";
+
             // 
-            // chart1
+            // election_chart
             // 
-            this.chart1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
-            chartArea6.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea6);
-            legend6.Name = "Legend1";
-            this.chart1.Legends.Add(legend6);
-            this.chart1.Location = new System.Drawing.Point(30, 70);
-            this.chart1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.chart1.Name = "chart1";
-            this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series6.ChartArea = "ChartArea1";
-            series6.Legend = "Legend1";
-            series6.Name = "Series1";
-            this.chart1.Series.Add(series6);
-            this.chart1.Size = new System.Drawing.Size(754, 319);
-            this.chart1.TabIndex = 3;
-            this.chart1.Text = "chart1";
+            this.election_chart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
+            chartArea1.Name = "ChartArea1";
+            this.election_chart.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.election_chart.Legends.Add(legend1);
+            this.election_chart.Location = new System.Drawing.Point(30, 70);
+            this.election_chart.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.election_chart.Name = "election_chart";
+            this.election_chart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.election_chart.Series.Add(series1);
+            this.election_chart.Size = new System.Drawing.Size(754, 319);
+            this.election_chart.TabIndex = 3;
+            this.election_chart.Text = "chart1";
+         
             // 
             // siticonePanel4
             // 
@@ -384,51 +408,82 @@
             this.siticonePanel4.BorderColor = System.Drawing.Color.Gainsboro;
             this.siticonePanel4.BorderRadius = 20;
             this.siticonePanel4.BorderThickness = 2;
-            this.siticonePanel4.Controls.Add(this.siticoneCircleProgressBar3);
-            this.siticonePanel4.Controls.Add(this.siticoneCircleProgressBar2);
+            this.siticonePanel4.Controls.Add(this.number_of_candidates_progress);
+            this.siticonePanel4.Controls.Add(this.number_of_voters_progress);
             this.siticonePanel4.Controls.Add(this.label9);
             this.siticonePanel4.Controls.Add(this.label8);
             this.siticonePanel4.Controls.Add(this.label7);
             this.siticonePanel4.Controls.Add(this.label6);
-            this.siticonePanel4.Controls.Add(this.siticoneCircleProgressBar1);
+            this.siticonePanel4.Controls.Add(this.registered_voters_progress);
             this.siticonePanel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
             this.siticonePanel4.Location = new System.Drawing.Point(859, 28);
             this.siticonePanel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.siticonePanel4.Name = "siticonePanel4";
             this.siticonePanel4.Size = new System.Drawing.Size(330, 757);
             this.siticonePanel4.TabIndex = 4;
+
             // 
-            // siticoneCircleProgressBar3
+            // number_of_candidates_progress
             // 
-            this.siticoneCircleProgressBar3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            this.siticoneCircleProgressBar3.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.siticoneCircleProgressBar3.ForeColor = System.Drawing.Color.White;
-            this.siticoneCircleProgressBar3.Location = new System.Drawing.Point(87, 498);
-            this.siticoneCircleProgressBar3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.siticoneCircleProgressBar3.Minimum = 0;
-            this.siticoneCircleProgressBar3.Name = "siticoneCircleProgressBar3";
-            this.siticoneCircleProgressBar3.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            this.siticoneCircleProgressBar3.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            this.siticoneCircleProgressBar3.ShadowDecoration.Mode = Siticone.Desktop.UI.WinForms.Enums.ShadowMode.Circle;
-            this.siticoneCircleProgressBar3.Size = new System.Drawing.Size(163, 163);
-            this.siticoneCircleProgressBar3.TabIndex = 8;
-            this.siticoneCircleProgressBar3.Text = "siticoneCircleProgressBar3";
+            this.number_of_candidates_progress.Controls.Add(this.label17);
+            this.number_of_candidates_progress.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            this.number_of_candidates_progress.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.number_of_candidates_progress.ForeColor = System.Drawing.Color.White;
+            this.number_of_candidates_progress.Location = new System.Drawing.Point(87, 498);
+            this.number_of_candidates_progress.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.number_of_candidates_progress.Minimum = 0;
+            this.number_of_candidates_progress.Name = "number_of_candidates_progress";
+            this.number_of_candidates_progress.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.number_of_candidates_progress.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.number_of_candidates_progress.ShadowDecoration.Mode = Siticone.Desktop.UI.WinForms.Enums.ShadowMode.Circle;
+            this.number_of_candidates_progress.Size = new System.Drawing.Size(163, 163);
+            this.number_of_candidates_progress.TabIndex = 8;
+            this.number_of_candidates_progress.Text = "siticoneCircleProgressBar3";
+       
             // 
-            // siticoneCircleProgressBar2
+            // label17
             // 
-            this.siticoneCircleProgressBar2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            this.siticoneCircleProgressBar2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.siticoneCircleProgressBar2.ForeColor = System.Drawing.Color.White;
-            this.siticoneCircleProgressBar2.Location = new System.Drawing.Point(87, 282);
-            this.siticoneCircleProgressBar2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.siticoneCircleProgressBar2.Minimum = 0;
-            this.siticoneCircleProgressBar2.Name = "siticoneCircleProgressBar2";
-            this.siticoneCircleProgressBar2.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            this.siticoneCircleProgressBar2.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            this.siticoneCircleProgressBar2.ShadowDecoration.Mode = Siticone.Desktop.UI.WinForms.Enums.ShadowMode.Circle;
-            this.siticoneCircleProgressBar2.Size = new System.Drawing.Size(163, 163);
-            this.siticoneCircleProgressBar2.TabIndex = 7;
-            this.siticoneCircleProgressBar2.Text = "siticoneCircleProgressBar2";
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Transparent;
+            this.label17.Font = new System.Drawing.Font("Tahoma", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.label17.Location = new System.Drawing.Point(44, 43);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(74, 77);
+            this.label17.TabIndex = 10;
+            this.label17.Text = "0";
+
+            // 
+            // number_of_voters_progress
+            // 
+            this.number_of_voters_progress.Controls.Add(this.label10);
+            this.number_of_voters_progress.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            this.number_of_voters_progress.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.number_of_voters_progress.ForeColor = System.Drawing.Color.White;
+            this.number_of_voters_progress.Location = new System.Drawing.Point(87, 282);
+            this.number_of_voters_progress.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.number_of_voters_progress.Minimum = 0;
+            this.number_of_voters_progress.Name = "number_of_voters_progress";
+            this.number_of_voters_progress.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.number_of_voters_progress.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.number_of_voters_progress.ShadowDecoration.Mode = Siticone.Desktop.UI.WinForms.Enums.ShadowMode.Circle;
+            this.number_of_voters_progress.Size = new System.Drawing.Size(163, 163);
+            this.number_of_voters_progress.TabIndex = 7;
+            this.number_of_voters_progress.Text = "siticoneCircleProgressBar2";
+    
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Tahoma", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.label10.Location = new System.Drawing.Point(44, 43);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(74, 77);
+            this.label10.TabIndex = 10;
+            this.label10.Text = "0";
+         
             // 
             // label9
             // 
@@ -438,6 +493,7 @@
             this.label9.Size = new System.Drawing.Size(158, 16);
             this.label9.TabIndex = 6;
             this.label9.Text = "Total number of candidate";
+       
             // 
             // label8
             // 
@@ -447,6 +503,7 @@
             this.label8.Size = new System.Drawing.Size(133, 16);
             this.label8.TabIndex = 4;
             this.label8.Text = "Total number of votes";
+      
             // 
             // label7
             // 
@@ -456,6 +513,7 @@
             this.label7.Size = new System.Drawing.Size(200, 16);
             this.label7.TabIndex = 2;
             this.label7.Text = "Total number of registered voters";
+  
             // 
             // label6
             // 
@@ -468,22 +526,52 @@
             this.label6.Size = new System.Drawing.Size(202, 29);
             this.label6.TabIndex = 1;
             this.label6.Text = "Voting Progress";
+        
             // 
-            // siticoneCircleProgressBar1
+            // registered_voters_progress
             // 
-            this.siticoneCircleProgressBar1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            this.siticoneCircleProgressBar1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.siticoneCircleProgressBar1.ForeColor = System.Drawing.Color.White;
-            this.siticoneCircleProgressBar1.Location = new System.Drawing.Point(87, 67);
-            this.siticoneCircleProgressBar1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.siticoneCircleProgressBar1.Minimum = 0;
-            this.siticoneCircleProgressBar1.Name = "siticoneCircleProgressBar1";
-            this.siticoneCircleProgressBar1.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            this.siticoneCircleProgressBar1.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            this.siticoneCircleProgressBar1.ShadowDecoration.Mode = Siticone.Desktop.UI.WinForms.Enums.ShadowMode.Circle;
-            this.siticoneCircleProgressBar1.Size = new System.Drawing.Size(163, 163);
-            this.siticoneCircleProgressBar1.TabIndex = 0;
-            this.siticoneCircleProgressBar1.Text = "siticoneCircleProgressBar1";
+            this.registered_voters_progress.Controls.Add(this.label4);
+            this.registered_voters_progress.Controls.Add(this.label1);
+            this.registered_voters_progress.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            this.registered_voters_progress.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.registered_voters_progress.ForeColor = System.Drawing.Color.White;
+            this.registered_voters_progress.Location = new System.Drawing.Point(87, 67);
+            this.registered_voters_progress.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.registered_voters_progress.Minimum = 0;
+            this.registered_voters_progress.Name = "registered_voters_progress";
+            this.registered_voters_progress.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.registered_voters_progress.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.registered_voters_progress.ShadowDecoration.Mode = Siticone.Desktop.UI.WinForms.Enums.ShadowMode.Circle;
+            this.registered_voters_progress.Size = new System.Drawing.Size(163, 163);
+            this.registered_voters_progress.TabIndex = 0;
+            this.registered_voters_progress.Text = "siticoneCircleProgressBar1";
+        
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Tahoma", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.label4.Location = new System.Drawing.Point(47, 48);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(74, 77);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "0";
+           
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.label1.Location = new System.Drawing.Point(-20, 67);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(28, 29);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "0";
+           
             // 
             // label2
             // 
@@ -493,17 +581,19 @@
             this.label2.Size = new System.Drawing.Size(197, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Welcome to eBoto Voting System";
+           
             // 
-            // label1
+            // greetings_label
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            this.label1.Location = new System.Drawing.Point(28, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(228, 39);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Hello, Glyzel!";
+            this.greetings_label.AutoSize = true;
+            this.greetings_label.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.greetings_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.greetings_label.Location = new System.Drawing.Point(28, 22);
+            this.greetings_label.Name = "greetings_label";
+            this.greetings_label.Size = new System.Drawing.Size(228, 39);
+            this.greetings_label.TabIndex = 0;
+            this.greetings_label.Text = "Hello, Glyzel!";
+          
             // 
             // vote
             // 
@@ -519,6 +609,7 @@
             this.vote.TabIndex = 1;
             this.vote.Text = "Vote";
             this.vote.UseVisualStyleBackColor = true;
+          
             // 
             // label19
             // 
@@ -530,6 +621,7 @@
             this.label19.Size = new System.Drawing.Size(483, 33);
             this.label19.TabIndex = 3;
             this.label19.Text = "YOU MAY NOW CAST YOUR VOTES";
+        
             // 
             // guidelines
             // 
@@ -560,6 +652,7 @@
             this.guidelines.TabIndex = 2;
             this.guidelines.Text = "Voters Guidelines";
             this.guidelines.UseVisualStyleBackColor = true;
+        
             // 
             // siticonePictureBox2
             // 
@@ -572,6 +665,7 @@
             this.siticonePictureBox2.TabIndex = 18;
             this.siticonePictureBox2.TabStop = false;
             this.siticonePictureBox2.UseTransparentBackground = true;
+       
             // 
             // siticoneShapes13
             // 
@@ -587,6 +681,7 @@
             this.siticoneShapes13.Text = "1";
             this.siticoneShapes13.UseTransparentBackground = true;
             this.siticoneShapes13.Zoom = 80;
+    
             // 
             // siticoneShapes14
             // 
@@ -602,6 +697,7 @@
             this.siticoneShapes14.Text = "siticoneShapes14";
             this.siticoneShapes14.UseTransparentBackground = true;
             this.siticoneShapes14.Zoom = 80;
+
             // 
             // siticoneShapes9
             // 
@@ -617,6 +713,7 @@
             this.siticoneShapes9.Text = "1";
             this.siticoneShapes9.UseTransparentBackground = true;
             this.siticoneShapes9.Zoom = 80;
+  
             // 
             // siticoneShapes10
             // 
@@ -632,6 +729,7 @@
             this.siticoneShapes10.Text = "siticoneShapes10";
             this.siticoneShapes10.UseTransparentBackground = true;
             this.siticoneShapes10.Zoom = 80;
+ 
             // 
             // siticoneShapes11
             // 
@@ -647,6 +745,7 @@
             this.siticoneShapes11.Text = "1";
             this.siticoneShapes11.UseTransparentBackground = true;
             this.siticoneShapes11.Zoom = 80;
+ 
             // 
             // siticoneShapes12
             // 
@@ -662,6 +761,7 @@
             this.siticoneShapes12.Text = "siticoneShapes12";
             this.siticoneShapes12.UseTransparentBackground = true;
             this.siticoneShapes12.Zoom = 80;
+
             // 
             // siticoneShapes7
             // 
@@ -677,6 +777,7 @@
             this.siticoneShapes7.Text = "1";
             this.siticoneShapes7.UseTransparentBackground = true;
             this.siticoneShapes7.Zoom = 80;
+
             // 
             // siticoneShapes8
             // 
@@ -692,6 +793,7 @@
             this.siticoneShapes8.Text = "siticoneShapes8";
             this.siticoneShapes8.UseTransparentBackground = true;
             this.siticoneShapes8.Zoom = 80;
+
             // 
             // siticoneShapes5
             // 
@@ -707,6 +809,7 @@
             this.siticoneShapes5.Text = "1";
             this.siticoneShapes5.UseTransparentBackground = true;
             this.siticoneShapes5.Zoom = 80;
+      
             // 
             // siticoneShapes6
             // 
@@ -722,6 +825,7 @@
             this.siticoneShapes6.Text = "siticoneShapes6";
             this.siticoneShapes6.UseTransparentBackground = true;
             this.siticoneShapes6.Zoom = 80;
+     
             // 
             // siticoneShapes3
             // 
@@ -737,6 +841,7 @@
             this.siticoneShapes3.Text = "1";
             this.siticoneShapes3.UseTransparentBackground = true;
             this.siticoneShapes3.Zoom = 80;
+  
             // 
             // siticoneShapes4
             // 
@@ -752,6 +857,7 @@
             this.siticoneShapes4.Text = "siticoneShapes4";
             this.siticoneShapes4.UseTransparentBackground = true;
             this.siticoneShapes4.Zoom = 80;
+    
             // 
             // siticoneShapes2
             // 
@@ -767,6 +873,7 @@
             this.siticoneShapes2.Text = "1";
             this.siticoneShapes2.UseTransparentBackground = true;
             this.siticoneShapes2.Zoom = 80;
+     
             // 
             // siticoneShapes1
             // 
@@ -782,6 +889,7 @@
             this.siticoneShapes1.Text = "siticoneShapes1";
             this.siticoneShapes1.UseTransparentBackground = true;
             this.siticoneShapes1.Zoom = 80;
+       
             // 
             // label16
             // 
@@ -792,6 +900,7 @@
             this.label16.Size = new System.Drawing.Size(591, 621);
             this.label16.TabIndex = 3;
             this.label16.Text = resources.GetString("label16.Text");
+       
             // 
             // label11
             // 
@@ -803,6 +912,7 @@
             this.label11.Size = new System.Drawing.Size(289, 33);
             this.label11.TabIndex = 2;
             this.label11.Text = "VOTERS GUIDELINE";
+
             // 
             // settings
             // 
@@ -818,6 +928,7 @@
             this.settings.TabIndex = 3;
             this.settings.Text = "Settings";
             this.settings.UseVisualStyleBackColor = true;
+     
             // 
             // splitContainer1
             // 
@@ -828,38 +939,40 @@
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.iconButton10);
+            this.splitContainer1.Panel1.Controls.Add(this.logout_button);
             this.splitContainer1.Panel1.Controls.Add(this.label15);
-            this.splitContainer1.Panel1.Controls.Add(this.iconButton7);
-            this.splitContainer1.Panel1.Controls.Add(this.iconButton9);
+            this.splitContainer1.Panel1.Controls.Add(this.about_us_button);
+            this.splitContainer1.Panel1.Controls.Add(this.contact_button);
             this.splitContainer1.Panel1.Controls.Add(this.label12);
-            this.splitContainer1.Panel1.Controls.Add(this.iconButton8);
+            this.splitContainer1.Panel1.Controls.Add(this.policy_button);
             this.splitContainer1.Panel1.Controls.Add(this.label13);
             this.splitContainer1.Panel1.Controls.Add(this.label14);
-            this.splitContainer1.Panel1.Controls.Add(this.iconButton6);
-            this.splitContainer1.Panel1.Controls.Add(this.iconButton4);
+            this.splitContainer1.Panel1.Controls.Add(this.terms_button);
+            this.splitContainer1.Panel1.Controls.Add(this.edit_profile_button);
             this.splitContainer1.Size = new System.Drawing.Size(1207, 824);
             this.splitContainer1.SplitterDistance = 431;
             this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 12;
+
             // 
-            // iconButton10
+            // logout_button
             // 
-            this.iconButton10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
-            this.iconButton10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.iconButton10.IconChar = FontAwesome.Sharp.IconChar.DoorOpen;
-            this.iconButton10.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            this.iconButton10.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton10.IconSize = 60;
-            this.iconButton10.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.iconButton10.Location = new System.Drawing.Point(36, 530);
-            this.iconButton10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.iconButton10.Name = "iconButton10";
-            this.iconButton10.Size = new System.Drawing.Size(361, 62);
-            this.iconButton10.TabIndex = 13;
-            this.iconButton10.Text = "Logout";
-            this.iconButton10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton10.UseVisualStyleBackColor = false;
+            this.logout_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
+            this.logout_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.logout_button.IconChar = FontAwesome.Sharp.IconChar.DoorOpen;
+            this.logout_button.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.logout_button.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.logout_button.IconSize = 60;
+            this.logout_button.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.logout_button.Location = new System.Drawing.Point(36, 530);
+            this.logout_button.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.logout_button.Name = "logout_button";
+            this.logout_button.Size = new System.Drawing.Size(361, 62);
+            this.logout_button.TabIndex = 13;
+            this.logout_button.Text = "Logout";
+            this.logout_button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.logout_button.UseVisualStyleBackColor = false;
+    
             // 
             // label15
             // 
@@ -871,42 +984,45 @@
             this.label15.Size = new System.Drawing.Size(181, 39);
             this.label15.TabIndex = 12;
             this.label15.Text = "SETTINGS";
+     
             // 
-            // iconButton7
+            // about_us_button
             // 
-            this.iconButton7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
-            this.iconButton7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.iconButton7.IconChar = FontAwesome.Sharp.IconChar.Users;
-            this.iconButton7.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton7.IconSize = 60;
-            this.iconButton7.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.iconButton7.Location = new System.Drawing.Point(36, 232);
-            this.iconButton7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.iconButton7.Name = "iconButton7";
-            this.iconButton7.Size = new System.Drawing.Size(361, 62);
-            this.iconButton7.TabIndex = 9;
-            this.iconButton7.Text = "About Us";
-            this.iconButton7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton7.UseVisualStyleBackColor = false;
+            this.about_us_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
+            this.about_us_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.about_us_button.IconChar = FontAwesome.Sharp.IconChar.Users;
+            this.about_us_button.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.about_us_button.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.about_us_button.IconSize = 60;
+            this.about_us_button.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.about_us_button.Location = new System.Drawing.Point(36, 232);
+            this.about_us_button.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.about_us_button.Name = "about_us_button";
+            this.about_us_button.Size = new System.Drawing.Size(361, 62);
+            this.about_us_button.TabIndex = 9;
+            this.about_us_button.Text = "About Us";
+            this.about_us_button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.about_us_button.UseVisualStyleBackColor = false;
+      
             // 
-            // iconButton9
+            // contact_button
             // 
-            this.iconButton9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
-            this.iconButton9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.iconButton9.IconChar = FontAwesome.Sharp.IconChar.Phone;
-            this.iconButton9.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            this.iconButton9.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton9.IconSize = 60;
-            this.iconButton9.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.iconButton9.Location = new System.Drawing.Point(36, 451);
-            this.iconButton9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.iconButton9.Name = "iconButton9";
-            this.iconButton9.Size = new System.Drawing.Size(361, 62);
-            this.iconButton9.TabIndex = 11;
-            this.iconButton9.Text = "Contact Us";
-            this.iconButton9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton9.UseVisualStyleBackColor = false;
+            this.contact_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
+            this.contact_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.contact_button.IconChar = FontAwesome.Sharp.IconChar.Phone;
+            this.contact_button.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.contact_button.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.contact_button.IconSize = 60;
+            this.contact_button.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.contact_button.Location = new System.Drawing.Point(36, 451);
+            this.contact_button.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.contact_button.Name = "contact_button";
+            this.contact_button.Size = new System.Drawing.Size(361, 62);
+            this.contact_button.TabIndex = 11;
+            this.contact_button.Text = "Contact Us";
+            this.contact_button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.contact_button.UseVisualStyleBackColor = false;
+       
             // 
             // label12
             // 
@@ -916,24 +1032,26 @@
             this.label12.Size = new System.Drawing.Size(66, 16);
             this.label12.TabIndex = 3;
             this.label12.Text = "SETTINGS";
+
             // 
-            // iconButton8
+            // policy_button
             // 
-            this.iconButton8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
-            this.iconButton8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.iconButton8.IconChar = FontAwesome.Sharp.IconChar.Shield;
-            this.iconButton8.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            this.iconButton8.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton8.IconSize = 60;
-            this.iconButton8.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.iconButton8.Location = new System.Drawing.Point(36, 376);
-            this.iconButton8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.iconButton8.Name = "iconButton8";
-            this.iconButton8.Size = new System.Drawing.Size(361, 62);
-            this.iconButton8.TabIndex = 10;
-            this.iconButton8.Text = "Privacy Policy";
-            this.iconButton8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton8.UseVisualStyleBackColor = false;
+            this.policy_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
+            this.policy_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.policy_button.IconChar = FontAwesome.Sharp.IconChar.Shield;
+            this.policy_button.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.policy_button.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.policy_button.IconSize = 60;
+            this.policy_button.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.policy_button.Location = new System.Drawing.Point(36, 376);
+            this.policy_button.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.policy_button.Name = "policy_button";
+            this.policy_button.Size = new System.Drawing.Size(361, 62);
+            this.policy_button.TabIndex = 10;
+            this.policy_button.Text = "Privacy Policy";
+            this.policy_button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.policy_button.UseVisualStyleBackColor = false;
+
             // 
             // label13
             // 
@@ -943,6 +1061,7 @@
             this.label13.Size = new System.Drawing.Size(64, 16);
             this.label13.TabIndex = 4;
             this.label13.Text = "ACCOUNT";
+     
             // 
             // label14
             // 
@@ -952,46 +1071,50 @@
             this.label14.Size = new System.Drawing.Size(55, 16);
             this.label14.TabIndex = 5;
             this.label14.Text = "OTHERS";
+
             // 
-            // iconButton6
+            // terms_button
             // 
-            this.iconButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
-            this.iconButton6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.iconButton6.IconChar = FontAwesome.Sharp.IconChar.Pencil;
-            this.iconButton6.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton6.IconSize = 60;
-            this.iconButton6.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.iconButton6.Location = new System.Drawing.Point(36, 305);
-            this.iconButton6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.iconButton6.Name = "iconButton6";
-            this.iconButton6.Size = new System.Drawing.Size(361, 62);
-            this.iconButton6.TabIndex = 8;
-            this.iconButton6.Text = "Terms of Services";
-            this.iconButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton6.UseVisualStyleBackColor = false;
+            this.terms_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
+            this.terms_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.terms_button.IconChar = FontAwesome.Sharp.IconChar.Pencil;
+            this.terms_button.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.terms_button.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.terms_button.IconSize = 60;
+            this.terms_button.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.terms_button.Location = new System.Drawing.Point(36, 305);
+            this.terms_button.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.terms_button.Name = "terms_button";
+            this.terms_button.Size = new System.Drawing.Size(361, 62);
+            this.terms_button.TabIndex = 8;
+            this.terms_button.Text = "Terms of Services";
+            this.terms_button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.terms_button.UseVisualStyleBackColor = false;
+  
             // 
-            // iconButton4
+            // edit_profile_button
             // 
-            this.iconButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
-            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.UserEdit;
-            this.iconButton4.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton4.IconSize = 60;
-            this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton4.Location = new System.Drawing.Point(34, 125);
-            this.iconButton4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Size = new System.Drawing.Size(361, 62);
-            this.iconButton4.TabIndex = 6;
-            this.iconButton4.Text = "Edit Profile";
-            this.iconButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton4.UseVisualStyleBackColor = false;
+            this.edit_profile_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
+            this.edit_profile_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.edit_profile_button.IconChar = FontAwesome.Sharp.IconChar.UserEdit;
+            this.edit_profile_button.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.edit_profile_button.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.edit_profile_button.IconSize = 60;
+            this.edit_profile_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.edit_profile_button.Location = new System.Drawing.Point(34, 125);
+            this.edit_profile_button.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.edit_profile_button.Name = "edit_profile_button";
+            this.edit_profile_button.Size = new System.Drawing.Size(361, 62);
+            this.edit_profile_button.TabIndex = 6;
+            this.edit_profile_button.Text = "Edit Profile";
+            this.edit_profile_button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.edit_profile_button.UseVisualStyleBackColor = false;
+
             // 
             // toolTip1
             // 
             this.toolTip1.ToolTipTitle = "Voter";
+      
             // 
             // VotersDashboard
             // 
@@ -1016,9 +1139,15 @@
             this.siticonePanel3.PerformLayout();
             this.siticonePanel5.ResumeLayout(false);
             this.siticonePanel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.election_chart)).EndInit();
             this.siticonePanel4.ResumeLayout(false);
             this.siticonePanel4.PerformLayout();
+            this.number_of_candidates_progress.ResumeLayout(false);
+            this.number_of_candidates_progress.PerformLayout();
+            this.number_of_voters_progress.ResumeLayout(false);
+            this.number_of_voters_progress.PerformLayout();
+            this.registered_voters_progress.ResumeLayout(false);
+            this.registered_voters_progress.PerformLayout();
             this.vote.ResumeLayout(false);
             this.vote.PerformLayout();
             this.guidelines.ResumeLayout(false);
@@ -1044,38 +1173,38 @@
         private System.Windows.Forms.TabPage vote;
         private System.Windows.Forms.TabPage guidelines;
         private System.Windows.Forms.TabPage settings;
-        private FontAwesome.Sharp.IconButton iconButton1;
-        private FontAwesome.Sharp.IconButton iconButton2;
+        private FontAwesome.Sharp.IconButton notification_button;
+        private FontAwesome.Sharp.IconButton profile_button;
         private System.Windows.Forms.ToolTip toolTip1;
-        private Siticone.Desktop.UI.WinForms.SiticoneButton siticoneButton1;
-        private System.Windows.Forms.Label label4;
+        private Siticone.Desktop.UI.WinForms.SiticoneButton vote_now_button;
+        private System.Windows.Forms.Label election_name;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.Label greetings_label;
+        private System.Windows.Forms.DataVisualization.Charting.Chart election_chart;
         private Siticone.Desktop.UI.WinForms.SiticonePanel siticonePanel5;
         private System.Windows.Forms.Label label5;
         private Siticone.Desktop.UI.WinForms.SiticonePanel siticonePanel4;
         private FontAwesome.Sharp.IconButton iconButton3;
-        private Siticone.Desktop.UI.WinForms.SiticoneCircleProgressBar siticoneCircleProgressBar1;
+        private Siticone.Desktop.UI.WinForms.SiticoneCircleProgressBar registered_voters_progress;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label11;
-        private FontAwesome.Sharp.IconButton iconButton7;
-        private FontAwesome.Sharp.IconButton iconButton6;
-        private FontAwesome.Sharp.IconButton iconButton4;
+        private FontAwesome.Sharp.IconButton about_us_button;
+        private FontAwesome.Sharp.IconButton terms_button;
+        private FontAwesome.Sharp.IconButton edit_profile_button;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.Label label15;
-        private FontAwesome.Sharp.IconButton iconButton9;
-        private FontAwesome.Sharp.IconButton iconButton8;
+        private FontAwesome.Sharp.IconButton contact_button;
+        private FontAwesome.Sharp.IconButton policy_button;
         private Siticone.Desktop.UI.WinForms.SiticonePanel siticonePanel3;
-        private Siticone.Desktop.UI.WinForms.SiticoneCircleProgressBar siticoneCircleProgressBar2;
-        private Siticone.Desktop.UI.WinForms.SiticoneCircleProgressBar siticoneCircleProgressBar3;
+        private Siticone.Desktop.UI.WinForms.SiticoneCircleProgressBar number_of_voters_progress;
+        private Siticone.Desktop.UI.WinForms.SiticoneCircleProgressBar number_of_candidates_progress;
         private Siticone.Desktop.UI.WinForms.SiticoneShapes siticoneShapes2;
         private Siticone.Desktop.UI.WinForms.SiticoneShapes siticoneShapes1;
         private System.Windows.Forms.Label label16;
@@ -1092,9 +1221,13 @@
         private Siticone.Desktop.UI.WinForms.SiticoneShapes siticoneShapes3;
         private Siticone.Desktop.UI.WinForms.SiticoneShapes siticoneShapes4;
         private Siticone.Desktop.UI.WinForms.SiticonePictureBox siticonePictureBox2;
-        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label election_department;
         private System.Windows.Forms.Label label18;
-        private FontAwesome.Sharp.IconButton iconButton10;
+        private FontAwesome.Sharp.IconButton logout_button;
         private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label1;
     }
 }
