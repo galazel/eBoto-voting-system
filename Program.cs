@@ -16,7 +16,7 @@ namespace eBoto
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new VotersDashboard());
+            Application.Run(new AdminDashboard());
         }
     }
 }

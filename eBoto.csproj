@@ -75,6 +75,27 @@
     <Compile Include="ContactUs.Designer.cs">
       <DependentUpon>ContactUs.cs</DependentUpon>
     </Compile>
+    <Compile Include="DatabaseConfiguration.cs" />
+    <Compile Include="eBotoDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>eBotoDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="eBotoDBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>eBotoDBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="eBotoDBDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>eBotoDBDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="eBotoDBDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>eBotoDBDataSet3.xsd</DependentUpon>
+    </Compile>
     <Compile Include="EditProfile.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -137,6 +158,50 @@
     <EmbeddedResource Include="VotersDashboard.resx">
       <DependentUpon>VotersDashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="eBotoDBDataSet.xsc">
+      <DependentUpon>eBotoDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="eBotoDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>eBotoDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="eBotoDBDataSet.xss">
+      <DependentUpon>eBotoDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="eBotoDBDataSet1.xsc">
+      <DependentUpon>eBotoDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="eBotoDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>eBotoDBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="eBotoDBDataSet1.xss">
+      <DependentUpon>eBotoDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="eBotoDBDataSet2.xsc">
+      <DependentUpon>eBotoDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="eBotoDBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>eBotoDBDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="eBotoDBDataSet2.xss">
+      <DependentUpon>eBotoDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="eBotoDBDataSet3.xsc">
+      <DependentUpon>eBotoDBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="eBotoDBDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>eBotoDBDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="eBotoDBDataSet3.xss">
+      <DependentUpon>eBotoDBDataSet3.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

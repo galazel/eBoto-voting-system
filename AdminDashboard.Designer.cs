@@ -29,61 +29,100 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle61 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle62 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle63 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle64 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle65 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle66 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle67 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle68 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle69 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle70 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle71 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle72 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminDashboard));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label19 = new System.Windows.Forms.Label();
             this.dashboard = new System.Windows.Forms.TabPage();
+            this.greetings_label = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.profile_button = new FontAwesome.Sharp.IconButton();
             this.voters = new System.Windows.Forms.TabPage();
+            this.voters_dataview = new Siticone.Desktop.UI.WinForms.SiticoneDataGridView();
+            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.electionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.eBotoDBDataSet = new eBoto.eBotoDBDataSet();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.siticoneTextBox1 = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
-            this.voters_grid = new Siticone.Desktop.UI.WinForms.SiticoneDataGridView();
             this.siticoneTabControl1 = new Siticone.Desktop.UI.WinForms.SiticoneTabControl();
             this.elections = new System.Windows.Forms.TabPage();
+            this.siticoneComboBox1 = new Siticone.Desktop.UI.WinForms.SiticoneComboBox();
+            this.vote_now_button = new Siticone.Desktop.UI.WinForms.SiticoneButton();
+            this.elections_dataview = new Siticone.Desktop.UI.WinForms.SiticoneDataGridView();
+            this.electionIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.electionNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.startDateDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.endDateDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.departmentIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.positionIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.candidateIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.partylistIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label11 = new System.Windows.Forms.Label();
             this.positions = new System.Windows.Forms.TabPage();
+            this.positions_dataview = new Siticone.Desktop.UI.WinForms.SiticoneDataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.siticoneComboBox2 = new Siticone.Desktop.UI.WinForms.SiticoneComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.candidates = new System.Windows.Forms.TabPage();
+            this.candidates_dataview = new Siticone.Desktop.UI.WinForms.SiticoneDataGridView();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.siticoneTextBox2 = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.announcements = new System.Windows.Forms.TabPage();
             this.settings = new System.Windows.Forms.TabPage();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.siticoneBorderlessForm1 = new Siticone.Desktop.UI.WinForms.SiticoneBorderlessForm(this.components);
             this.label18 = new System.Windows.Forms.Label();
-            this.notification_button = new FontAwesome.Sharp.IconButton();
             this.siticonePanel2 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
             this.siticonePanel1 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
-            this.siticoneDataGridView1 = new Siticone.Desktop.UI.WinForms.SiticoneDataGridView();
-            this.vote_now_button = new Siticone.Desktop.UI.WinForms.SiticoneButton();
-            this.siticoneComboBox1 = new Siticone.Desktop.UI.WinForms.SiticoneComboBox();
-            this.siticoneComboBox2 = new Siticone.Desktop.UI.WinForms.SiticoneComboBox();
-            this.siticoneDataGridView2 = new Siticone.Desktop.UI.WinForms.SiticoneDataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.siticoneTextBox2 = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
-            this.siticoneDataGridView3 = new Siticone.Desktop.UI.WinForms.SiticoneDataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.electionsTableAdapter = new eBoto.eBotoDBDataSetTableAdapters.ElectionsTableAdapter();
+            this.siticoneButton1 = new Siticone.Desktop.UI.WinForms.SiticoneButton();
+            this.dashboard.SuspendLayout();
             this.voters.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.voters_grid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.voters_dataview)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.electionsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eBotoDBDataSet)).BeginInit();
             this.siticoneTabControl1.SuspendLayout();
             this.elections.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.elections_dataview)).BeginInit();
             this.positions.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.positions_dataview)).BeginInit();
             this.candidates.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.candidates_dataview)).BeginInit();
             this.siticonePanel2.SuspendLayout();
             this.siticonePanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.siticoneDataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.siticoneDataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.siticoneDataGridView3)).BeginInit();
             this.SuspendLayout();
             // 
             // label19
@@ -91,7 +130,7 @@
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            this.label19.Location = new System.Drawing.Point(39, 24);
+            this.label19.Location = new System.Drawing.Point(17, 20);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(125, 33);
             this.label19.TabIndex = 3;
@@ -102,6 +141,7 @@
             this.dashboard.AutoScroll = true;
             this.dashboard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.dashboard.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dashboard.Controls.Add(this.greetings_label);
             this.dashboard.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.dashboard.ImageKey = "dashboard.png";
             this.dashboard.Location = new System.Drawing.Point(184, 4);
@@ -112,6 +152,17 @@
             this.dashboard.TabIndex = 0;
             this.dashboard.Text = "Dashboard";
             this.dashboard.UseVisualStyleBackColor = true;
+            // 
+            // greetings_label
+            // 
+            this.greetings_label.AutoSize = true;
+            this.greetings_label.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.greetings_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.greetings_label.Location = new System.Drawing.Point(17, 20);
+            this.greetings_label.Name = "greetings_label";
+            this.greetings_label.Size = new System.Drawing.Size(233, 39);
+            this.greetings_label.TabIndex = 6;
+            this.greetings_label.Text = "Hello, Admin!";
             // 
             // toolTip1
             // 
@@ -137,9 +188,9 @@
             // voters
             // 
             this.voters.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.voters.Controls.Add(this.voters_dataview);
             this.voters.Controls.Add(this.iconButton1);
             this.voters.Controls.Add(this.siticoneTextBox1);
-            this.voters.Controls.Add(this.voters_grid);
             this.voters.Controls.Add(this.label19);
             this.voters.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.voters.ImageKey = "vote.png";
@@ -152,6 +203,131 @@
             this.voters.Text = "Voters";
             this.voters.UseVisualStyleBackColor = true;
             // 
+            // voters_dataview
+            // 
+            dataGridViewCellStyle61.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
+            this.voters_dataview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle61;
+            this.voters_dataview.AutoGenerateColumns = false;
+            this.voters_dataview.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
+            this.voters_dataview.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.voters_dataview.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Raised;
+            dataGridViewCellStyle62.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle62.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle62.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle62.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle62.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle62.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle62.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.voters_dataview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle62;
+            this.voters_dataview.ColumnHeadersHeight = 50;
+            this.voters_dataview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.voters_dataview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn17,
+            this.dataGridViewTextBoxColumn18,
+            this.dataGridViewTextBoxColumn19,
+            this.dataGridViewTextBoxColumn20,
+            this.dataGridViewTextBoxColumn21,
+            this.dataGridViewTextBoxColumn22,
+            this.dataGridViewTextBoxColumn23,
+            this.dataGridViewTextBoxColumn24});
+            this.voters_dataview.DataSource = this.electionsBindingSource;
+            dataGridViewCellStyle63.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle63.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle63.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle63.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle63.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(186)))), ((int)(((byte)(231)))));
+            dataGridViewCellStyle63.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle63.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.voters_dataview.DefaultCellStyle = dataGridViewCellStyle63;
+            this.voters_dataview.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(220)))), ((int)(((byte)(242)))));
+            this.voters_dataview.Location = new System.Drawing.Point(23, 91);
+            this.voters_dataview.Name = "voters_dataview";
+            this.voters_dataview.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.voters_dataview.RowHeadersVisible = false;
+            this.voters_dataview.Size = new System.Drawing.Size(1166, 565);
+            this.voters_dataview.TabIndex = 7;
+            this.voters_dataview.Theme = Siticone.Desktop.UI.WinForms.Enums.DataGridViewPresetThemes.FeterRiver;
+            this.voters_dataview.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
+            this.voters_dataview.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.voters_dataview.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.voters_dataview.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.voters_dataview.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.voters_dataview.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
+            this.voters_dataview.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(220)))), ((int)(((byte)(242)))));
+            this.voters_dataview.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.voters_dataview.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Raised;
+            this.voters_dataview.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.voters_dataview.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.voters_dataview.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.voters_dataview.ThemeStyle.HeaderStyle.Height = 50;
+            this.voters_dataview.ThemeStyle.ReadOnly = false;
+            this.voters_dataview.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(247)))));
+            this.voters_dataview.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.voters_dataview.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.voters_dataview.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.voters_dataview.ThemeStyle.RowsStyle.Height = 22;
+            this.voters_dataview.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(186)))), ((int)(((byte)(231)))));
+            this.voters_dataview.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            // 
+            // dataGridViewTextBoxColumn17
+            // 
+            this.dataGridViewTextBoxColumn17.DataPropertyName = "ElectionID";
+            this.dataGridViewTextBoxColumn17.HeaderText = "ElectionID";
+            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+            this.dataGridViewTextBoxColumn17.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn18
+            // 
+            this.dataGridViewTextBoxColumn18.DataPropertyName = "ElectionName";
+            this.dataGridViewTextBoxColumn18.HeaderText = "ElectionName";
+            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            // 
+            // dataGridViewTextBoxColumn19
+            // 
+            this.dataGridViewTextBoxColumn19.DataPropertyName = "StartDate";
+            this.dataGridViewTextBoxColumn19.HeaderText = "StartDate";
+            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
+            // 
+            // dataGridViewTextBoxColumn20
+            // 
+            this.dataGridViewTextBoxColumn20.DataPropertyName = "EndDate";
+            this.dataGridViewTextBoxColumn20.HeaderText = "EndDate";
+            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
+            // 
+            // dataGridViewTextBoxColumn21
+            // 
+            this.dataGridViewTextBoxColumn21.DataPropertyName = "DepartmentID";
+            this.dataGridViewTextBoxColumn21.HeaderText = "DepartmentID";
+            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
+            // 
+            // dataGridViewTextBoxColumn22
+            // 
+            this.dataGridViewTextBoxColumn22.DataPropertyName = "PositionID";
+            this.dataGridViewTextBoxColumn22.HeaderText = "PositionID";
+            this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
+            // 
+            // dataGridViewTextBoxColumn23
+            // 
+            this.dataGridViewTextBoxColumn23.DataPropertyName = "CandidateID";
+            this.dataGridViewTextBoxColumn23.HeaderText = "CandidateID";
+            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
+            // 
+            // dataGridViewTextBoxColumn24
+            // 
+            this.dataGridViewTextBoxColumn24.DataPropertyName = "PartylistID";
+            this.dataGridViewTextBoxColumn24.HeaderText = "PartylistID";
+            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
+            // 
+            // electionsBindingSource
+            // 
+            this.electionsBindingSource.DataMember = "Elections";
+            this.electionsBindingSource.DataSource = this.eBotoDBDataSet;
+            // 
+            // eBotoDBDataSet
+            // 
+            this.eBotoDBDataSet.DataSetName = "eBotoDBDataSet";
+            this.eBotoDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // iconButton1
             // 
             this.iconButton1.BackColor = System.Drawing.Color.Transparent;
@@ -161,7 +337,7 @@
             this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
             this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Location = new System.Drawing.Point(1105, 55);
+            this.iconButton1.Location = new System.Drawing.Point(1135, 19);
             this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(54, 47);
@@ -179,65 +355,13 @@
             this.siticoneTextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.siticoneTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.siticoneTextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox1.Location = new System.Drawing.Point(741, 55);
+            this.siticoneTextBox1.Location = new System.Drawing.Point(771, 20);
             this.siticoneTextBox1.Name = "siticoneTextBox1";
             this.siticoneTextBox1.PasswordChar = '\0';
             this.siticoneTextBox1.PlaceholderText = "";
             this.siticoneTextBox1.SelectedText = "";
             this.siticoneTextBox1.Size = new System.Drawing.Size(358, 47);
             this.siticoneTextBox1.TabIndex = 5;
-            // 
-            // voters_grid
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(237)))), ((int)(((byte)(183)))));
-            this.voters_grid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.voters_grid.BackgroundColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.voters_grid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.voters_grid.ColumnHeadersHeight = 4;
-            this.voters_grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(243)))), ((int)(((byte)(207)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(215)))), ((int)(((byte)(95)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.voters_grid.DefaultCellStyle = dataGridViewCellStyle3;
-            this.voters_grid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(233)))), ((int)(((byte)(170)))));
-            this.voters_grid.Location = new System.Drawing.Point(45, 118);
-            this.voters_grid.Name = "voters_grid";
-            this.voters_grid.RowHeadersVisible = false;
-            this.voters_grid.Size = new System.Drawing.Size(1114, 565);
-            this.voters_grid.TabIndex = 4;
-            this.voters_grid.Theme = Siticone.Desktop.UI.WinForms.Enums.DataGridViewPresetThemes.SunFlower;
-            this.voters_grid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(237)))), ((int)(((byte)(183)))));
-            this.voters_grid.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.voters_grid.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.voters_grid.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.voters_grid.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.voters_grid.ThemeStyle.BackColor = System.Drawing.Color.Gainsboro;
-            this.voters_grid.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(233)))), ((int)(((byte)(170)))));
-            this.voters_grid.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
-            this.voters_grid.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.voters_grid.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.voters_grid.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.voters_grid.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.voters_grid.ThemeStyle.HeaderStyle.Height = 4;
-            this.voters_grid.ThemeStyle.ReadOnly = false;
-            this.voters_grid.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(243)))), ((int)(((byte)(207)))));
-            this.voters_grid.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.voters_grid.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.voters_grid.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.voters_grid.ThemeStyle.RowsStyle.Height = 22;
-            this.voters_grid.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(215)))), ((int)(((byte)(95)))));
-            this.voters_grid.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             // 
             // siticoneTabControl1
             // 
@@ -280,13 +404,14 @@
             this.siticoneTabControl1.TabButtonTextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             this.siticoneTabControl1.TabIndex = 0;
             this.siticoneTabControl1.TabMenuBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.siticoneTabControl1.SelectedIndexChanged += new System.EventHandler(this.TabChanged);
             // 
             // elections
             // 
             this.elections.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.elections.Controls.Add(this.siticoneComboBox1);
             this.elections.Controls.Add(this.vote_now_button);
-            this.elections.Controls.Add(this.siticoneDataGridView1);
+            this.elections.Controls.Add(this.elections_dataview);
             this.elections.Controls.Add(this.label11);
             this.elections.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.elections.ImageKey = "guidelines.png";
@@ -298,12 +423,166 @@
             this.elections.Text = "Elections";
             this.elections.UseVisualStyleBackColor = true;
             // 
+            // siticoneComboBox1
+            // 
+            this.siticoneComboBox1.BackColor = System.Drawing.Color.Transparent;
+            this.siticoneComboBox1.BorderRadius = 10;
+            this.siticoneComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.siticoneComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.siticoneComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.siticoneComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.siticoneComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.siticoneComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.siticoneComboBox1.ItemHeight = 30;
+            this.siticoneComboBox1.Items.AddRange(new object[] {
+            "Default",
+            "A-Z",
+            "Z-A"});
+            this.siticoneComboBox1.Location = new System.Drawing.Point(1049, 17);
+            this.siticoneComboBox1.Name = "siticoneComboBox1";
+            this.siticoneComboBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.siticoneComboBox1.Size = new System.Drawing.Size(140, 36);
+            this.siticoneComboBox1.TabIndex = 8;
+            // 
+            // vote_now_button
+            // 
+            this.vote_now_button.BorderRadius = 10;
+            this.vote_now_button.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.vote_now_button.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.vote_now_button.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.vote_now_button.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.vote_now_button.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.vote_now_button.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.vote_now_button.ForeColor = System.Drawing.Color.White;
+            this.vote_now_button.Location = new System.Drawing.Point(928, 17);
+            this.vote_now_button.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.vote_now_button.Name = "vote_now_button";
+            this.vote_now_button.Size = new System.Drawing.Size(115, 36);
+            this.vote_now_button.TabIndex = 7;
+            this.vote_now_button.Text = "Add Election";
+            // 
+            // elections_dataview
+            // 
+            dataGridViewCellStyle64.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
+            this.elections_dataview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle64;
+            this.elections_dataview.AutoGenerateColumns = false;
+            this.elections_dataview.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
+            this.elections_dataview.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.elections_dataview.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Raised;
+            dataGridViewCellStyle65.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle65.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle65.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle65.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle65.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle65.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle65.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.elections_dataview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle65;
+            this.elections_dataview.ColumnHeadersHeight = 50;
+            this.elections_dataview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.elections_dataview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.electionIDDataGridViewTextBoxColumn1,
+            this.electionNameDataGridViewTextBoxColumn1,
+            this.startDateDataGridViewTextBoxColumn1,
+            this.endDateDataGridViewTextBoxColumn1,
+            this.departmentIDDataGridViewTextBoxColumn1,
+            this.positionIDDataGridViewTextBoxColumn1,
+            this.candidateIDDataGridViewTextBoxColumn1,
+            this.partylistIDDataGridViewTextBoxColumn1});
+            this.elections_dataview.DataSource = this.electionsBindingSource;
+            dataGridViewCellStyle66.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle66.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle66.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle66.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle66.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(186)))), ((int)(((byte)(231)))));
+            dataGridViewCellStyle66.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle66.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.elections_dataview.DefaultCellStyle = dataGridViewCellStyle66;
+            this.elections_dataview.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(220)))), ((int)(((byte)(242)))));
+            this.elections_dataview.Location = new System.Drawing.Point(23, 91);
+            this.elections_dataview.Name = "elections_dataview";
+            this.elections_dataview.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.elections_dataview.RowHeadersVisible = false;
+            this.elections_dataview.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.elections_dataview.Size = new System.Drawing.Size(1166, 565);
+            this.elections_dataview.TabIndex = 6;
+            this.elections_dataview.Theme = Siticone.Desktop.UI.WinForms.Enums.DataGridViewPresetThemes.FeterRiver;
+            this.elections_dataview.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
+            this.elections_dataview.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.elections_dataview.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.elections_dataview.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.elections_dataview.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.elections_dataview.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
+            this.elections_dataview.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(220)))), ((int)(((byte)(242)))));
+            this.elections_dataview.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.elections_dataview.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Raised;
+            this.elections_dataview.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.elections_dataview.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.elections_dataview.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.elections_dataview.ThemeStyle.HeaderStyle.Height = 50;
+            this.elections_dataview.ThemeStyle.ReadOnly = false;
+            this.elections_dataview.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(247)))));
+            this.elections_dataview.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.elections_dataview.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.elections_dataview.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.elections_dataview.ThemeStyle.RowsStyle.Height = 22;
+            this.elections_dataview.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(186)))), ((int)(((byte)(231)))));
+            this.elections_dataview.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            // 
+            // electionIDDataGridViewTextBoxColumn1
+            // 
+            this.electionIDDataGridViewTextBoxColumn1.DataPropertyName = "ElectionID";
+            this.electionIDDataGridViewTextBoxColumn1.HeaderText = "ElectionID";
+            this.electionIDDataGridViewTextBoxColumn1.Name = "electionIDDataGridViewTextBoxColumn1";
+            this.electionIDDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // electionNameDataGridViewTextBoxColumn1
+            // 
+            this.electionNameDataGridViewTextBoxColumn1.DataPropertyName = "ElectionName";
+            this.electionNameDataGridViewTextBoxColumn1.HeaderText = "ElectionName";
+            this.electionNameDataGridViewTextBoxColumn1.Name = "electionNameDataGridViewTextBoxColumn1";
+            // 
+            // startDateDataGridViewTextBoxColumn1
+            // 
+            this.startDateDataGridViewTextBoxColumn1.DataPropertyName = "StartDate";
+            this.startDateDataGridViewTextBoxColumn1.HeaderText = "StartDate";
+            this.startDateDataGridViewTextBoxColumn1.Name = "startDateDataGridViewTextBoxColumn1";
+            // 
+            // endDateDataGridViewTextBoxColumn1
+            // 
+            this.endDateDataGridViewTextBoxColumn1.DataPropertyName = "EndDate";
+            this.endDateDataGridViewTextBoxColumn1.HeaderText = "EndDate";
+            this.endDateDataGridViewTextBoxColumn1.Name = "endDateDataGridViewTextBoxColumn1";
+            // 
+            // departmentIDDataGridViewTextBoxColumn1
+            // 
+            this.departmentIDDataGridViewTextBoxColumn1.DataPropertyName = "DepartmentID";
+            this.departmentIDDataGridViewTextBoxColumn1.HeaderText = "DepartmentID";
+            this.departmentIDDataGridViewTextBoxColumn1.Name = "departmentIDDataGridViewTextBoxColumn1";
+            // 
+            // positionIDDataGridViewTextBoxColumn1
+            // 
+            this.positionIDDataGridViewTextBoxColumn1.DataPropertyName = "PositionID";
+            this.positionIDDataGridViewTextBoxColumn1.HeaderText = "PositionID";
+            this.positionIDDataGridViewTextBoxColumn1.Name = "positionIDDataGridViewTextBoxColumn1";
+            // 
+            // candidateIDDataGridViewTextBoxColumn1
+            // 
+            this.candidateIDDataGridViewTextBoxColumn1.DataPropertyName = "CandidateID";
+            this.candidateIDDataGridViewTextBoxColumn1.HeaderText = "CandidateID";
+            this.candidateIDDataGridViewTextBoxColumn1.Name = "candidateIDDataGridViewTextBoxColumn1";
+            // 
+            // partylistIDDataGridViewTextBoxColumn1
+            // 
+            this.partylistIDDataGridViewTextBoxColumn1.DataPropertyName = "PartylistID";
+            this.partylistIDDataGridViewTextBoxColumn1.HeaderText = "PartylistID";
+            this.partylistIDDataGridViewTextBoxColumn1.Name = "partylistIDDataGridViewTextBoxColumn1";
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            this.label11.Location = new System.Drawing.Point(40, 24);
+            this.label11.Location = new System.Drawing.Point(17, 20);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(171, 33);
             this.label11.TabIndex = 2;
@@ -313,8 +592,9 @@
             // 
             this.positions.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.positions.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.positions.Controls.Add(this.siticoneButton1);
+            this.positions.Controls.Add(this.positions_dataview);
             this.positions.Controls.Add(this.siticoneComboBox2);
-            this.positions.Controls.Add(this.siticoneDataGridView2);
             this.positions.Controls.Add(this.label1);
             this.positions.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.positions.ImageKey = "settings.png";
@@ -326,11 +606,159 @@
             this.positions.Text = "Positions";
             this.positions.UseVisualStyleBackColor = true;
             // 
+            // positions_dataview
+            // 
+            dataGridViewCellStyle67.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
+            this.positions_dataview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle67;
+            this.positions_dataview.AutoGenerateColumns = false;
+            this.positions_dataview.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
+            this.positions_dataview.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.positions_dataview.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Raised;
+            dataGridViewCellStyle68.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle68.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle68.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle68.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle68.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle68.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle68.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.positions_dataview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle68;
+            this.positions_dataview.ColumnHeadersHeight = 50;
+            this.positions_dataview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.positions_dataview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8});
+            this.positions_dataview.DataSource = this.electionsBindingSource;
+            dataGridViewCellStyle69.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle69.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle69.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle69.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle69.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(186)))), ((int)(((byte)(231)))));
+            dataGridViewCellStyle69.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle69.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.positions_dataview.DefaultCellStyle = dataGridViewCellStyle69;
+            this.positions_dataview.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(220)))), ((int)(((byte)(242)))));
+            this.positions_dataview.Location = new System.Drawing.Point(23, 91);
+            this.positions_dataview.Name = "positions_dataview";
+            this.positions_dataview.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.positions_dataview.RowHeadersVisible = false;
+            this.positions_dataview.Size = new System.Drawing.Size(1166, 565);
+            this.positions_dataview.TabIndex = 13;
+            this.positions_dataview.Theme = Siticone.Desktop.UI.WinForms.Enums.DataGridViewPresetThemes.FeterRiver;
+            this.positions_dataview.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
+            this.positions_dataview.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.positions_dataview.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.positions_dataview.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.positions_dataview.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.positions_dataview.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
+            this.positions_dataview.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(220)))), ((int)(((byte)(242)))));
+            this.positions_dataview.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.positions_dataview.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Raised;
+            this.positions_dataview.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.positions_dataview.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.positions_dataview.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.positions_dataview.ThemeStyle.HeaderStyle.Height = 50;
+            this.positions_dataview.ThemeStyle.ReadOnly = false;
+            this.positions_dataview.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(247)))));
+            this.positions_dataview.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.positions_dataview.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.positions_dataview.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.positions_dataview.ThemeStyle.RowsStyle.Height = 22;
+            this.positions_dataview.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(186)))), ((int)(((byte)(231)))));
+            this.positions_dataview.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "ElectionID";
+            this.dataGridViewTextBoxColumn1.HeaderText = "ElectionID";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "ElectionName";
+            this.dataGridViewTextBoxColumn2.HeaderText = "ElectionName";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "StartDate";
+            this.dataGridViewTextBoxColumn3.HeaderText = "StartDate";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "EndDate";
+            this.dataGridViewTextBoxColumn4.HeaderText = "EndDate";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "DepartmentID";
+            this.dataGridViewTextBoxColumn5.HeaderText = "DepartmentID";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "PositionID";
+            this.dataGridViewTextBoxColumn6.HeaderText = "PositionID";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "CandidateID";
+            this.dataGridViewTextBoxColumn7.HeaderText = "CandidateID";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "PartylistID";
+            this.dataGridViewTextBoxColumn8.HeaderText = "PartylistID";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
+            // siticoneComboBox2
+            // 
+            this.siticoneComboBox2.BackColor = System.Drawing.Color.Transparent;
+            this.siticoneComboBox2.BorderRadius = 10;
+            this.siticoneComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.siticoneComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.siticoneComboBox2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.siticoneComboBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.siticoneComboBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.siticoneComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.siticoneComboBox2.ItemHeight = 30;
+            this.siticoneComboBox2.Items.AddRange(new object[] {
+            "Default",
+            "A-Z",
+            "Z-A"});
+            this.siticoneComboBox2.Location = new System.Drawing.Point(1049, 20);
+            this.siticoneComboBox2.Name = "siticoneComboBox2";
+            this.siticoneComboBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.siticoneComboBox2.Size = new System.Drawing.Size(140, 36);
+            this.siticoneComboBox2.TabIndex = 12;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.label1.Location = new System.Drawing.Point(17, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(173, 33);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "POSITIONS";
+            // 
             // candidates
             // 
+            this.candidates.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.candidates.Controls.Add(this.candidates_dataview);
             this.candidates.Controls.Add(this.iconButton2);
             this.candidates.Controls.Add(this.siticoneTextBox2);
-            this.candidates.Controls.Add(this.siticoneDataGridView3);
             this.candidates.Controls.Add(this.label2);
             this.candidates.Location = new System.Drawing.Point(184, 4);
             this.candidates.Name = "candidates";
@@ -339,8 +767,170 @@
             this.candidates.Text = "Candidates";
             this.candidates.UseVisualStyleBackColor = true;
             // 
+            // candidates_dataview
+            // 
+            dataGridViewCellStyle70.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
+            this.candidates_dataview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle70;
+            this.candidates_dataview.AutoGenerateColumns = false;
+            this.candidates_dataview.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
+            this.candidates_dataview.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.candidates_dataview.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Raised;
+            dataGridViewCellStyle71.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle71.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle71.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle71.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle71.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle71.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle71.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.candidates_dataview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle71;
+            this.candidates_dataview.ColumnHeadersHeight = 50;
+            this.candidates_dataview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.candidates_dataview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn12,
+            this.dataGridViewTextBoxColumn13,
+            this.dataGridViewTextBoxColumn14,
+            this.dataGridViewTextBoxColumn15,
+            this.dataGridViewTextBoxColumn16});
+            this.candidates_dataview.DataSource = this.electionsBindingSource;
+            dataGridViewCellStyle72.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle72.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle72.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle72.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle72.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(186)))), ((int)(((byte)(231)))));
+            dataGridViewCellStyle72.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle72.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.candidates_dataview.DefaultCellStyle = dataGridViewCellStyle72;
+            this.candidates_dataview.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(220)))), ((int)(((byte)(242)))));
+            this.candidates_dataview.Location = new System.Drawing.Point(23, 91);
+            this.candidates_dataview.Name = "candidates_dataview";
+            this.candidates_dataview.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.candidates_dataview.RowHeadersVisible = false;
+            this.candidates_dataview.Size = new System.Drawing.Size(1166, 565);
+            this.candidates_dataview.TabIndex = 10;
+            this.candidates_dataview.Theme = Siticone.Desktop.UI.WinForms.Enums.DataGridViewPresetThemes.FeterRiver;
+            this.candidates_dataview.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
+            this.candidates_dataview.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.candidates_dataview.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.candidates_dataview.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.candidates_dataview.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.candidates_dataview.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
+            this.candidates_dataview.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(220)))), ((int)(((byte)(242)))));
+            this.candidates_dataview.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.candidates_dataview.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Raised;
+            this.candidates_dataview.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.candidates_dataview.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.candidates_dataview.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.candidates_dataview.ThemeStyle.HeaderStyle.Height = 50;
+            this.candidates_dataview.ThemeStyle.ReadOnly = false;
+            this.candidates_dataview.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(247)))));
+            this.candidates_dataview.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.candidates_dataview.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.candidates_dataview.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.candidates_dataview.ThemeStyle.RowsStyle.Height = 22;
+            this.candidates_dataview.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(186)))), ((int)(((byte)(231)))));
+            this.candidates_dataview.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "ElectionID";
+            this.dataGridViewTextBoxColumn9.HeaderText = "ElectionID";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "ElectionName";
+            this.dataGridViewTextBoxColumn10.HeaderText = "ElectionName";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "StartDate";
+            this.dataGridViewTextBoxColumn11.HeaderText = "StartDate";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "EndDate";
+            this.dataGridViewTextBoxColumn12.HeaderText = "EndDate";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.DataPropertyName = "DepartmentID";
+            this.dataGridViewTextBoxColumn13.HeaderText = "DepartmentID";
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            this.dataGridViewTextBoxColumn14.DataPropertyName = "PositionID";
+            this.dataGridViewTextBoxColumn14.HeaderText = "PositionID";
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            // 
+            // dataGridViewTextBoxColumn15
+            // 
+            this.dataGridViewTextBoxColumn15.DataPropertyName = "CandidateID";
+            this.dataGridViewTextBoxColumn15.HeaderText = "CandidateID";
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            // 
+            // dataGridViewTextBoxColumn16
+            // 
+            this.dataGridViewTextBoxColumn16.DataPropertyName = "PartylistID";
+            this.dataGridViewTextBoxColumn16.HeaderText = "PartylistID";
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            // 
+            // iconButton2
+            // 
+            this.iconButton2.BackColor = System.Drawing.Color.Transparent;
+            this.iconButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton2.ForeColor = System.Drawing.Color.Transparent;
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            this.iconButton2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton2.Location = new System.Drawing.Point(1135, 19);
+            this.iconButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.iconButton2.Name = "iconButton2";
+            this.iconButton2.Size = new System.Drawing.Size(54, 47);
+            this.iconButton2.TabIndex = 9;
+            this.iconButton2.UseVisualStyleBackColor = false;
+            // 
+            // siticoneTextBox2
+            // 
+            this.siticoneTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.siticoneTextBox2.DefaultText = "Search";
+            this.siticoneTextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.siticoneTextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.siticoneTextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.siticoneTextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.siticoneTextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.siticoneTextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.siticoneTextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.siticoneTextBox2.Location = new System.Drawing.Point(771, 20);
+            this.siticoneTextBox2.Name = "siticoneTextBox2";
+            this.siticoneTextBox2.PasswordChar = '\0';
+            this.siticoneTextBox2.PlaceholderText = "";
+            this.siticoneTextBox2.SelectedText = "";
+            this.siticoneTextBox2.Size = new System.Drawing.Size(358, 47);
+            this.siticoneTextBox2.TabIndex = 8;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.label2.Location = new System.Drawing.Point(17, 20);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(194, 33);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "CANDIDATES";
+            // 
             // announcements
             // 
+            this.announcements.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.announcements.Location = new System.Drawing.Point(184, 4);
             this.announcements.Name = "announcements";
             this.announcements.Size = new System.Drawing.Size(1211, 828);
@@ -350,6 +940,7 @@
             // 
             // settings
             // 
+            this.settings.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.settings.Location = new System.Drawing.Point(184, 4);
             this.settings.Name = "settings";
             this.settings.Size = new System.Drawing.Size(1211, 828);
@@ -387,22 +978,6 @@
             this.label18.TabIndex = 7;
             this.label18.Text = "eBoto";
             // 
-            // notification_button
-            // 
-            this.notification_button.BackColor = System.Drawing.Color.Transparent;
-            this.notification_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.notification_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.notification_button.ForeColor = System.Drawing.Color.Transparent;
-            this.notification_button.IconChar = FontAwesome.Sharp.IconChar.Bell;
-            this.notification_button.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            this.notification_button.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.notification_button.Location = new System.Drawing.Point(1259, 13);
-            this.notification_button.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.notification_button.Name = "notification_button";
-            this.notification_button.Size = new System.Drawing.Size(54, 47);
-            this.notification_button.TabIndex = 1;
-            this.notification_button.UseVisualStyleBackColor = false;
-            // 
             // siticonePanel2
             // 
             this.siticonePanel2.Controls.Add(this.siticoneTabControl1);
@@ -418,7 +993,6 @@
             this.siticonePanel1.BackColor = System.Drawing.Color.White;
             this.siticonePanel1.Controls.Add(this.label18);
             this.siticonePanel1.Controls.Add(this.profile_button);
-            this.siticonePanel1.Controls.Add(this.notification_button);
             this.siticonePanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.siticonePanel1.Location = new System.Drawing.Point(0, 0);
             this.siticonePanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -426,277 +1000,26 @@
             this.siticonePanel1.Size = new System.Drawing.Size(1399, 64);
             this.siticonePanel1.TabIndex = 2;
             // 
-            // siticoneDataGridView1
+            // electionsTableAdapter
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(237)))), ((int)(((byte)(183)))));
-            this.siticoneDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.siticoneDataGridView1.BackgroundColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.siticoneDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.siticoneDataGridView1.ColumnHeadersHeight = 4;
-            this.siticoneDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(243)))), ((int)(((byte)(207)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(215)))), ((int)(((byte)(95)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.siticoneDataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
-            this.siticoneDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(233)))), ((int)(((byte)(170)))));
-            this.siticoneDataGridView1.Location = new System.Drawing.Point(46, 125);
-            this.siticoneDataGridView1.Name = "siticoneDataGridView1";
-            this.siticoneDataGridView1.RowHeadersVisible = false;
-            this.siticoneDataGridView1.Size = new System.Drawing.Size(1114, 565);
-            this.siticoneDataGridView1.TabIndex = 6;
-            this.siticoneDataGridView1.Theme = Siticone.Desktop.UI.WinForms.Enums.DataGridViewPresetThemes.SunFlower;
-            this.siticoneDataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(237)))), ((int)(((byte)(183)))));
-            this.siticoneDataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.siticoneDataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.siticoneDataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.siticoneDataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.siticoneDataGridView1.ThemeStyle.BackColor = System.Drawing.Color.Gainsboro;
-            this.siticoneDataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(233)))), ((int)(((byte)(170)))));
-            this.siticoneDataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
-            this.siticoneDataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.siticoneDataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.siticoneDataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.siticoneDataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.siticoneDataGridView1.ThemeStyle.HeaderStyle.Height = 4;
-            this.siticoneDataGridView1.ThemeStyle.ReadOnly = false;
-            this.siticoneDataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(243)))), ((int)(((byte)(207)))));
-            this.siticoneDataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.siticoneDataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.siticoneDataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.siticoneDataGridView1.ThemeStyle.RowsStyle.Height = 22;
-            this.siticoneDataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(215)))), ((int)(((byte)(95)))));
-            this.siticoneDataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.electionsTableAdapter.ClearBeforeFill = true;
             // 
-            // vote_now_button
+            // siticoneButton1
             // 
-            this.vote_now_button.BorderRadius = 10;
-            this.vote_now_button.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.vote_now_button.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.vote_now_button.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.vote_now_button.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.vote_now_button.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            this.vote_now_button.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.vote_now_button.ForeColor = System.Drawing.Color.White;
-            this.vote_now_button.Location = new System.Drawing.Point(46, 82);
-            this.vote_now_button.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.vote_now_button.Name = "vote_now_button";
-            this.vote_now_button.Size = new System.Drawing.Size(115, 36);
-            this.vote_now_button.TabIndex = 7;
-            this.vote_now_button.Text = "Add Election";
-            // 
-            // siticoneComboBox1
-            // 
-            this.siticoneComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.siticoneComboBox1.BorderRadius = 10;
-            this.siticoneComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.siticoneComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.siticoneComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.siticoneComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.siticoneComboBox1.ItemHeight = 30;
-            this.siticoneComboBox1.Items.AddRange(new object[] {
-            "Default",
-            "A-Z",
-            "Z-A"});
-            this.siticoneComboBox1.Location = new System.Drawing.Point(1020, 82);
-            this.siticoneComboBox1.Name = "siticoneComboBox1";
-            this.siticoneComboBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.siticoneComboBox1.Size = new System.Drawing.Size(140, 36);
-            this.siticoneComboBox1.TabIndex = 8;
-            // 
-            // siticoneComboBox2
-            // 
-            this.siticoneComboBox2.BackColor = System.Drawing.Color.Transparent;
-            this.siticoneComboBox2.BorderRadius = 10;
-            this.siticoneComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.siticoneComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.siticoneComboBox2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneComboBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneComboBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.siticoneComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.siticoneComboBox2.ItemHeight = 30;
-            this.siticoneComboBox2.Items.AddRange(new object[] {
-            "Default",
-            "A-Z",
-            "Z-A"});
-            this.siticoneComboBox2.Location = new System.Drawing.Point(39, 78);
-            this.siticoneComboBox2.Name = "siticoneComboBox2";
-            this.siticoneComboBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.siticoneComboBox2.Size = new System.Drawing.Size(140, 36);
-            this.siticoneComboBox2.TabIndex = 12;
-            // 
-            // siticoneDataGridView2
-            // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(237)))), ((int)(((byte)(183)))));
-            this.siticoneDataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            this.siticoneDataGridView2.BackgroundColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.siticoneDataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
-            this.siticoneDataGridView2.ColumnHeadersHeight = 4;
-            this.siticoneDataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(243)))), ((int)(((byte)(207)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(215)))), ((int)(((byte)(95)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.siticoneDataGridView2.DefaultCellStyle = dataGridViewCellStyle9;
-            this.siticoneDataGridView2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(233)))), ((int)(((byte)(170)))));
-            this.siticoneDataGridView2.Location = new System.Drawing.Point(39, 120);
-            this.siticoneDataGridView2.Name = "siticoneDataGridView2";
-            this.siticoneDataGridView2.RowHeadersVisible = false;
-            this.siticoneDataGridView2.Size = new System.Drawing.Size(1114, 565);
-            this.siticoneDataGridView2.TabIndex = 10;
-            this.siticoneDataGridView2.Theme = Siticone.Desktop.UI.WinForms.Enums.DataGridViewPresetThemes.SunFlower;
-            this.siticoneDataGridView2.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(237)))), ((int)(((byte)(183)))));
-            this.siticoneDataGridView2.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.siticoneDataGridView2.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.siticoneDataGridView2.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.siticoneDataGridView2.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.siticoneDataGridView2.ThemeStyle.BackColor = System.Drawing.Color.Gainsboro;
-            this.siticoneDataGridView2.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(233)))), ((int)(((byte)(170)))));
-            this.siticoneDataGridView2.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
-            this.siticoneDataGridView2.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.siticoneDataGridView2.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.siticoneDataGridView2.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.siticoneDataGridView2.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.siticoneDataGridView2.ThemeStyle.HeaderStyle.Height = 4;
-            this.siticoneDataGridView2.ThemeStyle.ReadOnly = false;
-            this.siticoneDataGridView2.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(243)))), ((int)(((byte)(207)))));
-            this.siticoneDataGridView2.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.siticoneDataGridView2.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.siticoneDataGridView2.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.siticoneDataGridView2.ThemeStyle.RowsStyle.Height = 22;
-            this.siticoneDataGridView2.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(215)))), ((int)(((byte)(95)))));
-            this.siticoneDataGridView2.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            this.label1.Location = new System.Drawing.Point(33, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(173, 33);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "POSITIONS";
-            // 
-            // siticoneTextBox2
-            // 
-            this.siticoneTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.siticoneTextBox2.DefaultText = "Search";
-            this.siticoneTextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.siticoneTextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.siticoneTextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.siticoneTextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.siticoneTextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.siticoneTextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox2.Location = new System.Drawing.Point(734, 52);
-            this.siticoneTextBox2.Name = "siticoneTextBox2";
-            this.siticoneTextBox2.PasswordChar = '\0';
-            this.siticoneTextBox2.PlaceholderText = "";
-            this.siticoneTextBox2.SelectedText = "";
-            this.siticoneTextBox2.Size = new System.Drawing.Size(358, 47);
-            this.siticoneTextBox2.TabIndex = 8;
-            // 
-            // siticoneDataGridView3
-            // 
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(237)))), ((int)(((byte)(183)))));
-            this.siticoneDataGridView3.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
-            this.siticoneDataGridView3.BackgroundColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.siticoneDataGridView3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
-            this.siticoneDataGridView3.ColumnHeadersHeight = 4;
-            this.siticoneDataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(243)))), ((int)(((byte)(207)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(215)))), ((int)(((byte)(95)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.siticoneDataGridView3.DefaultCellStyle = dataGridViewCellStyle12;
-            this.siticoneDataGridView3.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(233)))), ((int)(((byte)(170)))));
-            this.siticoneDataGridView3.Location = new System.Drawing.Point(38, 115);
-            this.siticoneDataGridView3.Name = "siticoneDataGridView3";
-            this.siticoneDataGridView3.RowHeadersVisible = false;
-            this.siticoneDataGridView3.Size = new System.Drawing.Size(1114, 565);
-            this.siticoneDataGridView3.TabIndex = 7;
-            this.siticoneDataGridView3.Theme = Siticone.Desktop.UI.WinForms.Enums.DataGridViewPresetThemes.SunFlower;
-            this.siticoneDataGridView3.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(237)))), ((int)(((byte)(183)))));
-            this.siticoneDataGridView3.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.siticoneDataGridView3.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.siticoneDataGridView3.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.siticoneDataGridView3.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.siticoneDataGridView3.ThemeStyle.BackColor = System.Drawing.Color.Gainsboro;
-            this.siticoneDataGridView3.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(233)))), ((int)(((byte)(170)))));
-            this.siticoneDataGridView3.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
-            this.siticoneDataGridView3.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.siticoneDataGridView3.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.siticoneDataGridView3.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.siticoneDataGridView3.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.siticoneDataGridView3.ThemeStyle.HeaderStyle.Height = 4;
-            this.siticoneDataGridView3.ThemeStyle.ReadOnly = false;
-            this.siticoneDataGridView3.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(243)))), ((int)(((byte)(207)))));
-            this.siticoneDataGridView3.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.siticoneDataGridView3.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.siticoneDataGridView3.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.siticoneDataGridView3.ThemeStyle.RowsStyle.Height = 22;
-            this.siticoneDataGridView3.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(215)))), ((int)(((byte)(95)))));
-            this.siticoneDataGridView3.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            this.label2.Location = new System.Drawing.Point(32, 21);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(194, 33);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "CANDIDATES";
-            // 
-            // iconButton2
-            // 
-            this.iconButton2.BackColor = System.Drawing.Color.Transparent;
-            this.iconButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.ForeColor = System.Drawing.Color.Transparent;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
-            this.iconButton2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.Location = new System.Drawing.Point(1110, 61);
-            this.iconButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(54, 47);
-            this.iconButton2.TabIndex = 9;
-            this.iconButton2.UseVisualStyleBackColor = false;
+            this.siticoneButton1.BorderRadius = 10;
+            this.siticoneButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.siticoneButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.siticoneButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.siticoneButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.siticoneButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.siticoneButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.siticoneButton1.ForeColor = System.Drawing.Color.White;
+            this.siticoneButton1.Location = new System.Drawing.Point(928, 20);
+            this.siticoneButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.siticoneButton1.Name = "siticoneButton1";
+            this.siticoneButton1.Size = new System.Drawing.Size(115, 36);
+            this.siticoneButton1.TabIndex = 14;
+            this.siticoneButton1.Text = "Add Election";
             // 
             // AdminDashboard
             // 
@@ -707,23 +1030,29 @@
             this.Controls.Add(this.siticonePanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AdminDashboard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminDashboard";
+            this.Load += new System.EventHandler(this.AdminDashboard_Load);
+            this.dashboard.ResumeLayout(false);
+            this.dashboard.PerformLayout();
             this.voters.ResumeLayout(false);
             this.voters.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.voters_grid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.voters_dataview)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.electionsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eBotoDBDataSet)).EndInit();
             this.siticoneTabControl1.ResumeLayout(false);
             this.elections.ResumeLayout(false);
             this.elections.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.elections_dataview)).EndInit();
             this.positions.ResumeLayout(false);
             this.positions.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.positions_dataview)).EndInit();
             this.candidates.ResumeLayout(false);
             this.candidates.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.candidates_dataview)).EndInit();
             this.siticonePanel2.ResumeLayout(false);
             this.siticonePanel1.ResumeLayout(false);
             this.siticonePanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.siticoneDataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.siticoneDataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.siticoneDataGridView3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -745,20 +1074,56 @@
         private Siticone.Desktop.UI.WinForms.SiticonePanel siticonePanel2;
         private Siticone.Desktop.UI.WinForms.SiticonePanel siticonePanel1;
         private System.Windows.Forms.Label label18;
-        private FontAwesome.Sharp.IconButton notification_button;
         private System.Windows.Forms.Label label11;
         private Siticone.Desktop.UI.WinForms.SiticoneTextBox siticoneTextBox1;
-        private Siticone.Desktop.UI.WinForms.SiticoneDataGridView voters_grid;
         private FontAwesome.Sharp.IconButton iconButton1;
-        private Siticone.Desktop.UI.WinForms.SiticoneDataGridView siticoneDataGridView1;
+        private Siticone.Desktop.UI.WinForms.SiticoneDataGridView elections_dataview;
         private Siticone.Desktop.UI.WinForms.SiticoneComboBox siticoneComboBox1;
         private Siticone.Desktop.UI.WinForms.SiticoneButton vote_now_button;
         private Siticone.Desktop.UI.WinForms.SiticoneComboBox siticoneComboBox2;
-        private Siticone.Desktop.UI.WinForms.SiticoneDataGridView siticoneDataGridView2;
         private System.Windows.Forms.Label label1;
         private FontAwesome.Sharp.IconButton iconButton2;
         private Siticone.Desktop.UI.WinForms.SiticoneTextBox siticoneTextBox2;
-        private Siticone.Desktop.UI.WinForms.SiticoneDataGridView siticoneDataGridView3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label greetings_label;
+        private eBotoDBDataSet eBotoDBDataSet;
+        private System.Windows.Forms.BindingSource electionsBindingSource;
+        private eBotoDBDataSetTableAdapters.ElectionsTableAdapter electionsTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn electionIDDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn electionNameDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn startDateDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn endDateDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn departmentIDDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn positionIDDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn candidateIDDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn partylistIDDataGridViewTextBoxColumn1;
+        private Siticone.Desktop.UI.WinForms.SiticoneDataGridView voters_dataview;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn19;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn20;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn21;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn22;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn23;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn24;
+        private Siticone.Desktop.UI.WinForms.SiticoneDataGridView candidates_dataview;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
+        private Siticone.Desktop.UI.WinForms.SiticoneDataGridView positions_dataview;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private Siticone.Desktop.UI.WinForms.SiticoneButton siticoneButton1;
     }
 }

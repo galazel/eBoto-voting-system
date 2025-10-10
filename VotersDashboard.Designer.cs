@@ -149,7 +149,6 @@
             this.siticonePanel1.Name = "siticonePanel1";
             this.siticonePanel1.Size = new System.Drawing.Size(1399, 64);
             this.siticonePanel1.TabIndex = 0;
-
             // 
             // label18
             // 
@@ -161,7 +160,6 @@
             this.label18.Size = new System.Drawing.Size(167, 58);
             this.label18.TabIndex = 7;
             this.label18.Text = "eBoto";
-
             // 
             // profile_button
             // 
@@ -179,7 +177,6 @@
             this.profile_button.TabIndex = 2;
             this.toolTip1.SetToolTip(this.profile_button, "Voters Name");
             this.profile_button.UseVisualStyleBackColor = false;
-
             // 
             // notification_button
             // 
@@ -196,7 +193,6 @@
             this.notification_button.Size = new System.Drawing.Size(54, 47);
             this.notification_button.TabIndex = 1;
             this.notification_button.UseVisualStyleBackColor = false;
-
             // 
             // siticonePanel2
             // 
@@ -207,7 +203,6 @@
             this.siticonePanel2.Name = "siticonePanel2";
             this.siticonePanel2.Size = new System.Drawing.Size(1399, 836);
             this.siticonePanel2.TabIndex = 1;
-
             // 
             // siticoneTabControl1
             // 
@@ -247,7 +242,6 @@
             this.siticoneTabControl1.TabButtonTextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             this.siticoneTabControl1.TabIndex = 0;
             this.siticoneTabControl1.TabMenuBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-
             // 
             // dashboard
             // 
@@ -269,7 +263,6 @@
             this.dashboard.TabIndex = 0;
             this.dashboard.Text = "Dashboard";
             this.dashboard.UseVisualStyleBackColor = true;
-
             // 
             // siticonePanel3
             // 
@@ -286,8 +279,6 @@
             this.siticonePanel3.Name = "siticonePanel3";
             this.siticonePanel3.Size = new System.Drawing.Size(805, 230);
             this.siticonePanel3.TabIndex = 6;
-     
-
             // 
             // election_department
             // 
@@ -297,7 +288,6 @@
             this.election_department.Size = new System.Drawing.Size(170, 16);
             this.election_department.TabIndex = 5;
             this.election_department.Text = "College of Computer Studies";
-    
             // 
             // election_name
             // 
@@ -309,7 +299,6 @@
             this.election_name.Size = new System.Drawing.Size(755, 33);
             this.election_name.TabIndex = 3;
             this.election_name.Text = "Philippine Society of Information Technology Students";
-        
             // 
             // vote_now_button
             // 
@@ -327,7 +316,6 @@
             this.vote_now_button.Size = new System.Drawing.Size(210, 47);
             this.vote_now_button.TabIndex = 4;
             this.vote_now_button.Text = "Vote Now";
-           
             // 
             // label3
             // 
@@ -337,7 +325,6 @@
             this.label3.Size = new System.Drawing.Size(102, 16);
             this.label3.TabIndex = 2;
             this.label3.Text = "Ongoing Election";
-     
             // 
             // siticonePanel5
             // 
@@ -353,7 +340,6 @@
             this.siticonePanel5.Name = "siticonePanel5";
             this.siticonePanel5.Size = new System.Drawing.Size(805, 443);
             this.siticonePanel5.TabIndex = 5;
-
             // 
             // iconButton3
             // 
@@ -370,7 +356,6 @@
             this.iconButton3.Size = new System.Drawing.Size(89, 47);
             this.iconButton3.TabIndex = 3;
             this.iconButton3.UseVisualStyleBackColor = false;
-
             // 
             // label5
             // 
@@ -380,7 +365,6 @@
             this.label5.Size = new System.Drawing.Size(89, 16);
             this.label5.TabIndex = 4;
             this.label5.Text = "LIVE RESULTS";
-
             // 
             // election_chart
             // 
@@ -400,7 +384,6 @@
             this.election_chart.Size = new System.Drawing.Size(754, 319);
             this.election_chart.TabIndex = 3;
             this.election_chart.Text = "chart1";
-         
             // 
             // siticonePanel4
             // 
@@ -421,7 +404,6 @@
             this.siticonePanel4.Name = "siticonePanel4";
             this.siticonePanel4.Size = new System.Drawing.Size(330, 757);
             this.siticonePanel4.TabIndex = 4;
-
             // 
             // number_of_candidates_progress
             // 
@@ -439,7 +421,6 @@
             this.number_of_candidates_progress.Size = new System.Drawing.Size(163, 163);
             this.number_of_candidates_progress.TabIndex = 8;
             this.number_of_candidates_progress.Text = "siticoneCircleProgressBar3";
-       
             // 
             // label17
             // 
@@ -452,7 +433,6 @@
             this.label17.Size = new System.Drawing.Size(74, 77);
             this.label17.TabIndex = 10;
             this.label17.Text = "0";
-
             // 
             // number_of_voters_progress
             // 
@@ -470,7 +450,6 @@
             this.number_of_voters_progress.Size = new System.Drawing.Size(163, 163);
             this.number_of_voters_progress.TabIndex = 7;
             this.number_of_voters_progress.Text = "siticoneCircleProgressBar2";
-    
             // 
             // label10
             // 
@@ -483,7 +462,6 @@
             this.label10.Size = new System.Drawing.Size(74, 77);
             this.label10.TabIndex = 10;
             this.label10.Text = "0";
-         
             // 
             // label9
             // 
@@ -493,7 +471,6 @@
             this.label9.Size = new System.Drawing.Size(158, 16);
             this.label9.TabIndex = 6;
             this.label9.Text = "Total number of candidate";
-       
             // 
             // label8
             // 
@@ -503,7 +480,6 @@
             this.label8.Size = new System.Drawing.Size(133, 16);
             this.label8.TabIndex = 4;
             this.label8.Text = "Total number of votes";
-      
             // 
             // label7
             // 
@@ -513,7 +489,6 @@
             this.label7.Size = new System.Drawing.Size(200, 16);
             this.label7.TabIndex = 2;
             this.label7.Text = "Total number of registered voters";
-  
             // 
             // label6
             // 
@@ -526,7 +501,6 @@
             this.label6.Size = new System.Drawing.Size(202, 29);
             this.label6.TabIndex = 1;
             this.label6.Text = "Voting Progress";
-        
             // 
             // registered_voters_progress
             // 
@@ -545,7 +519,6 @@
             this.registered_voters_progress.Size = new System.Drawing.Size(163, 163);
             this.registered_voters_progress.TabIndex = 0;
             this.registered_voters_progress.Text = "siticoneCircleProgressBar1";
-        
             // 
             // label4
             // 
@@ -558,7 +531,6 @@
             this.label4.Size = new System.Drawing.Size(74, 77);
             this.label4.TabIndex = 9;
             this.label4.Text = "0";
-           
             // 
             // label1
             // 
@@ -571,7 +543,6 @@
             this.label1.Size = new System.Drawing.Size(28, 29);
             this.label1.TabIndex = 2;
             this.label1.Text = "0";
-           
             // 
             // label2
             // 
@@ -581,7 +552,6 @@
             this.label2.Size = new System.Drawing.Size(197, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Welcome to eBoto Voting System";
-           
             // 
             // greetings_label
             // 
@@ -593,7 +563,6 @@
             this.greetings_label.Size = new System.Drawing.Size(228, 39);
             this.greetings_label.TabIndex = 0;
             this.greetings_label.Text = "Hello, Glyzel!";
-          
             // 
             // vote
             // 
@@ -609,7 +578,6 @@
             this.vote.TabIndex = 1;
             this.vote.Text = "Vote";
             this.vote.UseVisualStyleBackColor = true;
-          
             // 
             // label19
             // 
@@ -621,7 +589,6 @@
             this.label19.Size = new System.Drawing.Size(483, 33);
             this.label19.TabIndex = 3;
             this.label19.Text = "YOU MAY NOW CAST YOUR VOTES";
-        
             // 
             // guidelines
             // 
@@ -652,20 +619,18 @@
             this.guidelines.TabIndex = 2;
             this.guidelines.Text = "Voters Guidelines";
             this.guidelines.UseVisualStyleBackColor = true;
-        
             // 
             // siticonePictureBox2
             // 
             this.siticonePictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("siticonePictureBox2.Image")));
             this.siticonePictureBox2.ImageRotate = 0F;
-            this.siticonePictureBox2.Location = new System.Drawing.Point(377, 114);
+            this.siticonePictureBox2.Location = new System.Drawing.Point(545, 119);
             this.siticonePictureBox2.Name = "siticonePictureBox2";
-            this.siticonePictureBox2.Size = new System.Drawing.Size(812, 537);
+            this.siticonePictureBox2.Size = new System.Drawing.Size(735, 537);
             this.siticonePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.siticonePictureBox2.TabIndex = 18;
             this.siticonePictureBox2.TabStop = false;
             this.siticonePictureBox2.UseTransparentBackground = true;
-       
             // 
             // siticoneShapes13
             // 
@@ -681,7 +646,6 @@
             this.siticoneShapes13.Text = "1";
             this.siticoneShapes13.UseTransparentBackground = true;
             this.siticoneShapes13.Zoom = 80;
-    
             // 
             // siticoneShapes14
             // 
@@ -697,7 +661,6 @@
             this.siticoneShapes14.Text = "siticoneShapes14";
             this.siticoneShapes14.UseTransparentBackground = true;
             this.siticoneShapes14.Zoom = 80;
-
             // 
             // siticoneShapes9
             // 
@@ -713,7 +676,6 @@
             this.siticoneShapes9.Text = "1";
             this.siticoneShapes9.UseTransparentBackground = true;
             this.siticoneShapes9.Zoom = 80;
-  
             // 
             // siticoneShapes10
             // 
@@ -729,7 +691,6 @@
             this.siticoneShapes10.Text = "siticoneShapes10";
             this.siticoneShapes10.UseTransparentBackground = true;
             this.siticoneShapes10.Zoom = 80;
- 
             // 
             // siticoneShapes11
             // 
@@ -745,7 +706,6 @@
             this.siticoneShapes11.Text = "1";
             this.siticoneShapes11.UseTransparentBackground = true;
             this.siticoneShapes11.Zoom = 80;
- 
             // 
             // siticoneShapes12
             // 
@@ -761,7 +721,6 @@
             this.siticoneShapes12.Text = "siticoneShapes12";
             this.siticoneShapes12.UseTransparentBackground = true;
             this.siticoneShapes12.Zoom = 80;
-
             // 
             // siticoneShapes7
             // 
@@ -777,7 +736,6 @@
             this.siticoneShapes7.Text = "1";
             this.siticoneShapes7.UseTransparentBackground = true;
             this.siticoneShapes7.Zoom = 80;
-
             // 
             // siticoneShapes8
             // 
@@ -793,7 +751,6 @@
             this.siticoneShapes8.Text = "siticoneShapes8";
             this.siticoneShapes8.UseTransparentBackground = true;
             this.siticoneShapes8.Zoom = 80;
-
             // 
             // siticoneShapes5
             // 
@@ -809,7 +766,6 @@
             this.siticoneShapes5.Text = "1";
             this.siticoneShapes5.UseTransparentBackground = true;
             this.siticoneShapes5.Zoom = 80;
-      
             // 
             // siticoneShapes6
             // 
@@ -825,7 +781,6 @@
             this.siticoneShapes6.Text = "siticoneShapes6";
             this.siticoneShapes6.UseTransparentBackground = true;
             this.siticoneShapes6.Zoom = 80;
-     
             // 
             // siticoneShapes3
             // 
@@ -841,7 +796,6 @@
             this.siticoneShapes3.Text = "1";
             this.siticoneShapes3.UseTransparentBackground = true;
             this.siticoneShapes3.Zoom = 80;
-  
             // 
             // siticoneShapes4
             // 
@@ -857,7 +811,6 @@
             this.siticoneShapes4.Text = "siticoneShapes4";
             this.siticoneShapes4.UseTransparentBackground = true;
             this.siticoneShapes4.Zoom = 80;
-    
             // 
             // siticoneShapes2
             // 
@@ -873,7 +826,6 @@
             this.siticoneShapes2.Text = "1";
             this.siticoneShapes2.UseTransparentBackground = true;
             this.siticoneShapes2.Zoom = 80;
-     
             // 
             // siticoneShapes1
             // 
@@ -889,7 +841,6 @@
             this.siticoneShapes1.Text = "siticoneShapes1";
             this.siticoneShapes1.UseTransparentBackground = true;
             this.siticoneShapes1.Zoom = 80;
-       
             // 
             // label16
             // 
@@ -900,7 +851,6 @@
             this.label16.Size = new System.Drawing.Size(591, 621);
             this.label16.TabIndex = 3;
             this.label16.Text = resources.GetString("label16.Text");
-       
             // 
             // label11
             // 
@@ -912,7 +862,6 @@
             this.label11.Size = new System.Drawing.Size(289, 33);
             this.label11.TabIndex = 2;
             this.label11.Text = "VOTERS GUIDELINE";
-
             // 
             // settings
             // 
@@ -928,7 +877,6 @@
             this.settings.TabIndex = 3;
             this.settings.Text = "Settings";
             this.settings.UseVisualStyleBackColor = true;
-     
             // 
             // splitContainer1
             // 
@@ -953,7 +901,6 @@
             this.splitContainer1.SplitterDistance = 431;
             this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 12;
-
             // 
             // logout_button
             // 
@@ -972,7 +919,6 @@
             this.logout_button.Text = "Logout";
             this.logout_button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.logout_button.UseVisualStyleBackColor = false;
-    
             // 
             // label15
             // 
@@ -984,7 +930,6 @@
             this.label15.Size = new System.Drawing.Size(181, 39);
             this.label15.TabIndex = 12;
             this.label15.Text = "SETTINGS";
-     
             // 
             // about_us_button
             // 
@@ -1003,7 +948,6 @@
             this.about_us_button.Text = "About Us";
             this.about_us_button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.about_us_button.UseVisualStyleBackColor = false;
-      
             // 
             // contact_button
             // 
@@ -1022,7 +966,6 @@
             this.contact_button.Text = "Contact Us";
             this.contact_button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.contact_button.UseVisualStyleBackColor = false;
-       
             // 
             // label12
             // 
@@ -1032,7 +975,6 @@
             this.label12.Size = new System.Drawing.Size(66, 16);
             this.label12.TabIndex = 3;
             this.label12.Text = "SETTINGS";
-
             // 
             // policy_button
             // 
@@ -1051,7 +993,6 @@
             this.policy_button.Text = "Privacy Policy";
             this.policy_button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.policy_button.UseVisualStyleBackColor = false;
-
             // 
             // label13
             // 
@@ -1061,7 +1002,6 @@
             this.label13.Size = new System.Drawing.Size(64, 16);
             this.label13.TabIndex = 4;
             this.label13.Text = "ACCOUNT";
-     
             // 
             // label14
             // 
@@ -1071,7 +1011,6 @@
             this.label14.Size = new System.Drawing.Size(55, 16);
             this.label14.TabIndex = 5;
             this.label14.Text = "OTHERS";
-
             // 
             // terms_button
             // 
@@ -1090,7 +1029,6 @@
             this.terms_button.Text = "Terms of Services";
             this.terms_button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.terms_button.UseVisualStyleBackColor = false;
-  
             // 
             // edit_profile_button
             // 
@@ -1109,12 +1047,10 @@
             this.edit_profile_button.Text = "Edit Profile";
             this.edit_profile_button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.edit_profile_button.UseVisualStyleBackColor = false;
-
             // 
             // toolTip1
             // 
             this.toolTip1.ToolTipTitle = "Voter";
-      
             // 
             // VotersDashboard
             // 

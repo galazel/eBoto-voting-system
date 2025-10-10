@@ -51,10 +51,8 @@
             this.barangay_box = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
             this.province_box = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.repeatpass_box = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
             this.password_box = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
             this.username_box = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
-            this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.register_button = new Siticone.Desktop.UI.WinForms.SiticoneButton();
@@ -417,31 +415,6 @@
             this.label13.TabIndex = 29;
             this.label13.Text = "ACCOUNT INFORMATION";
             // 
-            // repeatpass_box
-            // 
-            this.repeatpass_box.BackColor = System.Drawing.Color.Transparent;
-            this.repeatpass_box.BorderColor = System.Drawing.Color.Gainsboro;
-            this.repeatpass_box.BorderRadius = 10;
-            this.repeatpass_box.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.repeatpass_box.DefaultText = "";
-            this.repeatpass_box.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.repeatpass_box.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.repeatpass_box.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.repeatpass_box.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.repeatpass_box.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
-            this.repeatpass_box.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.repeatpass_box.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.repeatpass_box.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.repeatpass_box.Location = new System.Drawing.Point(780, 668);
-            this.repeatpass_box.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.repeatpass_box.Name = "repeatpass_box";
-            this.repeatpass_box.PasswordChar = '●';
-            this.repeatpass_box.PlaceholderText = "";
-            this.repeatpass_box.SelectedText = "";
-            this.repeatpass_box.Size = new System.Drawing.Size(332, 46);
-            this.repeatpass_box.TabIndex = 35;
-            this.repeatpass_box.UseSystemPasswordChar = true;
-            // 
             // password_box
             // 
             this.password_box.BackColor = System.Drawing.Color.Transparent;
@@ -490,17 +463,6 @@
             this.username_box.SelectedText = "";
             this.username_box.Size = new System.Drawing.Size(332, 46);
             this.username_box.TabIndex = 33;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(782, 650);
-            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(106, 16);
-            this.label14.TabIndex = 32;
-            this.label14.Text = "Repeat Password";
             // 
             // label15
             // 
@@ -744,10 +706,8 @@
             this.Controls.Add(this.siticoneCheckBox1);
             this.Controls.Add(this.birthday_date);
             this.Controls.Add(this.register_button);
-            this.Controls.Add(this.repeatpass_box);
             this.Controls.Add(this.password_box);
             this.Controls.Add(this.username_box);
-            this.Controls.Add(this.label14);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label13);
@@ -804,10 +764,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
-        private Siticone.Desktop.UI.WinForms.SiticoneTextBox repeatpass_box;
         private Siticone.Desktop.UI.WinForms.SiticoneTextBox password_box;
         private Siticone.Desktop.UI.WinForms.SiticoneTextBox username_box;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label13;
