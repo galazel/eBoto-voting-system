@@ -51,15 +51,15 @@ namespace eBoto
             switch (selectedTab.Text)
             {
                 case "Elections":
-                    LoadData("SELECT * FROM Elections", elections_dataview);
+                    LoadData("SELECT ElectionID, ElectionName, StartDate, EndDate FROM Elections", elections_dataview);
                     break;
 
                 case "Positions":
-                    LoadData("SELECT PositionID, PositionName FROM Positions", positions_dataview);
+                    LoadData("SELECT PositionID, PositionName FROM Positions ORDER BY PositionID", positions_dataview);
                     break;
 
                 case "Candidates":
-                    LoadData("SELECT CandidateID FROM Candidates", candidates_dataview);
+                    LoadData("SELECT Candidates.CandidateID, Candidates.FullName, Candidates.PartylistName, Departments.DepartmentName FROM Candidates INNER JOIN Departments ON Candidates.DepartmentID = Departments.DepartmentID", candidates_dataview);
                     break;
 
                 case "Voters":
@@ -67,6 +67,11 @@ namespace eBoto
                     break;
             }
             Console.WriteLine($"Selected Tab: {selectedTab.Text}");
+        }
+
+        private void siticoneButton1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
