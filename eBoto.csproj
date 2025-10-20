@@ -63,6 +63,18 @@
     <Compile Include="AboutUs.Designer.cs">
       <DependentUpon>AboutUs.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddCandidates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCandidates.Designer.cs">
+      <DependentUpon>AddCandidates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddElection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddElection.Designer.cs">
+      <DependentUpon>AddElection.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +146,15 @@
     <Compile Include="VotersDashboard.Designer.cs">
       <DependentUpon>VotersDashboard.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddCandidates.dje-NE.resx">
+      <DependentUpon>AddCandidates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCandidates.resx">
+      <DependentUpon>AddCandidates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddElection.resx">
+      <DependentUpon>AddElection.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </EmbeddedResource>

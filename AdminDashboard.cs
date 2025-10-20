@@ -39,7 +39,7 @@ namespace eBoto
 
         private void AdminDashboard_Load(object sender, EventArgs e)
         {
-            LoadData("SELECT * FROM Elections", elections_dataview);
+            
         }
 
         private void TabChanged(object sender, EventArgs e)
@@ -50,14 +50,6 @@ namespace eBoto
                 return;
             switch (selectedTab.Text)
             {
-                case "Elections":
-                    LoadData("SELECT ElectionID, ElectionName, StartDate, EndDate FROM Elections", elections_dataview);
-                    break;
-
-                case "Positions":
-                    LoadData("SELECT PositionID, PositionName FROM Positions ORDER BY PositionID", positions_dataview);
-                    break;
-
                 case "Candidates":
                     LoadData("SELECT Candidates.CandidateID, Candidates.FullName, Candidates.PartylistName, Departments.DepartmentName FROM Candidates INNER JOIN Departments ON Candidates.DepartmentID = Departments.DepartmentID", candidates_dataview);
                     break;
@@ -72,6 +64,11 @@ namespace eBoto
         private void siticoneButton1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void create_button_Click(object sender, EventArgs e)
+        {
+            new AddElection().ShowDialog();
         }
     }
 }
