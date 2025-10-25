@@ -1,6 +1,6 @@
 ﻿namespace eBoto
 {
-    partial class Register
+    partial class return_bttn
     {
         /// <summary>
         /// Required designer variable.
@@ -67,6 +67,7 @@
             this.siticoneTextBox2 = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.siticoneTextBox3 = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.SuspendLayout();
             // 
             // siticoneBorderlessForm1
@@ -688,12 +689,26 @@
             this.siticoneTextBox3.Size = new System.Drawing.Size(332, 46);
             this.siticoneTextBox3.TabIndex = 47;
             // 
-            // Register
+            // iconButton1
+            // 
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.ArrowLeft;
+            this.iconButton1.IconColor = System.Drawing.Color.Black;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.IconSize = 30;
+            this.iconButton1.Location = new System.Drawing.Point(21, 828);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(71, 33);
+            this.iconButton1.TabIndex = 49;
+            this.iconButton1.UseVisualStyleBackColor = true;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            // 
+            // return_bttn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1146, 875);
+            this.Controls.Add(this.iconButton1);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.siticoneTextBox3);
             this.Controls.Add(this.label19);
@@ -734,7 +749,7 @@
             this.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.Name = "Register";
+            this.Name = "return_bttn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Register";
             this.ResumeLayout(false);
@@ -781,5 +796,6 @@
         private Siticone.Desktop.UI.WinForms.SiticoneTextBox siticoneTextBox3;
         private System.Windows.Forms.Label label19;
         private Siticone.Desktop.UI.WinForms.SiticoneTextBox siticoneTextBox2;
+        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }

@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace eBoto
 {
-    public partial class return_bttn : Form
+    public partial class ViewCandidates : Form
     {
-        public return_bttn()
+        public ViewCandidates()
         {
             InitializeComponent();
-        }
-
-        private void iconButton1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            new Login().ShowDialog();
         }
     }
 }

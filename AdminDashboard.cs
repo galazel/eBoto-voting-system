@@ -44,31 +44,42 @@ namespace eBoto
 
         private void TabChanged(object sender, EventArgs e)
         {
-            var selectedTab = siticoneTabControl1.SelectedTab;
+            //var selectedTab = siticoneTabControl1.SelectedTab;
 
-            if (selectedTab == null)
-                return;
-            switch (selectedTab.Text)
-            {
-                case "Candidates":
-                    LoadData("SELECT Candidates.CandidateID, Candidates.FullName, Candidates.PartylistName, Departments.DepartmentName FROM Candidates INNER JOIN Departments ON Candidates.DepartmentID = Departments.DepartmentID", candidates_dataview);
-                    break;
+            //if (selectedTab == null)
+            //    return;
+            //switch (selectedTab.Text)
+            //{
+            //    case "Candidates":
+            //        LoadData("SELECT Candidates.CandidateID, Candidates.FullName, Candidates.PartylistName, Departments.DepartmentName FROM Candidates INNER JOIN Departments ON Candidates.DepartmentID = Departments.DepartmentID", candidates_dataview);
+            //        break;
 
-                case "Voters":
-                    LoadData("SELECT VoterID, Username FROM Voters", voters_dataview);
-                    break;
-            }
-            Console.WriteLine($"Selected Tab: {selectedTab.Text}");
+            //    case "Voters":
+            //        LoadData("SELECT VoterID, Username FROM Voters", voters_dataview);
+            //        break;
+            //}
+            //Console.WriteLine($"Selected Tab: {selectedTab.Text}");
         }
 
         private void siticoneButton1_Click(object sender, EventArgs e)
         {
-
         }
 
         private void create_button_Click(object sender, EventArgs e)
         {
             new AddElection().ShowDialog();
+        }
+
+        private void elections_flow_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void profile_button_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Logging out...");
+            this.Hide();
+            new Login().ShowDialog();
         }
     }
 }

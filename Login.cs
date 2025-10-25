@@ -16,5 +16,18 @@ namespace eBoto
         {
             InitializeComponent();
         }
+
+        private void login_button_Click(object sender, EventArgs e)
+        {
+            if (username_box.Text.Equals("") || password_box.Text.Equals(""))
+                MessageBox.Show("Please input the required fields");
+            else
+                new VotersDashboard().ShowDialog();
+        }
+
+        private void register_here_Click(object sender, EventArgs e)
+        {
+            new return_bttn().ShowDialog();
+        }
     }
 }

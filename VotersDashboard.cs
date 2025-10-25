@@ -17,6 +17,21 @@ namespace eBoto
             InitializeComponent();
         }
 
-       
+        private void profile_button_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Logging out...");
+            this.Hide();
+            new Login().Show();
+        }
+
+        private void view_candidates_button_Click(object sender, EventArgs e)
+        {
+            new ViewCandidates().ShowDialog();
+        }
+
+        private void confirm_ballot_button_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Voted Successfully");
+        }
     }
 }

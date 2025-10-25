@@ -108,6 +108,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>eBotoDBDataSet3.xsd</DependentUpon>
     </Compile>
+    <Compile Include="eBotoDBDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>eBotoDBDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="eBotoDBDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>eBotoDBDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="eBotoDBDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>eBotoDBDataSet6.xsd</DependentUpon>
+    </Compile>
     <Compile Include="EditProfile.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -134,11 +149,23 @@
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
+    <Compile Include="SummaryOfVotes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SummaryOfVotes.Designer.cs">
+      <DependentUpon>SummaryOfVotes.cs</DependentUpon>
+    </Compile>
     <Compile Include="TermsOfService.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="TermsOfService.Designer.cs">
       <DependentUpon>TermsOfService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewCandidates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewCandidates.Designer.cs">
+      <DependentUpon>ViewCandidates.cs</DependentUpon>
     </Compile>
     <Compile Include="VotersDashboard.cs">
       <SubType>Form</SubType>
@@ -175,6 +202,12 @@
     </Compile>
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryOfVotes.resx">
+      <DependentUpon>SummaryOfVotes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewCandidates.resx">
+      <DependentUpon>ViewCandidates.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VotersDashboard.resx">
       <DependentUpon>VotersDashboard.cs</DependentUpon>
@@ -222,6 +255,39 @@
     </None>
     <None Include="eBotoDBDataSet3.xss">
       <DependentUpon>eBotoDBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="eBotoDBDataSet4.xsc">
+      <DependentUpon>eBotoDBDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="eBotoDBDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>eBotoDBDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="eBotoDBDataSet4.xss">
+      <DependentUpon>eBotoDBDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="eBotoDBDataSet5.xsc">
+      <DependentUpon>eBotoDBDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="eBotoDBDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>eBotoDBDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="eBotoDBDataSet5.xss">
+      <DependentUpon>eBotoDBDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="eBotoDBDataSet6.xsc">
+      <DependentUpon>eBotoDBDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="eBotoDBDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>eBotoDBDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="eBotoDBDataSet6.xss">
+      <DependentUpon>eBotoDBDataSet6.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

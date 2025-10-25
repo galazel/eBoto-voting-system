@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.register_here = new System.Windows.Forms.Label();
             this.siticoneBorderlessForm1 = new Siticone.Desktop.UI.WinForms.SiticoneBorderlessForm(this.components);
             this.siticoneControlBox1 = new Siticone.Desktop.UI.WinForms.SiticoneControlBox();
@@ -39,7 +38,7 @@
             this.password_box = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
             this.username_box = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
             this.siticonePasswordValidationTool1 = new Siticone.Desktop.UI.Winforms.SiticonePasswordValidationTool();
-            this.register_button = new Siticone.Desktop.UI.WinForms.SiticoneButton();
+            this.login_button = new Siticone.Desktop.UI.WinForms.SiticoneButton();
             this.siticonePictureBox1 = new Siticone.Desktop.UI.WinForms.SiticonePictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -54,25 +53,17 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "Password";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(299, 470);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(135, 19);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "Forgot Password?";
-            // 
             // register_here
             // 
             this.register_here.AutoSize = true;
+            this.register_here.Cursor = System.Windows.Forms.Cursors.Hand;
             this.register_here.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.register_here.Location = new System.Drawing.Point(95, 676);
             this.register_here.Name = "register_here";
             this.register_here.Size = new System.Drawing.Size(271, 19);
             this.register_here.TabIndex = 9;
             this.register_here.Text = "Don\'t have an account? Register here";
+            this.register_here.Click += new System.EventHandler(this.register_here_Click);
             // 
             // siticoneBorderlessForm1
             // 
@@ -159,22 +150,24 @@
             // 
             this.siticonePasswordValidationTool1.PasswordMaximumLength = ((long)(16));
             // 
-            // register_button
+            // login_button
             // 
-            this.register_button.BorderRadius = 20;
-            this.register_button.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.register_button.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.register_button.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.register_button.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.register_button.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            this.register_button.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.register_button.ForeColor = System.Drawing.Color.White;
-            this.register_button.Location = new System.Drawing.Point(150, 605);
-            this.register_button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.register_button.Name = "register_button";
-            this.register_button.Size = new System.Drawing.Size(180, 45);
-            this.register_button.TabIndex = 37;
-            this.register_button.Text = "LOGIN";
+            this.login_button.BorderRadius = 20;
+            this.login_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.login_button.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.login_button.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.login_button.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.login_button.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.login_button.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.login_button.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.login_button.ForeColor = System.Drawing.Color.White;
+            this.login_button.Location = new System.Drawing.Point(150, 605);
+            this.login_button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.login_button.Name = "login_button";
+            this.login_button.Size = new System.Drawing.Size(180, 45);
+            this.login_button.TabIndex = 37;
+            this.login_button.Text = "LOGIN";
+            this.login_button.Click += new System.EventHandler(this.login_button_Click);
             // 
             // siticonePictureBox1
             // 
@@ -195,12 +188,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(481, 734);
-            this.Controls.Add(this.register_button);
+            this.Controls.Add(this.login_button);
             this.Controls.Add(this.username_box);
             this.Controls.Add(this.password_box);
             this.Controls.Add(this.siticoneControlBox1);
             this.Controls.Add(this.register_here);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.siticonePictureBox1);
@@ -217,7 +209,6 @@
 
         #endregion
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label register_here;
         private Siticone.Desktop.UI.WinForms.SiticoneBorderlessForm siticoneBorderlessForm1;
         private Siticone.Desktop.UI.WinForms.SiticoneControlBox siticoneControlBox1;
@@ -225,7 +216,7 @@
         private Siticone.Desktop.UI.WinForms.SiticoneTextBox username_box;
         private Siticone.Desktop.UI.WinForms.SiticoneTextBox password_box;
         private Siticone.Desktop.UI.Winforms.SiticonePasswordValidationTool siticonePasswordValidationTool1;
-        private Siticone.Desktop.UI.WinForms.SiticoneButton register_button;
+        private Siticone.Desktop.UI.WinForms.SiticoneButton login_button;
         private Siticone.Desktop.UI.WinForms.SiticonePictureBox siticonePictureBox1;
     }
 }
