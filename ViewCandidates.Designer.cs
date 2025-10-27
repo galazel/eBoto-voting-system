@@ -35,8 +35,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.siticonePictureBox1 = new Siticone.Desktop.UI.WinForms.SiticonePictureBox();
             this.siticonePanel1 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
-            this.election_department = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
+            this.election_department = new System.Windows.Forms.Label();
             this.siticonePanel2 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -142,7 +142,7 @@
             this.siticoneControlBox1.CustomIconSize = 50F;
             this.siticoneControlBox1.FillColor = System.Drawing.Color.White;
             this.siticoneControlBox1.IconColor = System.Drawing.Color.Red;
-            this.siticoneControlBox1.Location = new System.Drawing.Point(1055, 17);
+            this.siticoneControlBox1.Location = new System.Drawing.Point(1021, 17);
             this.siticoneControlBox1.Name = "siticoneControlBox1";
             this.siticoneControlBox1.PressedDepth = 50;
             this.siticoneControlBox1.Size = new System.Drawing.Size(45, 29);
@@ -181,16 +181,6 @@
             this.siticonePanel1.Size = new System.Drawing.Size(283, 306);
             this.siticonePanel1.TabIndex = 47;
             // 
-            // election_department
-            // 
-            this.election_department.AutoSize = true;
-            this.election_department.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.election_department.Location = new System.Drawing.Point(84, 259);
-            this.election_department.Name = "election_department";
-            this.election_department.Size = new System.Drawing.Size(116, 13);
-            this.election_department.TabIndex = 46;
-            this.election_department.Text = "GLYZEL GALAGAR";
-            // 
             // label16
             // 
             this.label16.AutoSize = true;
@@ -201,6 +191,16 @@
             this.label16.Size = new System.Drawing.Size(78, 16);
             this.label16.TabIndex = 66;
             this.label16.Text = "PDP Partylist";
+            // 
+            // election_department
+            // 
+            this.election_department.AutoSize = true;
+            this.election_department.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.election_department.Location = new System.Drawing.Point(84, 259);
+            this.election_department.Name = "election_department";
+            this.election_department.Size = new System.Drawing.Size(116, 13);
+            this.election_department.TabIndex = 46;
+            this.election_department.Text = "GLYZEL GALAGAR";
             // 
             // siticonePanel2
             // 

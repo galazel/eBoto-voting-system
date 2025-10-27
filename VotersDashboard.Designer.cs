@@ -29,24 +29,24 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series15 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series16 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series17 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series18 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series19 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series20 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series21 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series22 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series23 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series24 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series25 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series26 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series27 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series28 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series13 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VotersDashboard));
             this.siticoneBorderlessForm1 = new Siticone.Desktop.UI.WinForms.SiticoneBorderlessForm(this.components);
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
@@ -70,6 +70,44 @@
             this.label2 = new System.Windows.Forms.Label();
             this.greetings_label = new System.Windows.Forms.Label();
             this.vote = new System.Windows.Forms.TabPage();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.siticonePanel8 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
+            this.siticoneButton4 = new Siticone.Desktop.UI.WinForms.SiticoneButton();
+            this.label8 = new System.Windows.Forms.Label();
+            this.siticonePictureBox5 = new Siticone.Desktop.UI.WinForms.SiticonePictureBox();
+            this.siticonePanel9 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
+            this.siticoneButton5 = new Siticone.Desktop.UI.WinForms.SiticoneButton();
+            this.label10 = new System.Windows.Forms.Label();
+            this.siticonePictureBox6 = new Siticone.Desktop.UI.WinForms.SiticonePictureBox();
+            this.siticonePanel11 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
+            this.siticoneButton6 = new Siticone.Desktop.UI.WinForms.SiticoneButton();
+            this.label21 = new System.Windows.Forms.Label();
+            this.siticonePictureBox7 = new Siticone.Desktop.UI.WinForms.SiticonePictureBox();
+            this.siticonePanel12 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
+            this.siticoneButton7 = new Siticone.Desktop.UI.WinForms.SiticoneButton();
+            this.label22 = new System.Windows.Forms.Label();
+            this.siticonePictureBox8 = new Siticone.Desktop.UI.WinForms.SiticonePictureBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.siticonePanel4 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
+            this.vote_button = new Siticone.Desktop.UI.WinForms.SiticoneButton();
+            this.label7 = new System.Windows.Forms.Label();
+            this.siticonePictureBox1 = new Siticone.Desktop.UI.WinForms.SiticonePictureBox();
+            this.siticonePanel6 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
+            this.siticoneButton1 = new Siticone.Desktop.UI.WinForms.SiticoneButton();
+            this.label9 = new System.Windows.Forms.Label();
+            this.siticonePictureBox3 = new Siticone.Desktop.UI.WinForms.SiticonePictureBox();
+            this.siticonePanel7 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
+            this.siticoneButton2 = new Siticone.Desktop.UI.WinForms.SiticoneButton();
+            this.label17 = new System.Windows.Forms.Label();
+            this.siticonePictureBox4 = new Siticone.Desktop.UI.WinForms.SiticonePictureBox();
+            this.siticonePanel10 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
+            this.siticoneButton3 = new Siticone.Desktop.UI.WinForms.SiticoneButton();
+            this.label23 = new System.Windows.Forms.Label();
+            this.siticonePictureBox10 = new Siticone.Desktop.UI.WinForms.SiticonePictureBox();
+            this.confirm_ballot_button = new Siticone.Desktop.UI.WinForms.SiticoneButton();
             this.castYourVotes_label = new System.Windows.Forms.Label();
             this.guidelines = new System.Windows.Forms.TabPage();
             this.siticonePictureBox2 = new Siticone.Desktop.UI.WinForms.SiticonePictureBox();
@@ -102,44 +140,6 @@
             this.terms_button = new FontAwesome.Sharp.IconButton();
             this.edit_profile_button = new FontAwesome.Sharp.IconButton();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.siticonePanel4 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.siticonePictureBox1 = new Siticone.Desktop.UI.WinForms.SiticonePictureBox();
-            this.siticonePanel6 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.siticonePictureBox3 = new Siticone.Desktop.UI.WinForms.SiticonePictureBox();
-            this.siticonePanel7 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
-            this.label17 = new System.Windows.Forms.Label();
-            this.siticonePictureBox4 = new Siticone.Desktop.UI.WinForms.SiticonePictureBox();
-            this.siticonePanel10 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
-            this.label23 = new System.Windows.Forms.Label();
-            this.siticonePictureBox10 = new Siticone.Desktop.UI.WinForms.SiticonePictureBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.vote_button = new Siticone.Desktop.UI.WinForms.SiticoneButton();
-            this.siticoneButton1 = new Siticone.Desktop.UI.WinForms.SiticoneButton();
-            this.siticoneButton2 = new Siticone.Desktop.UI.WinForms.SiticoneButton();
-            this.siticoneButton3 = new Siticone.Desktop.UI.WinForms.SiticoneButton();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
-            this.siticonePanel8 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
-            this.siticoneButton4 = new Siticone.Desktop.UI.WinForms.SiticoneButton();
-            this.label8 = new System.Windows.Forms.Label();
-            this.siticonePictureBox5 = new Siticone.Desktop.UI.WinForms.SiticonePictureBox();
-            this.siticonePanel9 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
-            this.siticoneButton5 = new Siticone.Desktop.UI.WinForms.SiticoneButton();
-            this.label10 = new System.Windows.Forms.Label();
-            this.siticonePictureBox6 = new Siticone.Desktop.UI.WinForms.SiticonePictureBox();
-            this.siticonePanel11 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
-            this.siticoneButton6 = new Siticone.Desktop.UI.WinForms.SiticoneButton();
-            this.label21 = new System.Windows.Forms.Label();
-            this.siticonePictureBox7 = new Siticone.Desktop.UI.WinForms.SiticonePictureBox();
-            this.siticonePanel12 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
-            this.siticoneButton7 = new Siticone.Desktop.UI.WinForms.SiticoneButton();
-            this.label22 = new System.Windows.Forms.Label();
-            this.siticonePictureBox8 = new Siticone.Desktop.UI.WinForms.SiticonePictureBox();
-            this.confirm_ballot_button = new Siticone.Desktop.UI.WinForms.SiticoneButton();
             this.siticonePanel1.SuspendLayout();
             this.siticonePanel2.SuspendLayout();
             this.siticoneTabControl1.SuspendLayout();
@@ -149,21 +149,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.election_chart)).BeginInit();
             this.siticonePanel3.SuspendLayout();
             this.vote.SuspendLayout();
-            this.guidelines.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox2)).BeginInit();
-            this.settings.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
-            this.splitContainer1.Panel1.SuspendLayout();
-            this.splitContainer1.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.siticonePanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox1)).BeginInit();
-            this.siticonePanel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox3)).BeginInit();
-            this.siticonePanel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox4)).BeginInit();
-            this.siticonePanel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox10)).BeginInit();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
             this.siticonePanel8.SuspendLayout();
@@ -174,6 +159,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox7)).BeginInit();
             this.siticonePanel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox8)).BeginInit();
+            this.flowLayoutPanel1.SuspendLayout();
+            this.siticonePanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox1)).BeginInit();
+            this.siticonePanel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox3)).BeginInit();
+            this.siticonePanel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox4)).BeginInit();
+            this.siticonePanel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox10)).BeginInit();
+            this.guidelines.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox2)).BeginInit();
+            this.settings.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
             this.SuspendLayout();
             // 
             // siticoneBorderlessForm1
@@ -338,42 +338,42 @@
             // chart1
             // 
             this.chart1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
-            chartArea3.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chart1.Legends.Add(legend3);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(50, 447);
             this.chart1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series15.ChartArea = "ChartArea1";
-            series15.Legend = "Legend1";
-            series15.Name = "President";
-            series16.ChartArea = "ChartArea1";
-            series16.Legend = "Legend1";
-            series16.Name = "Vice President";
-            series17.ChartArea = "ChartArea1";
-            series17.Legend = "Legend1";
-            series17.Name = "Secretary";
-            series18.ChartArea = "ChartArea1";
-            series18.Legend = "Legend1";
-            series18.Name = "Treasurer";
-            series19.ChartArea = "ChartArea1";
-            series19.Legend = "Legend1";
-            series19.Name = "PIO";
-            series20.ChartArea = "ChartArea1";
-            series20.Legend = "Legend1";
-            series20.Name = "Auditor";
-            series21.ChartArea = "ChartArea1";
-            series21.Legend = "Legend1";
-            series21.Name = "Representative";
-            this.chart1.Series.Add(series15);
-            this.chart1.Series.Add(series16);
-            this.chart1.Series.Add(series17);
-            this.chart1.Series.Add(series18);
-            this.chart1.Series.Add(series19);
-            this.chart1.Series.Add(series20);
-            this.chart1.Series.Add(series21);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "President";
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Vice President";
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Secretary";
+            series4.ChartArea = "ChartArea1";
+            series4.Legend = "Legend1";
+            series4.Name = "Treasurer";
+            series5.ChartArea = "ChartArea1";
+            series5.Legend = "Legend1";
+            series5.Name = "PIO";
+            series6.ChartArea = "ChartArea1";
+            series6.Legend = "Legend1";
+            series6.Name = "Auditor";
+            series7.ChartArea = "ChartArea1";
+            series7.Legend = "Legend1";
+            series7.Name = "Representative";
+            this.chart1.Series.Add(series1);
+            this.chart1.Series.Add(series2);
+            this.chart1.Series.Add(series3);
+            this.chart1.Series.Add(series4);
+            this.chart1.Series.Add(series5);
+            this.chart1.Series.Add(series6);
+            this.chart1.Series.Add(series7);
             this.chart1.Size = new System.Drawing.Size(1042, 336);
             this.chart1.TabIndex = 6;
             this.chart1.Text = "chart1";
@@ -403,42 +403,42 @@
             // election_chart
             // 
             this.election_chart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
-            chartArea4.Name = "ChartArea1";
-            this.election_chart.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.election_chart.Legends.Add(legend4);
+            chartArea2.Name = "ChartArea1";
+            this.election_chart.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.election_chart.Legends.Add(legend2);
             this.election_chart.Location = new System.Drawing.Point(50, 82);
             this.election_chart.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.election_chart.Name = "election_chart";
             this.election_chart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series22.ChartArea = "ChartArea1";
-            series22.Legend = "Legend1";
-            series22.Name = "Daniel Kane Mapanp";
-            series23.ChartArea = "ChartArea1";
-            series23.Legend = "Legend1";
-            series23.Name = "Loren Cavan";
-            series24.ChartArea = "ChartArea1";
-            series24.Legend = "Legend1";
-            series24.Name = "Berra Toress";
-            series25.ChartArea = "ChartArea1";
-            series25.Legend = "Legend1";
-            series25.Name = "Math Xian";
-            series26.ChartArea = "ChartArea1";
-            series26.Legend = "Legend1";
-            series26.Name = "Glyzel Galagar";
-            series27.ChartArea = "ChartArea1";
-            series27.Legend = "Legend1";
-            series27.Name = "Haruto Kuroskai";
-            series28.ChartArea = "ChartArea1";
-            series28.Legend = "Legend1";
-            series28.Name = "Lim Muel";
-            this.election_chart.Series.Add(series22);
-            this.election_chart.Series.Add(series23);
-            this.election_chart.Series.Add(series24);
-            this.election_chart.Series.Add(series25);
-            this.election_chart.Series.Add(series26);
-            this.election_chart.Series.Add(series27);
-            this.election_chart.Series.Add(series28);
+            series8.ChartArea = "ChartArea1";
+            series8.Legend = "Legend1";
+            series8.Name = "Daniel Kane Mapanp";
+            series9.ChartArea = "ChartArea1";
+            series9.Legend = "Legend1";
+            series9.Name = "Loren Cavan";
+            series10.ChartArea = "ChartArea1";
+            series10.Legend = "Legend1";
+            series10.Name = "Berra Toress";
+            series11.ChartArea = "ChartArea1";
+            series11.Legend = "Legend1";
+            series11.Name = "Math Xian";
+            series12.ChartArea = "ChartArea1";
+            series12.Legend = "Legend1";
+            series12.Name = "Glyzel Galagar";
+            series13.ChartArea = "ChartArea1";
+            series13.Legend = "Legend1";
+            series13.Name = "Haruto Kuroskai";
+            series14.ChartArea = "ChartArea1";
+            series14.Legend = "Legend1";
+            series14.Name = "Lim Muel";
+            this.election_chart.Series.Add(series8);
+            this.election_chart.Series.Add(series9);
+            this.election_chart.Series.Add(series10);
+            this.election_chart.Series.Add(series11);
+            this.election_chart.Series.Add(series12);
+            this.election_chart.Series.Add(series13);
+            this.election_chart.Series.Add(series14);
             this.election_chart.Size = new System.Drawing.Size(1042, 336);
             this.election_chart.TabIndex = 3;
             this.election_chart.Text = "chart1";
@@ -544,6 +544,480 @@
             this.vote.TabIndex = 1;
             this.vote.Text = "Vote";
             this.vote.UseVisualStyleBackColor = true;
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.AutoScroll = true;
+            this.flowLayoutPanel2.Controls.Add(this.label6);
+            this.flowLayoutPanel2.Controls.Add(this.flowLayoutPanel3);
+            this.flowLayoutPanel2.Controls.Add(this.label20);
+            this.flowLayoutPanel2.Controls.Add(this.flowLayoutPanel1);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(31, 80);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Padding = new System.Windows.Forms.Padding(10);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(1158, 856);
+            this.flowLayoutPanel2.TabIndex = 71;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.label6.Location = new System.Drawing.Point(13, 10);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(100, 23);
+            this.label6.TabIndex = 55;
+            this.label6.Text = "President";
+            // 
+            // flowLayoutPanel3
+            // 
+            this.flowLayoutPanel3.AutoScroll = true;
+            this.flowLayoutPanel3.Controls.Add(this.siticonePanel8);
+            this.flowLayoutPanel3.Controls.Add(this.siticonePanel9);
+            this.flowLayoutPanel3.Controls.Add(this.siticonePanel11);
+            this.flowLayoutPanel3.Controls.Add(this.siticonePanel12);
+            this.flowLayoutPanel3.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(13, 36);
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            this.flowLayoutPanel3.Padding = new System.Windows.Forms.Padding(10);
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(1115, 375);
+            this.flowLayoutPanel3.TabIndex = 56;
+            // 
+            // siticonePanel8
+            // 
+            this.siticonePanel8.Controls.Add(this.siticoneButton4);
+            this.siticonePanel8.Controls.Add(this.label8);
+            this.siticonePanel8.Controls.Add(this.siticonePictureBox5);
+            this.siticonePanel8.Location = new System.Drawing.Point(13, 13);
+            this.siticonePanel8.Name = "siticonePanel8";
+            this.siticonePanel8.Size = new System.Drawing.Size(283, 331);
+            this.siticonePanel8.TabIndex = 47;
+            // 
+            // siticoneButton4
+            // 
+            this.siticoneButton4.BorderRadius = 20;
+            this.siticoneButton4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.siticoneButton4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.siticoneButton4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.siticoneButton4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.siticoneButton4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.siticoneButton4.FillColor = System.Drawing.Color.DarkGreen;
+            this.siticoneButton4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.siticoneButton4.ForeColor = System.Drawing.Color.White;
+            this.siticoneButton4.Location = new System.Drawing.Point(63, 283);
+            this.siticoneButton4.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.siticoneButton4.Name = "siticoneButton4";
+            this.siticoneButton4.Size = new System.Drawing.Size(153, 35);
+            this.siticoneButton4.TabIndex = 70;
+            this.siticoneButton4.Text = "VOTE";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(84, 259);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(116, 13);
+            this.label8.TabIndex = 46;
+            this.label8.Text = "GLYZEL GALAGAR";
+            // 
+            // siticonePictureBox5
+            // 
+            this.siticonePictureBox5.BackColor = System.Drawing.Color.DarkGray;
+            this.siticonePictureBox5.FillColor = System.Drawing.Color.DarkGray;
+            this.siticonePictureBox5.ImageRotate = 0F;
+            this.siticonePictureBox5.Location = new System.Drawing.Point(24, 20);
+            this.siticonePictureBox5.Name = "siticonePictureBox5";
+            this.siticonePictureBox5.Size = new System.Drawing.Size(234, 236);
+            this.siticonePictureBox5.TabIndex = 45;
+            this.siticonePictureBox5.TabStop = false;
+            // 
+            // siticonePanel9
+            // 
+            this.siticonePanel9.Controls.Add(this.siticoneButton5);
+            this.siticonePanel9.Controls.Add(this.label10);
+            this.siticonePanel9.Controls.Add(this.siticonePictureBox6);
+            this.siticonePanel9.Location = new System.Drawing.Point(302, 13);
+            this.siticonePanel9.Name = "siticonePanel9";
+            this.siticonePanel9.Size = new System.Drawing.Size(283, 331);
+            this.siticonePanel9.TabIndex = 48;
+            // 
+            // siticoneButton5
+            // 
+            this.siticoneButton5.BorderRadius = 20;
+            this.siticoneButton5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.siticoneButton5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.siticoneButton5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.siticoneButton5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.siticoneButton5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.siticoneButton5.FillColor = System.Drawing.Color.DarkGreen;
+            this.siticoneButton5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.siticoneButton5.ForeColor = System.Drawing.Color.White;
+            this.siticoneButton5.Location = new System.Drawing.Point(66, 283);
+            this.siticoneButton5.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.siticoneButton5.Name = "siticoneButton5";
+            this.siticoneButton5.Size = new System.Drawing.Size(153, 35);
+            this.siticoneButton5.TabIndex = 71;
+            this.siticoneButton5.Text = "VOTE";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(84, 259);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(116, 13);
+            this.label10.TabIndex = 46;
+            this.label10.Text = "GLYZEL GALAGAR";
+            // 
+            // siticonePictureBox6
+            // 
+            this.siticonePictureBox6.BackColor = System.Drawing.Color.DarkGray;
+            this.siticonePictureBox6.FillColor = System.Drawing.Color.DarkGray;
+            this.siticonePictureBox6.ImageRotate = 0F;
+            this.siticonePictureBox6.Location = new System.Drawing.Point(24, 20);
+            this.siticonePictureBox6.Name = "siticonePictureBox6";
+            this.siticonePictureBox6.Size = new System.Drawing.Size(234, 236);
+            this.siticonePictureBox6.TabIndex = 45;
+            this.siticonePictureBox6.TabStop = false;
+            // 
+            // siticonePanel11
+            // 
+            this.siticonePanel11.Controls.Add(this.siticoneButton6);
+            this.siticonePanel11.Controls.Add(this.label21);
+            this.siticonePanel11.Controls.Add(this.siticonePictureBox7);
+            this.siticonePanel11.Location = new System.Drawing.Point(591, 13);
+            this.siticonePanel11.Name = "siticonePanel11";
+            this.siticonePanel11.Size = new System.Drawing.Size(283, 331);
+            this.siticonePanel11.TabIndex = 49;
+            // 
+            // siticoneButton6
+            // 
+            this.siticoneButton6.BorderRadius = 20;
+            this.siticoneButton6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.siticoneButton6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.siticoneButton6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.siticoneButton6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.siticoneButton6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.siticoneButton6.FillColor = System.Drawing.Color.DarkGreen;
+            this.siticoneButton6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.siticoneButton6.ForeColor = System.Drawing.Color.White;
+            this.siticoneButton6.Location = new System.Drawing.Point(67, 283);
+            this.siticoneButton6.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.siticoneButton6.Name = "siticoneButton6";
+            this.siticoneButton6.Size = new System.Drawing.Size(153, 35);
+            this.siticoneButton6.TabIndex = 71;
+            this.siticoneButton6.Text = "VOTE";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(84, 259);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(116, 13);
+            this.label21.TabIndex = 46;
+            this.label21.Text = "GLYZEL GALAGAR";
+            // 
+            // siticonePictureBox7
+            // 
+            this.siticonePictureBox7.BackColor = System.Drawing.Color.DarkGray;
+            this.siticonePictureBox7.FillColor = System.Drawing.Color.DarkGray;
+            this.siticonePictureBox7.ImageRotate = 0F;
+            this.siticonePictureBox7.Location = new System.Drawing.Point(24, 20);
+            this.siticonePictureBox7.Name = "siticonePictureBox7";
+            this.siticonePictureBox7.Size = new System.Drawing.Size(234, 236);
+            this.siticonePictureBox7.TabIndex = 45;
+            this.siticonePictureBox7.TabStop = false;
+            // 
+            // siticonePanel12
+            // 
+            this.siticonePanel12.Controls.Add(this.siticoneButton7);
+            this.siticonePanel12.Controls.Add(this.label22);
+            this.siticonePanel12.Controls.Add(this.siticonePictureBox8);
+            this.siticonePanel12.Location = new System.Drawing.Point(880, 13);
+            this.siticonePanel12.Name = "siticonePanel12";
+            this.siticonePanel12.Size = new System.Drawing.Size(283, 331);
+            this.siticonePanel12.TabIndex = 50;
+            // 
+            // siticoneButton7
+            // 
+            this.siticoneButton7.BorderRadius = 20;
+            this.siticoneButton7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.siticoneButton7.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.siticoneButton7.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.siticoneButton7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.siticoneButton7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.siticoneButton7.FillColor = System.Drawing.Color.DarkGreen;
+            this.siticoneButton7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.siticoneButton7.ForeColor = System.Drawing.Color.White;
+            this.siticoneButton7.Location = new System.Drawing.Point(66, 283);
+            this.siticoneButton7.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.siticoneButton7.Name = "siticoneButton7";
+            this.siticoneButton7.Size = new System.Drawing.Size(153, 35);
+            this.siticoneButton7.TabIndex = 71;
+            this.siticoneButton7.Text = "VOTE";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(84, 259);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(116, 13);
+            this.label22.TabIndex = 46;
+            this.label22.Text = "GLYZEL GALAGAR";
+            // 
+            // siticonePictureBox8
+            // 
+            this.siticonePictureBox8.BackColor = System.Drawing.Color.DarkGray;
+            this.siticonePictureBox8.FillColor = System.Drawing.Color.DarkGray;
+            this.siticonePictureBox8.ImageRotate = 0F;
+            this.siticonePictureBox8.Location = new System.Drawing.Point(24, 20);
+            this.siticonePictureBox8.Name = "siticonePictureBox8";
+            this.siticonePictureBox8.Size = new System.Drawing.Size(234, 236);
+            this.siticonePictureBox8.TabIndex = 45;
+            this.siticonePictureBox8.TabStop = false;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.label20.Location = new System.Drawing.Point(13, 414);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(100, 23);
+            this.label20.TabIndex = 53;
+            this.label20.Text = "President";
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.Controls.Add(this.siticonePanel4);
+            this.flowLayoutPanel1.Controls.Add(this.siticonePanel6);
+            this.flowLayoutPanel1.Controls.Add(this.siticonePanel7);
+            this.flowLayoutPanel1.Controls.Add(this.siticonePanel10);
+            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(13, 440);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(10);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1115, 375);
+            this.flowLayoutPanel1.TabIndex = 54;
+            // 
+            // siticonePanel4
+            // 
+            this.siticonePanel4.Controls.Add(this.vote_button);
+            this.siticonePanel4.Controls.Add(this.label7);
+            this.siticonePanel4.Controls.Add(this.siticonePictureBox1);
+            this.siticonePanel4.Location = new System.Drawing.Point(13, 13);
+            this.siticonePanel4.Name = "siticonePanel4";
+            this.siticonePanel4.Size = new System.Drawing.Size(283, 331);
+            this.siticonePanel4.TabIndex = 47;
+            // 
+            // vote_button
+            // 
+            this.vote_button.BorderRadius = 20;
+            this.vote_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.vote_button.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.vote_button.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.vote_button.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.vote_button.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.vote_button.FillColor = System.Drawing.Color.DarkGreen;
+            this.vote_button.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.vote_button.ForeColor = System.Drawing.Color.White;
+            this.vote_button.Location = new System.Drawing.Point(63, 283);
+            this.vote_button.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.vote_button.Name = "vote_button";
+            this.vote_button.Size = new System.Drawing.Size(153, 35);
+            this.vote_button.TabIndex = 70;
+            this.vote_button.Text = "VOTE";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(84, 259);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(116, 13);
+            this.label7.TabIndex = 46;
+            this.label7.Text = "GLYZEL GALAGAR";
+            // 
+            // siticonePictureBox1
+            // 
+            this.siticonePictureBox1.BackColor = System.Drawing.Color.DarkGray;
+            this.siticonePictureBox1.FillColor = System.Drawing.Color.DarkGray;
+            this.siticonePictureBox1.ImageRotate = 0F;
+            this.siticonePictureBox1.Location = new System.Drawing.Point(24, 20);
+            this.siticonePictureBox1.Name = "siticonePictureBox1";
+            this.siticonePictureBox1.Size = new System.Drawing.Size(234, 236);
+            this.siticonePictureBox1.TabIndex = 45;
+            this.siticonePictureBox1.TabStop = false;
+            // 
+            // siticonePanel6
+            // 
+            this.siticonePanel6.Controls.Add(this.siticoneButton1);
+            this.siticonePanel6.Controls.Add(this.label9);
+            this.siticonePanel6.Controls.Add(this.siticonePictureBox3);
+            this.siticonePanel6.Location = new System.Drawing.Point(302, 13);
+            this.siticonePanel6.Name = "siticonePanel6";
+            this.siticonePanel6.Size = new System.Drawing.Size(283, 331);
+            this.siticonePanel6.TabIndex = 48;
+            // 
+            // siticoneButton1
+            // 
+            this.siticoneButton1.BorderRadius = 20;
+            this.siticoneButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.siticoneButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.siticoneButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.siticoneButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.siticoneButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.siticoneButton1.FillColor = System.Drawing.Color.DarkGreen;
+            this.siticoneButton1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.siticoneButton1.ForeColor = System.Drawing.Color.White;
+            this.siticoneButton1.Location = new System.Drawing.Point(66, 283);
+            this.siticoneButton1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.siticoneButton1.Name = "siticoneButton1";
+            this.siticoneButton1.Size = new System.Drawing.Size(153, 35);
+            this.siticoneButton1.TabIndex = 71;
+            this.siticoneButton1.Text = "VOTE";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(84, 259);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(116, 13);
+            this.label9.TabIndex = 46;
+            this.label9.Text = "GLYZEL GALAGAR";
+            // 
+            // siticonePictureBox3
+            // 
+            this.siticonePictureBox3.BackColor = System.Drawing.Color.DarkGray;
+            this.siticonePictureBox3.FillColor = System.Drawing.Color.DarkGray;
+            this.siticonePictureBox3.ImageRotate = 0F;
+            this.siticonePictureBox3.Location = new System.Drawing.Point(24, 20);
+            this.siticonePictureBox3.Name = "siticonePictureBox3";
+            this.siticonePictureBox3.Size = new System.Drawing.Size(234, 236);
+            this.siticonePictureBox3.TabIndex = 45;
+            this.siticonePictureBox3.TabStop = false;
+            // 
+            // siticonePanel7
+            // 
+            this.siticonePanel7.Controls.Add(this.siticoneButton2);
+            this.siticonePanel7.Controls.Add(this.label17);
+            this.siticonePanel7.Controls.Add(this.siticonePictureBox4);
+            this.siticonePanel7.Location = new System.Drawing.Point(591, 13);
+            this.siticonePanel7.Name = "siticonePanel7";
+            this.siticonePanel7.Size = new System.Drawing.Size(283, 331);
+            this.siticonePanel7.TabIndex = 49;
+            // 
+            // siticoneButton2
+            // 
+            this.siticoneButton2.BorderRadius = 20;
+            this.siticoneButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.siticoneButton2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.siticoneButton2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.siticoneButton2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.siticoneButton2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.siticoneButton2.FillColor = System.Drawing.Color.DarkGreen;
+            this.siticoneButton2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.siticoneButton2.ForeColor = System.Drawing.Color.White;
+            this.siticoneButton2.Location = new System.Drawing.Point(67, 283);
+            this.siticoneButton2.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.siticoneButton2.Name = "siticoneButton2";
+            this.siticoneButton2.Size = new System.Drawing.Size(153, 35);
+            this.siticoneButton2.TabIndex = 71;
+            this.siticoneButton2.Text = "VOTE";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(84, 259);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(116, 13);
+            this.label17.TabIndex = 46;
+            this.label17.Text = "GLYZEL GALAGAR";
+            // 
+            // siticonePictureBox4
+            // 
+            this.siticonePictureBox4.BackColor = System.Drawing.Color.DarkGray;
+            this.siticonePictureBox4.FillColor = System.Drawing.Color.DarkGray;
+            this.siticonePictureBox4.ImageRotate = 0F;
+            this.siticonePictureBox4.Location = new System.Drawing.Point(24, 20);
+            this.siticonePictureBox4.Name = "siticonePictureBox4";
+            this.siticonePictureBox4.Size = new System.Drawing.Size(234, 236);
+            this.siticonePictureBox4.TabIndex = 45;
+            this.siticonePictureBox4.TabStop = false;
+            // 
+            // siticonePanel10
+            // 
+            this.siticonePanel10.Controls.Add(this.siticoneButton3);
+            this.siticonePanel10.Controls.Add(this.label23);
+            this.siticonePanel10.Controls.Add(this.siticonePictureBox10);
+            this.siticonePanel10.Location = new System.Drawing.Point(880, 13);
+            this.siticonePanel10.Name = "siticonePanel10";
+            this.siticonePanel10.Size = new System.Drawing.Size(283, 331);
+            this.siticonePanel10.TabIndex = 50;
+            // 
+            // siticoneButton3
+            // 
+            this.siticoneButton3.BorderRadius = 20;
+            this.siticoneButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.siticoneButton3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.siticoneButton3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.siticoneButton3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.siticoneButton3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.siticoneButton3.FillColor = System.Drawing.Color.DarkGreen;
+            this.siticoneButton3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.siticoneButton3.ForeColor = System.Drawing.Color.White;
+            this.siticoneButton3.Location = new System.Drawing.Point(66, 283);
+            this.siticoneButton3.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.siticoneButton3.Name = "siticoneButton3";
+            this.siticoneButton3.Size = new System.Drawing.Size(153, 35);
+            this.siticoneButton3.TabIndex = 71;
+            this.siticoneButton3.Text = "VOTE";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(84, 259);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(116, 13);
+            this.label23.TabIndex = 46;
+            this.label23.Text = "GLYZEL GALAGAR";
+            // 
+            // siticonePictureBox10
+            // 
+            this.siticonePictureBox10.BackColor = System.Drawing.Color.DarkGray;
+            this.siticonePictureBox10.FillColor = System.Drawing.Color.DarkGray;
+            this.siticonePictureBox10.ImageRotate = 0F;
+            this.siticonePictureBox10.Location = new System.Drawing.Point(24, 20);
+            this.siticonePictureBox10.Name = "siticonePictureBox10";
+            this.siticonePictureBox10.Size = new System.Drawing.Size(234, 236);
+            this.siticonePictureBox10.TabIndex = 45;
+            this.siticonePictureBox10.TabStop = false;
+            // 
+            // confirm_ballot_button
+            // 
+            this.confirm_ballot_button.BorderRadius = 20;
+            this.confirm_ballot_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.confirm_ballot_button.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.confirm_ballot_button.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.confirm_ballot_button.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.confirm_ballot_button.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.confirm_ballot_button.FillColor = System.Drawing.Color.DarkGreen;
+            this.confirm_ballot_button.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.confirm_ballot_button.ForeColor = System.Drawing.Color.White;
+            this.confirm_ballot_button.Location = new System.Drawing.Point(1036, 25);
+            this.confirm_ballot_button.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.confirm_ballot_button.Name = "confirm_ballot_button";
+            this.confirm_ballot_button.Size = new System.Drawing.Size(153, 35);
+            this.confirm_ballot_button.TabIndex = 72;
+            this.confirm_ballot_button.Text = "CONFIRM";
+            this.confirm_ballot_button.Click += new System.EventHandler(this.confirm_ballot_button_Click);
             // 
             // castYourVotes_label
             // 
@@ -1018,480 +1492,6 @@
             // 
             this.toolTip1.ToolTipTitle = "Voter";
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Controls.Add(this.siticonePanel4);
-            this.flowLayoutPanel1.Controls.Add(this.siticonePanel6);
-            this.flowLayoutPanel1.Controls.Add(this.siticonePanel7);
-            this.flowLayoutPanel1.Controls.Add(this.siticonePanel10);
-            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(13, 440);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(10);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1115, 375);
-            this.flowLayoutPanel1.TabIndex = 54;
-            // 
-            // siticonePanel4
-            // 
-            this.siticonePanel4.Controls.Add(this.vote_button);
-            this.siticonePanel4.Controls.Add(this.label7);
-            this.siticonePanel4.Controls.Add(this.siticonePictureBox1);
-            this.siticonePanel4.Location = new System.Drawing.Point(13, 13);
-            this.siticonePanel4.Name = "siticonePanel4";
-            this.siticonePanel4.Size = new System.Drawing.Size(283, 331);
-            this.siticonePanel4.TabIndex = 47;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(84, 259);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(116, 13);
-            this.label7.TabIndex = 46;
-            this.label7.Text = "GLYZEL GALAGAR";
-            // 
-            // siticonePictureBox1
-            // 
-            this.siticonePictureBox1.BackColor = System.Drawing.Color.DarkGray;
-            this.siticonePictureBox1.FillColor = System.Drawing.Color.DarkGray;
-            this.siticonePictureBox1.ImageRotate = 0F;
-            this.siticonePictureBox1.Location = new System.Drawing.Point(24, 20);
-            this.siticonePictureBox1.Name = "siticonePictureBox1";
-            this.siticonePictureBox1.Size = new System.Drawing.Size(234, 236);
-            this.siticonePictureBox1.TabIndex = 45;
-            this.siticonePictureBox1.TabStop = false;
-            // 
-            // siticonePanel6
-            // 
-            this.siticonePanel6.Controls.Add(this.siticoneButton1);
-            this.siticonePanel6.Controls.Add(this.label9);
-            this.siticonePanel6.Controls.Add(this.siticonePictureBox3);
-            this.siticonePanel6.Location = new System.Drawing.Point(302, 13);
-            this.siticonePanel6.Name = "siticonePanel6";
-            this.siticonePanel6.Size = new System.Drawing.Size(283, 331);
-            this.siticonePanel6.TabIndex = 48;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(84, 259);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(116, 13);
-            this.label9.TabIndex = 46;
-            this.label9.Text = "GLYZEL GALAGAR";
-            // 
-            // siticonePictureBox3
-            // 
-            this.siticonePictureBox3.BackColor = System.Drawing.Color.DarkGray;
-            this.siticonePictureBox3.FillColor = System.Drawing.Color.DarkGray;
-            this.siticonePictureBox3.ImageRotate = 0F;
-            this.siticonePictureBox3.Location = new System.Drawing.Point(24, 20);
-            this.siticonePictureBox3.Name = "siticonePictureBox3";
-            this.siticonePictureBox3.Size = new System.Drawing.Size(234, 236);
-            this.siticonePictureBox3.TabIndex = 45;
-            this.siticonePictureBox3.TabStop = false;
-            // 
-            // siticonePanel7
-            // 
-            this.siticonePanel7.Controls.Add(this.siticoneButton2);
-            this.siticonePanel7.Controls.Add(this.label17);
-            this.siticonePanel7.Controls.Add(this.siticonePictureBox4);
-            this.siticonePanel7.Location = new System.Drawing.Point(591, 13);
-            this.siticonePanel7.Name = "siticonePanel7";
-            this.siticonePanel7.Size = new System.Drawing.Size(283, 331);
-            this.siticonePanel7.TabIndex = 49;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(84, 259);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(116, 13);
-            this.label17.TabIndex = 46;
-            this.label17.Text = "GLYZEL GALAGAR";
-            // 
-            // siticonePictureBox4
-            // 
-            this.siticonePictureBox4.BackColor = System.Drawing.Color.DarkGray;
-            this.siticonePictureBox4.FillColor = System.Drawing.Color.DarkGray;
-            this.siticonePictureBox4.ImageRotate = 0F;
-            this.siticonePictureBox4.Location = new System.Drawing.Point(24, 20);
-            this.siticonePictureBox4.Name = "siticonePictureBox4";
-            this.siticonePictureBox4.Size = new System.Drawing.Size(234, 236);
-            this.siticonePictureBox4.TabIndex = 45;
-            this.siticonePictureBox4.TabStop = false;
-            // 
-            // siticonePanel10
-            // 
-            this.siticonePanel10.Controls.Add(this.siticoneButton3);
-            this.siticonePanel10.Controls.Add(this.label23);
-            this.siticonePanel10.Controls.Add(this.siticonePictureBox10);
-            this.siticonePanel10.Location = new System.Drawing.Point(880, 13);
-            this.siticonePanel10.Name = "siticonePanel10";
-            this.siticonePanel10.Size = new System.Drawing.Size(283, 331);
-            this.siticonePanel10.TabIndex = 50;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(84, 259);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(116, 13);
-            this.label23.TabIndex = 46;
-            this.label23.Text = "GLYZEL GALAGAR";
-            // 
-            // siticonePictureBox10
-            // 
-            this.siticonePictureBox10.BackColor = System.Drawing.Color.DarkGray;
-            this.siticonePictureBox10.FillColor = System.Drawing.Color.DarkGray;
-            this.siticonePictureBox10.ImageRotate = 0F;
-            this.siticonePictureBox10.Location = new System.Drawing.Point(24, 20);
-            this.siticonePictureBox10.Name = "siticonePictureBox10";
-            this.siticonePictureBox10.Size = new System.Drawing.Size(234, 236);
-            this.siticonePictureBox10.TabIndex = 45;
-            this.siticonePictureBox10.TabStop = false;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            this.label20.Location = new System.Drawing.Point(13, 414);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(100, 23);
-            this.label20.TabIndex = 53;
-            this.label20.Text = "President";
-            // 
-            // vote_button
-            // 
-            this.vote_button.BorderRadius = 20;
-            this.vote_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.vote_button.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.vote_button.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.vote_button.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.vote_button.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.vote_button.FillColor = System.Drawing.Color.DarkGreen;
-            this.vote_button.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.vote_button.ForeColor = System.Drawing.Color.White;
-            this.vote_button.Location = new System.Drawing.Point(63, 283);
-            this.vote_button.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.vote_button.Name = "vote_button";
-            this.vote_button.Size = new System.Drawing.Size(153, 35);
-            this.vote_button.TabIndex = 70;
-            this.vote_button.Text = "VOTE";
-            // 
-            // siticoneButton1
-            // 
-            this.siticoneButton1.BorderRadius = 20;
-            this.siticoneButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.siticoneButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.siticoneButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.siticoneButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.siticoneButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.siticoneButton1.FillColor = System.Drawing.Color.DarkGreen;
-            this.siticoneButton1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.siticoneButton1.ForeColor = System.Drawing.Color.White;
-            this.siticoneButton1.Location = new System.Drawing.Point(66, 283);
-            this.siticoneButton1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.siticoneButton1.Name = "siticoneButton1";
-            this.siticoneButton1.Size = new System.Drawing.Size(153, 35);
-            this.siticoneButton1.TabIndex = 71;
-            this.siticoneButton1.Text = "VOTE";
-            // 
-            // siticoneButton2
-            // 
-            this.siticoneButton2.BorderRadius = 20;
-            this.siticoneButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.siticoneButton2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.siticoneButton2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.siticoneButton2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.siticoneButton2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.siticoneButton2.FillColor = System.Drawing.Color.DarkGreen;
-            this.siticoneButton2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.siticoneButton2.ForeColor = System.Drawing.Color.White;
-            this.siticoneButton2.Location = new System.Drawing.Point(67, 283);
-            this.siticoneButton2.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.siticoneButton2.Name = "siticoneButton2";
-            this.siticoneButton2.Size = new System.Drawing.Size(153, 35);
-            this.siticoneButton2.TabIndex = 71;
-            this.siticoneButton2.Text = "VOTE";
-            // 
-            // siticoneButton3
-            // 
-            this.siticoneButton3.BorderRadius = 20;
-            this.siticoneButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.siticoneButton3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.siticoneButton3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.siticoneButton3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.siticoneButton3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.siticoneButton3.FillColor = System.Drawing.Color.DarkGreen;
-            this.siticoneButton3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.siticoneButton3.ForeColor = System.Drawing.Color.White;
-            this.siticoneButton3.Location = new System.Drawing.Point(66, 283);
-            this.siticoneButton3.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.siticoneButton3.Name = "siticoneButton3";
-            this.siticoneButton3.Size = new System.Drawing.Size(153, 35);
-            this.siticoneButton3.TabIndex = 71;
-            this.siticoneButton3.Text = "VOTE";
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.AutoScroll = true;
-            this.flowLayoutPanel2.Controls.Add(this.label6);
-            this.flowLayoutPanel2.Controls.Add(this.flowLayoutPanel3);
-            this.flowLayoutPanel2.Controls.Add(this.label20);
-            this.flowLayoutPanel2.Controls.Add(this.flowLayoutPanel1);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(31, 80);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Padding = new System.Windows.Forms.Padding(10);
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(1158, 856);
-            this.flowLayoutPanel2.TabIndex = 71;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            this.label6.Location = new System.Drawing.Point(13, 10);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(100, 23);
-            this.label6.TabIndex = 55;
-            this.label6.Text = "President";
-            // 
-            // flowLayoutPanel3
-            // 
-            this.flowLayoutPanel3.AutoScroll = true;
-            this.flowLayoutPanel3.Controls.Add(this.siticonePanel8);
-            this.flowLayoutPanel3.Controls.Add(this.siticonePanel9);
-            this.flowLayoutPanel3.Controls.Add(this.siticonePanel11);
-            this.flowLayoutPanel3.Controls.Add(this.siticonePanel12);
-            this.flowLayoutPanel3.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(13, 36);
-            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Padding = new System.Windows.Forms.Padding(10);
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(1115, 375);
-            this.flowLayoutPanel3.TabIndex = 56;
-            // 
-            // siticonePanel8
-            // 
-            this.siticonePanel8.Controls.Add(this.siticoneButton4);
-            this.siticonePanel8.Controls.Add(this.label8);
-            this.siticonePanel8.Controls.Add(this.siticonePictureBox5);
-            this.siticonePanel8.Location = new System.Drawing.Point(13, 13);
-            this.siticonePanel8.Name = "siticonePanel8";
-            this.siticonePanel8.Size = new System.Drawing.Size(283, 331);
-            this.siticonePanel8.TabIndex = 47;
-            // 
-            // siticoneButton4
-            // 
-            this.siticoneButton4.BorderRadius = 20;
-            this.siticoneButton4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.siticoneButton4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.siticoneButton4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.siticoneButton4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.siticoneButton4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.siticoneButton4.FillColor = System.Drawing.Color.DarkGreen;
-            this.siticoneButton4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.siticoneButton4.ForeColor = System.Drawing.Color.White;
-            this.siticoneButton4.Location = new System.Drawing.Point(63, 283);
-            this.siticoneButton4.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.siticoneButton4.Name = "siticoneButton4";
-            this.siticoneButton4.Size = new System.Drawing.Size(153, 35);
-            this.siticoneButton4.TabIndex = 70;
-            this.siticoneButton4.Text = "VOTE";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(84, 259);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(116, 13);
-            this.label8.TabIndex = 46;
-            this.label8.Text = "GLYZEL GALAGAR";
-            // 
-            // siticonePictureBox5
-            // 
-            this.siticonePictureBox5.BackColor = System.Drawing.Color.DarkGray;
-            this.siticonePictureBox5.FillColor = System.Drawing.Color.DarkGray;
-            this.siticonePictureBox5.ImageRotate = 0F;
-            this.siticonePictureBox5.Location = new System.Drawing.Point(24, 20);
-            this.siticonePictureBox5.Name = "siticonePictureBox5";
-            this.siticonePictureBox5.Size = new System.Drawing.Size(234, 236);
-            this.siticonePictureBox5.TabIndex = 45;
-            this.siticonePictureBox5.TabStop = false;
-            // 
-            // siticonePanel9
-            // 
-            this.siticonePanel9.Controls.Add(this.siticoneButton5);
-            this.siticonePanel9.Controls.Add(this.label10);
-            this.siticonePanel9.Controls.Add(this.siticonePictureBox6);
-            this.siticonePanel9.Location = new System.Drawing.Point(302, 13);
-            this.siticonePanel9.Name = "siticonePanel9";
-            this.siticonePanel9.Size = new System.Drawing.Size(283, 331);
-            this.siticonePanel9.TabIndex = 48;
-            // 
-            // siticoneButton5
-            // 
-            this.siticoneButton5.BorderRadius = 20;
-            this.siticoneButton5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.siticoneButton5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.siticoneButton5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.siticoneButton5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.siticoneButton5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.siticoneButton5.FillColor = System.Drawing.Color.DarkGreen;
-            this.siticoneButton5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.siticoneButton5.ForeColor = System.Drawing.Color.White;
-            this.siticoneButton5.Location = new System.Drawing.Point(66, 283);
-            this.siticoneButton5.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.siticoneButton5.Name = "siticoneButton5";
-            this.siticoneButton5.Size = new System.Drawing.Size(153, 35);
-            this.siticoneButton5.TabIndex = 71;
-            this.siticoneButton5.Text = "VOTE";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(84, 259);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(116, 13);
-            this.label10.TabIndex = 46;
-            this.label10.Text = "GLYZEL GALAGAR";
-            // 
-            // siticonePictureBox6
-            // 
-            this.siticonePictureBox6.BackColor = System.Drawing.Color.DarkGray;
-            this.siticonePictureBox6.FillColor = System.Drawing.Color.DarkGray;
-            this.siticonePictureBox6.ImageRotate = 0F;
-            this.siticonePictureBox6.Location = new System.Drawing.Point(24, 20);
-            this.siticonePictureBox6.Name = "siticonePictureBox6";
-            this.siticonePictureBox6.Size = new System.Drawing.Size(234, 236);
-            this.siticonePictureBox6.TabIndex = 45;
-            this.siticonePictureBox6.TabStop = false;
-            // 
-            // siticonePanel11
-            // 
-            this.siticonePanel11.Controls.Add(this.siticoneButton6);
-            this.siticonePanel11.Controls.Add(this.label21);
-            this.siticonePanel11.Controls.Add(this.siticonePictureBox7);
-            this.siticonePanel11.Location = new System.Drawing.Point(591, 13);
-            this.siticonePanel11.Name = "siticonePanel11";
-            this.siticonePanel11.Size = new System.Drawing.Size(283, 331);
-            this.siticonePanel11.TabIndex = 49;
-            // 
-            // siticoneButton6
-            // 
-            this.siticoneButton6.BorderRadius = 20;
-            this.siticoneButton6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.siticoneButton6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.siticoneButton6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.siticoneButton6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.siticoneButton6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.siticoneButton6.FillColor = System.Drawing.Color.DarkGreen;
-            this.siticoneButton6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.siticoneButton6.ForeColor = System.Drawing.Color.White;
-            this.siticoneButton6.Location = new System.Drawing.Point(67, 283);
-            this.siticoneButton6.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.siticoneButton6.Name = "siticoneButton6";
-            this.siticoneButton6.Size = new System.Drawing.Size(153, 35);
-            this.siticoneButton6.TabIndex = 71;
-            this.siticoneButton6.Text = "VOTE";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(84, 259);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(116, 13);
-            this.label21.TabIndex = 46;
-            this.label21.Text = "GLYZEL GALAGAR";
-            // 
-            // siticonePictureBox7
-            // 
-            this.siticonePictureBox7.BackColor = System.Drawing.Color.DarkGray;
-            this.siticonePictureBox7.FillColor = System.Drawing.Color.DarkGray;
-            this.siticonePictureBox7.ImageRotate = 0F;
-            this.siticonePictureBox7.Location = new System.Drawing.Point(24, 20);
-            this.siticonePictureBox7.Name = "siticonePictureBox7";
-            this.siticonePictureBox7.Size = new System.Drawing.Size(234, 236);
-            this.siticonePictureBox7.TabIndex = 45;
-            this.siticonePictureBox7.TabStop = false;
-            // 
-            // siticonePanel12
-            // 
-            this.siticonePanel12.Controls.Add(this.siticoneButton7);
-            this.siticonePanel12.Controls.Add(this.label22);
-            this.siticonePanel12.Controls.Add(this.siticonePictureBox8);
-            this.siticonePanel12.Location = new System.Drawing.Point(880, 13);
-            this.siticonePanel12.Name = "siticonePanel12";
-            this.siticonePanel12.Size = new System.Drawing.Size(283, 331);
-            this.siticonePanel12.TabIndex = 50;
-            // 
-            // siticoneButton7
-            // 
-            this.siticoneButton7.BorderRadius = 20;
-            this.siticoneButton7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.siticoneButton7.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.siticoneButton7.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.siticoneButton7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.siticoneButton7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.siticoneButton7.FillColor = System.Drawing.Color.DarkGreen;
-            this.siticoneButton7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.siticoneButton7.ForeColor = System.Drawing.Color.White;
-            this.siticoneButton7.Location = new System.Drawing.Point(66, 283);
-            this.siticoneButton7.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.siticoneButton7.Name = "siticoneButton7";
-            this.siticoneButton7.Size = new System.Drawing.Size(153, 35);
-            this.siticoneButton7.TabIndex = 71;
-            this.siticoneButton7.Text = "VOTE";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(84, 259);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(116, 13);
-            this.label22.TabIndex = 46;
-            this.label22.Text = "GLYZEL GALAGAR";
-            // 
-            // siticonePictureBox8
-            // 
-            this.siticonePictureBox8.BackColor = System.Drawing.Color.DarkGray;
-            this.siticonePictureBox8.FillColor = System.Drawing.Color.DarkGray;
-            this.siticonePictureBox8.ImageRotate = 0F;
-            this.siticonePictureBox8.Location = new System.Drawing.Point(24, 20);
-            this.siticonePictureBox8.Name = "siticonePictureBox8";
-            this.siticonePictureBox8.Size = new System.Drawing.Size(234, 236);
-            this.siticonePictureBox8.TabIndex = 45;
-            this.siticonePictureBox8.TabStop = false;
-            // 
-            // confirm_ballot_button
-            // 
-            this.confirm_ballot_button.BorderRadius = 20;
-            this.confirm_ballot_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.confirm_ballot_button.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.confirm_ballot_button.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.confirm_ballot_button.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.confirm_ballot_button.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.confirm_ballot_button.FillColor = System.Drawing.Color.DarkGreen;
-            this.confirm_ballot_button.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.confirm_ballot_button.ForeColor = System.Drawing.Color.White;
-            this.confirm_ballot_button.Location = new System.Drawing.Point(1036, 25);
-            this.confirm_ballot_button.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.confirm_ballot_button.Name = "confirm_ballot_button";
-            this.confirm_ballot_button.Size = new System.Drawing.Size(153, 35);
-            this.confirm_ballot_button.TabIndex = 72;
-            this.confirm_ballot_button.Text = "CONFIRM";
-            this.confirm_ballot_button.Click += new System.EventHandler(this.confirm_ballot_button_Click);
-            // 
             // VotersDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -1519,27 +1519,6 @@
             this.siticonePanel3.PerformLayout();
             this.vote.ResumeLayout(false);
             this.vote.PerformLayout();
-            this.guidelines.ResumeLayout(false);
-            this.guidelines.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox2)).EndInit();
-            this.settings.ResumeLayout(false);
-            this.splitContainer1.Panel1.ResumeLayout(false);
-            this.splitContainer1.Panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
-            this.splitContainer1.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.siticonePanel4.ResumeLayout(false);
-            this.siticonePanel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox1)).EndInit();
-            this.siticonePanel6.ResumeLayout(false);
-            this.siticonePanel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox3)).EndInit();
-            this.siticonePanel7.ResumeLayout(false);
-            this.siticonePanel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox4)).EndInit();
-            this.siticonePanel10.ResumeLayout(false);
-            this.siticonePanel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox10)).EndInit();
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel2.PerformLayout();
             this.flowLayoutPanel3.ResumeLayout(false);
@@ -1555,6 +1534,27 @@
             this.siticonePanel12.ResumeLayout(false);
             this.siticonePanel12.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox8)).EndInit();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.siticonePanel4.ResumeLayout(false);
+            this.siticonePanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox1)).EndInit();
+            this.siticonePanel6.ResumeLayout(false);
+            this.siticonePanel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox3)).EndInit();
+            this.siticonePanel7.ResumeLayout(false);
+            this.siticonePanel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox4)).EndInit();
+            this.siticonePanel10.ResumeLayout(false);
+            this.siticonePanel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox10)).EndInit();
+            this.guidelines.ResumeLayout(false);
+            this.guidelines.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox2)).EndInit();
+            this.settings.ResumeLayout(false);
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

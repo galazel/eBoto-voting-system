@@ -19,7 +19,11 @@ namespace eBoto
 
         private void login_button_Click(object sender, EventArgs e)
         {
-            if (username_box.Text.Equals("") || password_box.Text.Equals(""))
+            if(username_box.Text.Equals("admin") && password_box.Text.Equals("admin123"))
+            {
+                this.Hide();
+                new AdminDashboard().ShowDialog();  
+            }else if (username_box.Text.Equals("") || password_box.Text.Equals(""))
                 MessageBox.Show("Please input the required fields");
             else
                 new VotersDashboard().ShowDialog();
@@ -29,5 +33,7 @@ namespace eBoto
         {
             new return_bttn().ShowDialog();
         }
+
+      
     }
 }

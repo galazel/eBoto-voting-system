@@ -30,47 +30,47 @@
         {
             this.label6 = new System.Windows.Forms.Label();
             this.siticonePanel8 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
+            this.label22 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.siticonePictureBox5 = new Siticone.Desktop.UI.WinForms.SiticonePictureBox();
             this.siticonePanel1 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
+            this.label21 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.siticonePictureBox1 = new Siticone.Desktop.UI.WinForms.SiticonePictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.siticonePanel2 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
+            this.label17 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.siticonePictureBox2 = new Siticone.Desktop.UI.WinForms.SiticonePictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.siticonePanel3 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
+            this.label18 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.siticonePictureBox3 = new Siticone.Desktop.UI.WinForms.SiticonePictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.siticonePanel4 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
+            this.label27 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.siticonePictureBox4 = new Siticone.Desktop.UI.WinForms.SiticonePictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.siticonePanel5 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
+            this.label26 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.siticonePictureBox6 = new Siticone.Desktop.UI.WinForms.SiticonePictureBox();
             this.label12 = new System.Windows.Forms.Label();
             this.siticonePanel6 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
+            this.label25 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.siticonePictureBox7 = new Siticone.Desktop.UI.WinForms.SiticonePictureBox();
             this.label14 = new System.Windows.Forms.Label();
             this.siticonePanel7 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
-            this.label15 = new System.Windows.Forms.Label();
-            this.siticonePictureBox8 = new Siticone.Desktop.UI.WinForms.SiticonePictureBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.siticonePictureBox8 = new Siticone.Desktop.UI.WinForms.SiticonePictureBox();
+            this.label16 = new System.Windows.Forms.Label();
             this.siticonePanel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox5)).BeginInit();
             this.siticonePanel1.SuspendLayout();
@@ -110,6 +110,17 @@
             this.siticonePanel8.Size = new System.Drawing.Size(283, 331);
             this.siticonePanel8.TabIndex = 57;
             // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(100, 283);
+            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(78, 16);
+            this.label22.TabIndex = 70;
+            this.label22.Text = "PDP Partylist";
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -140,6 +151,17 @@
             this.siticonePanel1.Name = "siticonePanel1";
             this.siticonePanel1.Size = new System.Drawing.Size(283, 331);
             this.siticonePanel1.TabIndex = 59;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(100, 283);
+            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(78, 16);
+            this.label21.TabIndex = 72;
+            this.label21.Text = "PDP Partylist";
             // 
             // label1
             // 
@@ -183,6 +205,17 @@
             this.siticonePanel2.Size = new System.Drawing.Size(283, 331);
             this.siticonePanel2.TabIndex = 61;
             // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(101, 283);
+            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(78, 16);
+            this.label17.TabIndex = 73;
+            this.label17.Text = "PDP Partylist";
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -224,6 +257,17 @@
             this.siticonePanel3.Name = "siticonePanel3";
             this.siticonePanel3.Size = new System.Drawing.Size(283, 331);
             this.siticonePanel3.TabIndex = 63;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(101, 283);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(78, 16);
+            this.label18.TabIndex = 73;
+            this.label18.Text = "PDP Partylist";
             // 
             // label5
             // 
@@ -267,6 +311,17 @@
             this.siticonePanel4.Size = new System.Drawing.Size(283, 331);
             this.siticonePanel4.TabIndex = 71;
             // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(101, 281);
+            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(78, 16);
+            this.label27.TabIndex = 76;
+            this.label27.Text = "PDP Partylist";
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -309,6 +364,17 @@
             this.siticonePanel5.Size = new System.Drawing.Size(283, 331);
             this.siticonePanel5.TabIndex = 69;
             // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(101, 281);
+            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(78, 16);
+            this.label26.TabIndex = 75;
+            this.label26.Text = "PDP Partylist";
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -350,6 +416,17 @@
             this.siticonePanel6.Name = "siticonePanel6";
             this.siticonePanel6.Size = new System.Drawing.Size(283, 331);
             this.siticonePanel6.TabIndex = 67;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(100, 281);
+            this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(78, 16);
+            this.label25.TabIndex = 75;
+            this.label25.Text = "PDP Partylist";
             // 
             // label13
             // 
@@ -396,82 +473,6 @@
             this.siticonePanel7.Size = new System.Drawing.Size(283, 331);
             this.siticonePanel7.TabIndex = 65;
             // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(84, 259);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(116, 13);
-            this.label15.TabIndex = 46;
-            this.label15.Text = "GLYZEL GALAGAR";
-            // 
-            // siticonePictureBox8
-            // 
-            this.siticonePictureBox8.BackColor = System.Drawing.Color.DarkGray;
-            this.siticonePictureBox8.FillColor = System.Drawing.Color.DarkGray;
-            this.siticonePictureBox8.ImageRotate = 0F;
-            this.siticonePictureBox8.Location = new System.Drawing.Point(24, 20);
-            this.siticonePictureBox8.Name = "siticonePictureBox8";
-            this.siticonePictureBox8.Size = new System.Drawing.Size(234, 236);
-            this.siticonePictureBox8.TabIndex = 45;
-            this.siticonePictureBox8.TabStop = false;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            this.label16.Location = new System.Drawing.Point(112, 422);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(100, 23);
-            this.label16.TabIndex = 64;
-            this.label16.Text = "President";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(100, 283);
-            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(78, 16);
-            this.label21.TabIndex = 72;
-            this.label21.Text = "PDP Partylist";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(100, 283);
-            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(78, 16);
-            this.label22.TabIndex = 70;
-            this.label22.Text = "PDP Partylist";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(101, 283);
-            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(78, 16);
-            this.label17.TabIndex = 73;
-            this.label17.Text = "PDP Partylist";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(101, 283);
-            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(78, 16);
-            this.label18.TabIndex = 73;
-            this.label18.Text = "PDP Partylist";
-            // 
             // label19
             // 
             this.label19.AutoSize = true;
@@ -516,38 +517,37 @@
             this.label24.TabIndex = 77;
             this.label24.Text = "PDP Partylist";
             // 
-            // label25
+            // label15
             // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(100, 281);
-            this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(78, 16);
-            this.label25.TabIndex = 75;
-            this.label25.Text = "PDP Partylist";
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(84, 259);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(116, 13);
+            this.label15.TabIndex = 46;
+            this.label15.Text = "GLYZEL GALAGAR";
             // 
-            // label26
+            // siticonePictureBox8
             // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(101, 281);
-            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(78, 16);
-            this.label26.TabIndex = 75;
-            this.label26.Text = "PDP Partylist";
+            this.siticonePictureBox8.BackColor = System.Drawing.Color.DarkGray;
+            this.siticonePictureBox8.FillColor = System.Drawing.Color.DarkGray;
+            this.siticonePictureBox8.ImageRotate = 0F;
+            this.siticonePictureBox8.Location = new System.Drawing.Point(24, 20);
+            this.siticonePictureBox8.Name = "siticonePictureBox8";
+            this.siticonePictureBox8.Size = new System.Drawing.Size(234, 236);
+            this.siticonePictureBox8.TabIndex = 45;
+            this.siticonePictureBox8.TabStop = false;
             // 
-            // label27
+            // label16
             // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(101, 281);
-            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(78, 16);
-            this.label27.TabIndex = 76;
-            this.label27.Text = "PDP Partylist";
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.label16.Location = new System.Drawing.Point(112, 422);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(100, 23);
+            this.label16.TabIndex = 64;
+            this.label16.Text = "President";
             // 
             // SummaryOfVotes
             // 

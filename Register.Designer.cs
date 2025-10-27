@@ -66,8 +66,8 @@
             this.label19 = new System.Windows.Forms.Label();
             this.siticoneTextBox2 = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.siticoneTextBox3 = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.departments_combo = new Siticone.Desktop.UI.WinForms.SiticoneComboBox();
             this.SuspendLayout();
             // 
             // siticoneBorderlessForm1
@@ -665,30 +665,6 @@
             this.label20.TabIndex = 48;
             this.label20.Text = "Department";
             // 
-            // siticoneTextBox3
-            // 
-            this.siticoneTextBox3.BackColor = System.Drawing.Color.Transparent;
-            this.siticoneTextBox3.BorderColor = System.Drawing.Color.Gainsboro;
-            this.siticoneTextBox3.BorderRadius = 10;
-            this.siticoneTextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.siticoneTextBox3.DefaultText = "";
-            this.siticoneTextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.siticoneTextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.siticoneTextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.siticoneTextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.siticoneTextBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
-            this.siticoneTextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.siticoneTextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox3.Location = new System.Drawing.Point(780, 524);
-            this.siticoneTextBox3.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.siticoneTextBox3.Name = "siticoneTextBox3";
-            this.siticoneTextBox3.PasswordChar = '\0';
-            this.siticoneTextBox3.PlaceholderText = "";
-            this.siticoneTextBox3.SelectedText = "";
-            this.siticoneTextBox3.Size = new System.Drawing.Size(332, 46);
-            this.siticoneTextBox3.TabIndex = 47;
-            // 
             // iconButton1
             // 
             this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.ArrowLeft;
@@ -702,15 +678,32 @@
             this.iconButton1.UseVisualStyleBackColor = true;
             this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
+            // departments_combo
+            // 
+            this.departments_combo.AutoRoundedCorners = true;
+            this.departments_combo.BackColor = System.Drawing.Color.Transparent;
+            this.departments_combo.BorderRadius = 17;
+            this.departments_combo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.departments_combo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.departments_combo.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.departments_combo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.departments_combo.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.departments_combo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.departments_combo.ItemHeight = 30;
+            this.departments_combo.Location = new System.Drawing.Point(780, 525);
+            this.departments_combo.Name = "departments_combo";
+            this.departments_combo.Size = new System.Drawing.Size(332, 36);
+            this.departments_combo.TabIndex = 67;
+            // 
             // return_bttn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1146, 875);
+            this.Controls.Add(this.departments_combo);
             this.Controls.Add(this.iconButton1);
             this.Controls.Add(this.label20);
-            this.Controls.Add(this.siticoneTextBox3);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.siticoneTextBox2);
             this.Controls.Add(this.label18);
@@ -793,9 +786,9 @@
         private Siticone.Desktop.UI.WinForms.SiticoneTextBox siticoneTextBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label20;
-        private Siticone.Desktop.UI.WinForms.SiticoneTextBox siticoneTextBox3;
         private System.Windows.Forms.Label label19;
         private Siticone.Desktop.UI.WinForms.SiticoneTextBox siticoneTextBox2;
         private FontAwesome.Sharp.IconButton iconButton1;
+        private Siticone.Desktop.UI.WinForms.SiticoneComboBox departments_combo;
     }
 }

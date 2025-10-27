@@ -47,7 +47,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(35, 395);
+            this.label5.Location = new System.Drawing.Point(35, 385);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(76, 19);
             this.label5.TabIndex = 4;
@@ -58,7 +58,7 @@
             this.register_here.AutoSize = true;
             this.register_here.Cursor = System.Windows.Forms.Cursors.Hand;
             this.register_here.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.register_here.Location = new System.Drawing.Point(95, 676);
+            this.register_here.Location = new System.Drawing.Point(105, 676);
             this.register_here.Name = "register_here";
             this.register_here.Size = new System.Drawing.Size(271, 19);
             this.register_here.TabIndex = 9;
@@ -67,7 +67,6 @@
             // 
             // siticoneBorderlessForm1
             // 
-            this.siticoneBorderlessForm1.AnimateWindow = true;
             this.siticoneBorderlessForm1.BorderRadius = 20;
             this.siticoneBorderlessForm1.ContainerControl = this;
             this.siticoneBorderlessForm1.DockIndicatorColor = System.Drawing.Color.Gray;
@@ -95,7 +94,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(36, 316);
+            this.label4.Location = new System.Drawing.Point(36, 306);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(80, 19);
             this.label4.TabIndex = 3;
@@ -114,7 +113,7 @@
             this.password_box.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.password_box.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.password_box.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.password_box.Location = new System.Drawing.Point(38, 420);
+            this.password_box.Location = new System.Drawing.Point(38, 410);
             this.password_box.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.password_box.Name = "password_box";
             this.password_box.PasswordChar = '●';
@@ -137,7 +136,7 @@
             this.username_box.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.username_box.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.username_box.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.username_box.Location = new System.Drawing.Point(39, 340);
+            this.username_box.Location = new System.Drawing.Point(39, 330);
             this.username_box.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.username_box.Name = "username_box";
             this.username_box.PasswordChar = '\0';
@@ -174,9 +173,9 @@
             this.siticonePictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.siticonePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("siticonePictureBox1.Image")));
             this.siticonePictureBox1.ImageRotate = 0F;
-            this.siticonePictureBox1.Location = new System.Drawing.Point(12, -16);
+            this.siticonePictureBox1.Location = new System.Drawing.Point(37, 94);
             this.siticonePictureBox1.Name = "siticonePictureBox1";
-            this.siticonePictureBox1.Size = new System.Drawing.Size(457, 376);
+            this.siticonePictureBox1.Size = new System.Drawing.Size(397, 144);
             this.siticonePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.siticonePictureBox1.TabIndex = 39;
             this.siticonePictureBox1.TabStop = false;
@@ -220,4 +219,3 @@
         private Siticone.Desktop.UI.WinForms.SiticonePictureBox siticonePictureBox1;
     }
 }
-
