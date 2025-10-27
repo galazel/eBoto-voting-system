@@ -1,4 +1,5 @@
-﻿using System;
+﻿using eBoto.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,12 @@ namespace eBoto
         public Login()
         {
             InitializeComponent();
+            using (var db = new EbotoDBContext())
+            {
+                var departments = db.Departments.ToList();
+                MessageBox.Show("Connected! Departments Count: " + departments.Count);
+            }
+
         }
 
         private void login_button_Click(object sender, EventArgs e)
