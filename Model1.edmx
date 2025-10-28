@@ -12,10 +12,9 @@
           <Property Name="CandidateId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="CandidateName" Type="nvarchar(max)" Nullable="false" />
           <Property Name="Partylist" Type="nvarchar(max)" Nullable="false" />
-          <Property Name="Position" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="PositionId" Type="int" Nullable="false" />
           <Property Name="Motto" Type="nvarchar(max)" Nullable="false" />
           <Property Name="Image" Type="nvarchar(max)" Nullable="false" />
-          <Property Name="DepartmentId" Type="int" />
         </EntityType>
         <EntityType Name="Department">
           <Key>
@@ -30,10 +29,10 @@
           </Key>
           <Property Name="ElectionId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="ElectionName" Type="nvarchar(max)" Nullable="false" />
-          <Property Name="Department" Type="nvarchar(max)" Nullable="false" />
           <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
           <Property Name="Status" Type="bit" Nullable="false" />
-          <Property Name="DepartmentId" Type="int" />
+          <Property Name="DepartmentId" Type="int" Nullable="false" />
+          <Property Name="CandidateId" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="Position">
           <Key>
@@ -81,20 +80,32 @@
           <Property Name="DepartmentId" Type="int" />
           <Property Name="VotedCandidatesId" Type="int" />
         </EntityType>
-        <Association Name="FK_Candidate_Department">
-          <End Role="Department" Type="Self.Department" Multiplicity="0..1" />
+        <Association Name="FK_Candidate_Position">
+          <End Role="Position" Type="Self.Position" Multiplicity="1" />
           <End Role="Candidate" Type="Self.Candidate" Multiplicity="*" />
           <ReferentialConstraint>
-            <Principal Role="Department">
-              <PropertyRef Name="DepartmentId" />
+            <Principal Role="Position">
+              <PropertyRef Name="PositionId" />
             </Principal>
             <Dependent Role="Candidate">
-              <PropertyRef Name="DepartmentId" />
+              <PropertyRef Name="PositionId" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_Election_Department">
-          <End Role="Department" Type="Self.Department" Multiplicity="0..1" />
+        <Association Name="FK_Election_Candidate">
+          <End Role="Candidate" Type="Self.Candidate" Multiplicity="1" />
+          <End Role="Election" Type="Self.Election" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Candidate">
+              <PropertyRef Name="CandidateId" />
+            </Principal>
+            <Dependent Role="Election">
+              <PropertyRef Name="CandidateId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Election_Department1">
+          <End Role="Department" Type="Self.Department" Multiplicity="1" />
           <End Role="Election" Type="Self.Election" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Department">
@@ -137,11 +148,15 @@
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="VotedCandidates" EntityType="Self.VotedCandidates" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Voter" EntityType="Self.Voter" Schema="dbo" store:Type="Tables" />
-          <AssociationSet Name="FK_Candidate_Department" Association="Self.FK_Candidate_Department">
-            <End Role="Department" EntitySet="Department" />
+          <AssociationSet Name="FK_Candidate_Position" Association="Self.FK_Candidate_Position">
+            <End Role="Position" EntitySet="Position" />
             <End Role="Candidate" EntitySet="Candidate" />
           </AssociationSet>
-          <AssociationSet Name="FK_Election_Department" Association="Self.FK_Election_Department">
+          <AssociationSet Name="FK_Election_Candidate" Association="Self.FK_Election_Candidate">
+            <End Role="Candidate" EntitySet="Candidate" />
+            <End Role="Election" EntitySet="Election" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Election_Department1" Association="Self.FK_Election_Department1">
             <End Role="Department" EntitySet="Department" />
             <End Role="Election" EntitySet="Election" />
           </AssociationSet>
@@ -166,11 +181,11 @@
           <Property Name="CandidateId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="CandidateName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Partylist" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Position" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PositionId" Type="Int32" Nullable="false" />
           <Property Name="Motto" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="DepartmentId" Type="Int32" />
-          <NavigationProperty Name="Department" Relationship="Self.FK_Candidate_Department" FromRole="Candidate" ToRole="Department" />
+          <NavigationProperty Name="Position" Relationship="Self.FK_Candidate_Position" FromRole="Candidate" ToRole="Position" />
+          <NavigationProperty Name="Elections" Relationship="Self.FK_Election_Candidate" FromRole="Candidate" ToRole="Election" />
         </EntityType>
         <EntityType Name="Department">
           <Key>
@@ -178,8 +193,7 @@
           </Key>
           <Property Name="DepartmentId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="DepartmentName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-          <NavigationProperty Name="Candidates" Relationship="Self.FK_Candidate_Department" FromRole="Department" ToRole="Candidate" />
-          <NavigationProperty Name="Elections" Relationship="Self.FK_Election_Department" FromRole="Department" ToRole="Election" />
+          <NavigationProperty Name="Elections" Relationship="Self.FK_Election_Department1" FromRole="Department" ToRole="Election" />
           <NavigationProperty Name="Voters" Relationship="Self.FK_Voter_Department" FromRole="Department" ToRole="Voter" />
         </EntityType>
         <EntityType Name="Election">
@@ -188,11 +202,12 @@
           </Key>
           <Property Name="ElectionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="ElectionName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Department" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Status" Type="Boolean" Nullable="false" />
-          <Property Name="DepartmentId" Type="Int32" />
-          <NavigationProperty Name="Department1" Relationship="Self.FK_Election_Department" FromRole="Election" ToRole="Department" />
+          <Property Name="DepartmentId" Type="Int32" Nullable="false" />
+          <Property Name="CandidateId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Candidate" Relationship="Self.FK_Election_Candidate" FromRole="Election" ToRole="Candidate" />
+          <NavigationProperty Name="Department" Relationship="Self.FK_Election_Department1" FromRole="Election" ToRole="Department" />
         </EntityType>
         <EntityType Name="Position">
           <Key>
@@ -200,6 +215,7 @@
           </Key>
           <Property Name="PositionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="PositionName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Candidates" Relationship="Self.FK_Candidate_Position" FromRole="Position" ToRole="Candidate" />
         </EntityType>
         <EntityType Name="sysdiagram">
           <Key>
@@ -243,20 +259,32 @@
           <NavigationProperty Name="Department" Relationship="Self.FK_Voter_Department" FromRole="Voter" ToRole="Department" />
           <NavigationProperty Name="VotedCandidate" Relationship="Self.FK_Voter_VotedCandidates" FromRole="Voter" ToRole="VotedCandidates" />
         </EntityType>
-        <Association Name="FK_Candidate_Department">
-          <End Role="Department" Type="Self.Department" Multiplicity="0..1" />
+        <Association Name="FK_Candidate_Position">
+          <End Role="Position" Type="Self.Position" Multiplicity="1" />
           <End Role="Candidate" Type="Self.Candidate" Multiplicity="*" />
           <ReferentialConstraint>
-            <Principal Role="Department">
-              <PropertyRef Name="DepartmentId" />
+            <Principal Role="Position">
+              <PropertyRef Name="PositionId" />
             </Principal>
             <Dependent Role="Candidate">
-              <PropertyRef Name="DepartmentId" />
+              <PropertyRef Name="PositionId" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_Election_Department">
-          <End Role="Department" Type="Self.Department" Multiplicity="0..1" />
+        <Association Name="FK_Election_Candidate">
+          <End Role="Candidate" Type="Self.Candidate" Multiplicity="1" />
+          <End Role="Election" Type="Self.Election" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Candidate">
+              <PropertyRef Name="CandidateId" />
+            </Principal>
+            <Dependent Role="Election">
+              <PropertyRef Name="CandidateId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Election_Department1">
+          <End Role="Department" Type="Self.Department" Multiplicity="1" />
           <End Role="Election" Type="Self.Election" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Department">
@@ -299,11 +327,15 @@
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
           <EntitySet Name="VotedCandidates" EntityType="Self.VotedCandidate" />
           <EntitySet Name="Voters" EntityType="Self.Voter" />
-          <AssociationSet Name="FK_Candidate_Department" Association="Self.FK_Candidate_Department">
-            <End Role="Department" EntitySet="Departments" />
+          <AssociationSet Name="FK_Candidate_Position" Association="Self.FK_Candidate_Position">
+            <End Role="Position" EntitySet="Positions" />
             <End Role="Candidate" EntitySet="Candidates" />
           </AssociationSet>
-          <AssociationSet Name="FK_Election_Department" Association="Self.FK_Election_Department">
+          <AssociationSet Name="FK_Election_Candidate" Association="Self.FK_Election_Candidate">
+            <End Role="Candidate" EntitySet="Candidates" />
+            <End Role="Election" EntitySet="Elections" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Election_Department1" Association="Self.FK_Election_Department1">
             <End Role="Department" EntitySet="Departments" />
             <End Role="Election" EntitySet="Elections" />
           </AssociationSet>
@@ -328,10 +360,9 @@
                 <ScalarProperty Name="CandidateId" ColumnName="CandidateId" />
                 <ScalarProperty Name="CandidateName" ColumnName="CandidateName" />
                 <ScalarProperty Name="Partylist" ColumnName="Partylist" />
-                <ScalarProperty Name="Position" ColumnName="Position" />
+                <ScalarProperty Name="PositionId" ColumnName="PositionId" />
                 <ScalarProperty Name="Motto" ColumnName="Motto" />
                 <ScalarProperty Name="Image" ColumnName="Image" />
-                <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -348,10 +379,10 @@
               <MappingFragment StoreEntitySet="Election">
                 <ScalarProperty Name="ElectionId" ColumnName="ElectionId" />
                 <ScalarProperty Name="ElectionName" ColumnName="ElectionName" />
-                <ScalarProperty Name="Department" ColumnName="Department" />
                 <ScalarProperty Name="Description" ColumnName="Description" />
                 <ScalarProperty Name="Status" ColumnName="Status" />
                 <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
+                <ScalarProperty Name="CandidateId" ColumnName="CandidateId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

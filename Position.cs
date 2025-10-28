@@ -14,7 +14,16 @@ namespace eBoto
     
     public partial class Position
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Position()
+        {
+            this.Candidates = new HashSet<Candidate>();
+        }
+    
         public int PositionId { get; set; }
         public string PositionName { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Candidate> Candidates { get; set; }
     }
 }

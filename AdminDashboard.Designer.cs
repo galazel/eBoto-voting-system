@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminDashboard));
             this.label19 = new System.Windows.Forms.Label();
             this.dashboard = new System.Windows.Forms.TabPage();
@@ -69,10 +69,8 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.Settings = new System.Windows.Forms.TabPage();
-            this.update_position = new Siticone.Desktop.UI.WinForms.SiticoneButton();
             this.delete_position = new Siticone.Desktop.UI.WinForms.SiticoneButton();
             this.add_position = new Siticone.Desktop.UI.WinForms.SiticoneButton();
-            this.update_department = new Siticone.Desktop.UI.WinForms.SiticoneButton();
             this.delete_department = new Siticone.Desktop.UI.WinForms.SiticoneButton();
             this.add_department = new Siticone.Desktop.UI.WinForms.SiticoneButton();
             this.positions_grid = new System.Windows.Forms.DataGridView();
@@ -142,16 +140,16 @@
             // chart2
             // 
             this.chart2.BackColor = System.Drawing.Color.Gray;
-            chartArea3.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chart2.Legends.Add(legend3);
+            chartArea1.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart2.Legends.Add(legend1);
             this.chart2.Location = new System.Drawing.Point(612, 350);
             this.chart2.Name = "chart2";
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.chart2.Series.Add(series3);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart2.Series.Add(series1);
             this.chart2.Size = new System.Drawing.Size(568, 367);
             this.chart2.TabIndex = 14;
             this.chart2.Text = "chart2";
@@ -159,16 +157,16 @@
             // chart1
             // 
             this.chart1.BackColor = System.Drawing.Color.Gray;
-            chartArea4.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chart1.Legends.Add(legend4);
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
             this.chart1.Location = new System.Drawing.Point(24, 350);
             this.chart1.Name = "chart1";
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            this.chart1.Series.Add(series4);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(568, 367);
             this.chart1.TabIndex = 13;
             this.chart1.Text = "chart1";
@@ -527,10 +525,8 @@
             // Settings
             // 
             this.Settings.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Settings.Controls.Add(this.update_position);
             this.Settings.Controls.Add(this.delete_position);
             this.Settings.Controls.Add(this.add_position);
-            this.Settings.Controls.Add(this.update_department);
             this.Settings.Controls.Add(this.delete_department);
             this.Settings.Controls.Add(this.add_department);
             this.Settings.Controls.Add(this.positions_grid);
@@ -543,23 +539,6 @@
             this.Settings.TabIndex = 6;
             this.Settings.Text = "Settings";
             this.Settings.UseVisualStyleBackColor = true;
-            // 
-            // update_position
-            // 
-            this.update_position.BorderRadius = 10;
-            this.update_position.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.update_position.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.update_position.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.update_position.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.update_position.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            this.update_position.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.update_position.ForeColor = System.Drawing.Color.White;
-            this.update_position.Location = new System.Drawing.Point(785, 492);
-            this.update_position.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.update_position.Name = "update_position";
-            this.update_position.Size = new System.Drawing.Size(115, 36);
-            this.update_position.TabIndex = 15;
-            this.update_position.Text = "UPDATE";
             // 
             // delete_position
             // 
@@ -596,23 +575,6 @@
             this.add_position.TabIndex = 13;
             this.add_position.Text = "ADD";
             this.add_position.Click += new System.EventHandler(this.add_position_Click);
-            // 
-            // update_department
-            // 
-            this.update_department.BorderRadius = 10;
-            this.update_department.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.update_department.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.update_department.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.update_department.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.update_department.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            this.update_department.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.update_department.ForeColor = System.Drawing.Color.White;
-            this.update_department.Location = new System.Drawing.Point(785, 198);
-            this.update_department.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.update_department.Name = "update_department";
-            this.update_department.Size = new System.Drawing.Size(115, 36);
-            this.update_department.TabIndex = 12;
-            this.update_department.Text = "UPDATE";
             // 
             // delete_department
             // 
@@ -826,10 +788,8 @@
         private Siticone.Desktop.UI.WinForms.SiticoneAnimateWindow siticoneAnimateWindow1;
         private System.Windows.Forms.DataGridView positions_grid;
         private System.Windows.Forms.DataGridView departments_grid;
-        private Siticone.Desktop.UI.WinForms.SiticoneButton update_department;
         private Siticone.Desktop.UI.WinForms.SiticoneButton delete_department;
         private Siticone.Desktop.UI.WinForms.SiticoneButton add_department;
-        private Siticone.Desktop.UI.WinForms.SiticoneButton update_position;
         private Siticone.Desktop.UI.WinForms.SiticoneButton delete_position;
         private Siticone.Desktop.UI.WinForms.SiticoneButton add_position;
     }

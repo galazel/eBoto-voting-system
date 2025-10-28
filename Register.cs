@@ -16,6 +16,7 @@ namespace eBoto
         public return_bttn()
         {
             InitializeComponent();
+            departments_combo.Items.Clear();
             using (var db = new eBotoDBEntities1())
             {
                 var departments = db.Departments.Select(d => d.DepartmentName).ToList();
@@ -67,6 +68,11 @@ namespace eBoto
         }
 
         private void birthday_date_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void birthday_date_ValueChanged_1(object sender, EventArgs e)
         {
 
         }

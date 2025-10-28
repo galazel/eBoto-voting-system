@@ -683,6 +683,7 @@
             this.birthday_date.Name = "birthday_date";
             this.birthday_date.Size = new System.Drawing.Size(304, 23);
             this.birthday_date.TabIndex = 68;
+            this.birthday_date.ValueChanged += new System.EventHandler(this.birthday_date_ValueChanged_1);
             // 
             // return_bttn
             // 

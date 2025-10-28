@@ -198,52 +198,52 @@
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="siticonePictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="photo.Location" type="System.Drawing.Point, System.Drawing">
     <value>360, 140</value>
   </data>
-  <data name="siticonePictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="photo.Size" type="System.Drawing.Size, System.Drawing">
     <value>300, 369</value>
   </data>
-  <data name="siticonePictureBox1.TabIndex" type="System.Int32, mscorlib">
+  <data name="photo.TabIndex" type="System.Int32, mscorlib">
     <value>76</value>
   </data>
-  <data name="&gt;&gt;siticonePictureBox1.Name" xml:space="preserve">
-    <value>siticonePictureBox1</value>
+  <data name="&gt;&gt;photo.Name" xml:space="preserve">
+    <value>photo</value>
   </data>
-  <data name="&gt;&gt;siticonePictureBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;photo.Type" xml:space="preserve">
     <value>Siticone.Desktop.UI.WinForms.SiticonePictureBox, Siticone.Desktop.UI, Version=2.1.1.0, Culture=neutral, PublicKeyToken=9683591576b7f0b4</value>
   </data>
-  <data name="&gt;&gt;siticonePictureBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;photo.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;siticonePictureBox1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;photo.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="siticoneTextBox2.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="motto_box.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt</value>
   </data>
-  <data name="siticoneTextBox2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="motto_box.Location" type="System.Drawing.Point, System.Drawing">
     <value>50, 419</value>
   </data>
-  <data name="siticoneTextBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="motto_box.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 2, 4, 2</value>
   </data>
-  <data name="siticoneTextBox2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="motto_box.Size" type="System.Drawing.Size, System.Drawing">
     <value>278, 90</value>
   </data>
-  <data name="siticoneTextBox2.TabIndex" type="System.Int32, mscorlib">
+  <data name="motto_box.TabIndex" type="System.Int32, mscorlib">
     <value>75</value>
   </data>
-  <data name="&gt;&gt;siticoneTextBox2.Name" xml:space="preserve">
-    <value>siticoneTextBox2</value>
+  <data name="&gt;&gt;motto_box.Name" xml:space="preserve">
+    <value>motto_box</value>
   </data>
-  <data name="&gt;&gt;siticoneTextBox2.Type" xml:space="preserve">
+  <data name="&gt;&gt;motto_box.Type" xml:space="preserve">
     <value>Siticone.Desktop.UI.WinForms.SiticoneTextBox, Siticone.Desktop.UI, Version=2.1.1.0, Culture=neutral, PublicKeyToken=9683591576b7f0b4</value>
   </data>
-  <data name="&gt;&gt;siticoneTextBox2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;motto_box.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;siticoneTextBox2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;motto_box.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
@@ -279,31 +279,31 @@
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="siticoneComboBox1.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="positions_bombo.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 10pt</value>
   </data>
-  <data name="siticoneComboBox1.ItemHeight" type="System.Int32, mscorlib">
+  <data name="positions_bombo.ItemHeight" type="System.Int32, mscorlib">
     <value>30</value>
   </data>
-  <data name="siticoneComboBox1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="positions_bombo.Location" type="System.Drawing.Point, System.Drawing">
     <value>50, 337</value>
   </data>
-  <data name="siticoneComboBox1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="positions_bombo.Size" type="System.Drawing.Size, System.Drawing">
     <value>278, 36</value>
   </data>
-  <data name="siticoneComboBox1.TabIndex" type="System.Int32, mscorlib">
+  <data name="positions_bombo.TabIndex" type="System.Int32, mscorlib">
     <value>73</value>
   </data>
-  <data name="&gt;&gt;siticoneComboBox1.Name" xml:space="preserve">
-    <value>siticoneComboBox1</value>
+  <data name="&gt;&gt;positions_bombo.Name" xml:space="preserve">
+    <value>positions_bombo</value>
   </data>
-  <data name="&gt;&gt;siticoneComboBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;positions_bombo.Type" xml:space="preserve">
     <value>Siticone.Desktop.UI.WinForms.SiticoneComboBox, Siticone.Desktop.UI, Version=2.1.1.0, Culture=neutral, PublicKeyToken=9683591576b7f0b4</value>
   </data>
-  <data name="&gt;&gt;siticoneComboBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;positions_bombo.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;siticoneComboBox1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;positions_bombo.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
@@ -339,31 +339,31 @@
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="siticoneTextBox1.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="partylist_box.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt</value>
   </data>
-  <data name="siticoneTextBox1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="partylist_box.Location" type="System.Drawing.Point, System.Drawing">
     <value>50, 234</value>
   </data>
-  <data name="siticoneTextBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="partylist_box.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 2, 4, 2</value>
   </data>
-  <data name="siticoneTextBox1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="partylist_box.Size" type="System.Drawing.Size, System.Drawing">
     <value>278, 54</value>
   </data>
-  <data name="siticoneTextBox1.TabIndex" type="System.Int32, mscorlib">
+  <data name="partylist_box.TabIndex" type="System.Int32, mscorlib">
     <value>71</value>
   </data>
-  <data name="&gt;&gt;siticoneTextBox1.Name" xml:space="preserve">
-    <value>siticoneTextBox1</value>
+  <data name="&gt;&gt;partylist_box.Name" xml:space="preserve">
+    <value>partylist_box</value>
   </data>
-  <data name="&gt;&gt;siticoneTextBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;partylist_box.Type" xml:space="preserve">
     <value>Siticone.Desktop.UI.WinForms.SiticoneTextBox, Siticone.Desktop.UI, Version=2.1.1.0, Culture=neutral, PublicKeyToken=9683591576b7f0b4</value>
   </data>
-  <data name="&gt;&gt;siticoneTextBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;partylist_box.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;siticoneTextBox1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;partylist_box.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
   <data name="label20.AutoSize" type="System.Boolean, mscorlib">
@@ -399,31 +399,31 @@
   <data name="&gt;&gt;label20.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="firstname_box.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="candidate_name_box.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt</value>
   </data>
-  <data name="firstname_box.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="candidate_name_box.Location" type="System.Drawing.Point, System.Drawing">
     <value>50, 139</value>
   </data>
-  <data name="firstname_box.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="candidate_name_box.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 2, 4, 2</value>
   </data>
-  <data name="firstname_box.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="candidate_name_box.Size" type="System.Drawing.Size, System.Drawing">
     <value>278, 54</value>
   </data>
-  <data name="firstname_box.TabIndex" type="System.Int32, mscorlib">
+  <data name="candidate_name_box.TabIndex" type="System.Int32, mscorlib">
     <value>68</value>
   </data>
-  <data name="&gt;&gt;firstname_box.Name" xml:space="preserve">
-    <value>firstname_box</value>
+  <data name="&gt;&gt;candidate_name_box.Name" xml:space="preserve">
+    <value>candidate_name_box</value>
   </data>
-  <data name="&gt;&gt;firstname_box.Type" xml:space="preserve">
+  <data name="&gt;&gt;candidate_name_box.Type" xml:space="preserve">
     <value>Siticone.Desktop.UI.WinForms.SiticoneTextBox, Siticone.Desktop.UI, Version=2.1.1.0, Culture=neutral, PublicKeyToken=9683591576b7f0b4</value>
   </data>
-  <data name="&gt;&gt;firstname_box.Parent" xml:space="preserve">
+  <data name="&gt;&gt;candidate_name_box.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;firstname_box.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;candidate_name_box.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">

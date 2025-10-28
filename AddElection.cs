@@ -18,6 +18,13 @@ namespace eBoto
         public AddElection()
         {
             InitializeComponent();
+            departments_combo.Items.Clear();
+            using (var db = new eBotoDBEntities1())
+            {
+                departments_combo.DataSource = db.Departments
+                                                 .Select(d => d.DepartmentName)
+                                                 .ToList();
+            }
         }
         private void add_candidate_Click(object sender, EventArgs e)
         {
@@ -27,36 +34,20 @@ namespace eBoto
         private void create_election_Click(object sender, EventArgs e)
         {
        
-            if (electionName_box.Text.Equals("") || description_box.Text.Equals("") || departments_combo.Text.Equals("") || candidates_flow.Controls.Count == 0 || start_date.Text.Equals("") || end_date.Text.Equals(""))
-                MessageBox.Show("Please input the required fields");          
+            if (electionName_box.Text.Equals("") || description_box.Text.Equals("") || departments_combo.Text.Equals("") || candidates_flow.Controls.Count == 0)
+                MessageBox.Show("Please input the required fields");
+            else
+            {
+                MessageBox.Show("Election Created Successfully");
+                this.Hide();
+            }
         }
 
         private void AddElection_Load(object sender, EventArgs e)
         {
             
         }
-        public void LoadData()
-        {
-            try
-            {
-                DatabaseConfiguration connectionString = new DatabaseConfiguration();
-
-                using (SqlConnection conn = new SqlConnection(connectionString.ConnectionString))
-                {
-                    conn.Open();
-                    SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM Departments", conn);
-                    DataTable tb = new DataTable();
-                    adapter.Fill(tb);
-                    departments_combo.DataSource = tb;
-                    departments_combo.DisplayMember = "DepartmentName";
-                    departments_combo.ValueMember = "DepartmentID";
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error loading data: " + ex.Message);
-            }
-        }
+       
 
     }
 }
