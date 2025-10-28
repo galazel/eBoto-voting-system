@@ -56,18 +56,18 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.register_button = new Siticone.Desktop.UI.WinForms.SiticoneButton();
-            this.birthday_date = new Siticone.Desktop.UI.WinForms.SiticoneDateTimePicker();
-            this.siticoneCheckBox1 = new Siticone.Desktop.UI.WinForms.SiticoneCheckBox();
+            this.check_box = new Siticone.Desktop.UI.WinForms.SiticoneCheckBox();
             this.siticoneControlBox3 = new Siticone.Desktop.UI.WinForms.SiticoneControlBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.siticoneTextBox1 = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
+            this.year_box = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.siticoneTextBox2 = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
+            this.section_box = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.departments_combo = new Siticone.Desktop.UI.WinForms.SiticoneComboBox();
+            this.birthday_date = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // siticoneBorderlessForm1
@@ -503,51 +503,30 @@
             this.register_button.Size = new System.Drawing.Size(210, 55);
             this.register_button.TabIndex = 36;
             this.register_button.Text = "SUBMIT";
+            this.register_button.Click += new System.EventHandler(this.register_button_Click);
             // 
-            // birthday_date
+            // check_box
             // 
-            this.birthday_date.Animated = true;
-            this.birthday_date.BackColor = System.Drawing.Color.Transparent;
-            this.birthday_date.BorderColor = System.Drawing.Color.Gainsboro;
-            this.birthday_date.BorderRadius = 10;
-            this.birthday_date.Checked = true;
-            this.birthday_date.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
-            this.birthday_date.FocusedColor = System.Drawing.Color.White;
-            this.birthday_date.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.birthday_date.ForeColor = System.Drawing.Color.Black;
-            this.birthday_date.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.birthday_date.Location = new System.Drawing.Point(37, 288);
-            this.birthday_date.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.birthday_date.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.birthday_date.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.birthday_date.Name = "birthday_date";
-            this.birthday_date.Size = new System.Drawing.Size(332, 46);
-            this.birthday_date.TabIndex = 37;
-            this.birthday_date.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
-            this.birthday_date.Value = new System.DateTime(2025, 10, 1, 11, 56, 11, 272);
-            // 
-            // siticoneCheckBox1
-            // 
-            this.siticoneCheckBox1.AutoSize = true;
-            this.siticoneCheckBox1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneCheckBox1.CheckedState.BorderRadius = 0;
-            this.siticoneCheckBox1.CheckedState.BorderThickness = 0;
-            this.siticoneCheckBox1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneCheckBox1.CheckMarkColor = System.Drawing.SystemColors.ActiveBorder;
-            this.siticoneCheckBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.siticoneCheckBox1.ForeColor = System.Drawing.Color.Black;
-            this.siticoneCheckBox1.Location = new System.Drawing.Point(38, 754);
-            this.siticoneCheckBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.siticoneCheckBox1.Name = "siticoneCheckBox1";
-            this.siticoneCheckBox1.Size = new System.Drawing.Size(962, 20);
-            this.siticoneCheckBox1.TabIndex = 38;
-            this.siticoneCheckBox1.Text = "By accessing or using this application, you agree to comply with and be bound by " +
+            this.check_box.AutoSize = true;
+            this.check_box.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.check_box.CheckedState.BorderRadius = 0;
+            this.check_box.CheckedState.BorderThickness = 0;
+            this.check_box.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.check_box.CheckMarkColor = System.Drawing.SystemColors.ActiveBorder;
+            this.check_box.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.check_box.ForeColor = System.Drawing.Color.Black;
+            this.check_box.Location = new System.Drawing.Point(38, 754);
+            this.check_box.Margin = new System.Windows.Forms.Padding(4);
+            this.check_box.Name = "check_box";
+            this.check_box.Size = new System.Drawing.Size(962, 20);
+            this.check_box.TabIndex = 38;
+            this.check_box.Text = "By accessing or using this application, you agree to comply with and be bound by " +
     "these Terms and Conditions. If you do not agree, you may not use the application" +
     ".";
-            this.siticoneCheckBox1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.siticoneCheckBox1.UncheckedState.BorderRadius = 0;
-            this.siticoneCheckBox1.UncheckedState.BorderThickness = 0;
-            this.siticoneCheckBox1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.check_box.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.check_box.UncheckedState.BorderRadius = 0;
+            this.check_box.UncheckedState.BorderThickness = 0;
+            this.check_box.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             // 
             // siticoneControlBox3
             // 
@@ -584,29 +563,29 @@
             this.label2.TabIndex = 42;
             this.label2.Text = "SCHOOL";
             // 
-            // siticoneTextBox1
+            // year_box
             // 
-            this.siticoneTextBox1.BackColor = System.Drawing.Color.Transparent;
-            this.siticoneTextBox1.BorderColor = System.Drawing.Color.Gainsboro;
-            this.siticoneTextBox1.BorderRadius = 10;
-            this.siticoneTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.siticoneTextBox1.DefaultText = "";
-            this.siticoneTextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.siticoneTextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.siticoneTextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.siticoneTextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.siticoneTextBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
-            this.siticoneTextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.siticoneTextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox1.Location = new System.Drawing.Point(37, 524);
-            this.siticoneTextBox1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.siticoneTextBox1.Name = "siticoneTextBox1";
-            this.siticoneTextBox1.PasswordChar = '\0';
-            this.siticoneTextBox1.PlaceholderText = "";
-            this.siticoneTextBox1.SelectedText = "";
-            this.siticoneTextBox1.Size = new System.Drawing.Size(332, 46);
-            this.siticoneTextBox1.TabIndex = 43;
+            this.year_box.BackColor = System.Drawing.Color.Transparent;
+            this.year_box.BorderColor = System.Drawing.Color.Gainsboro;
+            this.year_box.BorderRadius = 10;
+            this.year_box.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.year_box.DefaultText = "";
+            this.year_box.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.year_box.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.year_box.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.year_box.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.year_box.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
+            this.year_box.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.year_box.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.year_box.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.year_box.Location = new System.Drawing.Point(37, 524);
+            this.year_box.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.year_box.Name = "year_box";
+            this.year_box.PasswordChar = '\0';
+            this.year_box.PlaceholderText = "";
+            this.year_box.SelectedText = "";
+            this.year_box.Size = new System.Drawing.Size(332, 46);
+            this.year_box.TabIndex = 43;
             // 
             // label18
             // 
@@ -630,29 +609,29 @@
             this.label19.TabIndex = 46;
             this.label19.Text = "Section";
             // 
-            // siticoneTextBox2
+            // section_box
             // 
-            this.siticoneTextBox2.BackColor = System.Drawing.Color.Transparent;
-            this.siticoneTextBox2.BorderColor = System.Drawing.Color.Gainsboro;
-            this.siticoneTextBox2.BorderRadius = 10;
-            this.siticoneTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.siticoneTextBox2.DefaultText = "";
-            this.siticoneTextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.siticoneTextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.siticoneTextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.siticoneTextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.siticoneTextBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
-            this.siticoneTextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.siticoneTextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox2.Location = new System.Drawing.Point(405, 524);
-            this.siticoneTextBox2.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.siticoneTextBox2.Name = "siticoneTextBox2";
-            this.siticoneTextBox2.PasswordChar = '\0';
-            this.siticoneTextBox2.PlaceholderText = "";
-            this.siticoneTextBox2.SelectedText = "";
-            this.siticoneTextBox2.Size = new System.Drawing.Size(332, 46);
-            this.siticoneTextBox2.TabIndex = 45;
+            this.section_box.BackColor = System.Drawing.Color.Transparent;
+            this.section_box.BorderColor = System.Drawing.Color.Gainsboro;
+            this.section_box.BorderRadius = 10;
+            this.section_box.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.section_box.DefaultText = "";
+            this.section_box.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.section_box.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.section_box.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.section_box.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.section_box.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
+            this.section_box.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.section_box.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.section_box.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.section_box.Location = new System.Drawing.Point(405, 524);
+            this.section_box.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.section_box.Name = "section_box";
+            this.section_box.PasswordChar = '\0';
+            this.section_box.PlaceholderText = "";
+            this.section_box.SelectedText = "";
+            this.section_box.Size = new System.Drawing.Size(332, 46);
+            this.section_box.TabIndex = 45;
             // 
             // label20
             // 
@@ -695,24 +674,34 @@
             this.departments_combo.Size = new System.Drawing.Size(332, 36);
             this.departments_combo.TabIndex = 67;
             // 
+            // birthday_date
+            // 
+            this.birthday_date.CalendarFont = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.birthday_date.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.birthday_date.Location = new System.Drawing.Point(37, 289);
+            this.birthday_date.MaximumSize = new System.Drawing.Size(400, 400);
+            this.birthday_date.Name = "birthday_date";
+            this.birthday_date.Size = new System.Drawing.Size(304, 23);
+            this.birthday_date.TabIndex = 68;
+            // 
             // return_bttn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1146, 875);
+            this.Controls.Add(this.birthday_date);
             this.Controls.Add(this.departments_combo);
             this.Controls.Add(this.iconButton1);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label19);
-            this.Controls.Add(this.siticoneTextBox2);
+            this.Controls.Add(this.section_box);
             this.Controls.Add(this.label18);
-            this.Controls.Add(this.siticoneTextBox1);
+            this.Controls.Add(this.year_box);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.siticoneControlBox3);
-            this.Controls.Add(this.siticoneCheckBox1);
-            this.Controls.Add(this.birthday_date);
+            this.Controls.Add(this.check_box);
             this.Controls.Add(this.register_button);
             this.Controls.Add(this.password_box);
             this.Controls.Add(this.username_box);
@@ -778,17 +767,17 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label13;
         private Siticone.Desktop.UI.WinForms.SiticoneButton register_button;
-        private Siticone.Desktop.UI.WinForms.SiticoneDateTimePicker birthday_date;
-        private Siticone.Desktop.UI.WinForms.SiticoneCheckBox siticoneCheckBox1;
+        private Siticone.Desktop.UI.WinForms.SiticoneCheckBox check_box;
         private Siticone.Desktop.UI.WinForms.SiticoneControlBox siticoneControlBox3;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
-        private Siticone.Desktop.UI.WinForms.SiticoneTextBox siticoneTextBox1;
+        private Siticone.Desktop.UI.WinForms.SiticoneTextBox year_box;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label19;
-        private Siticone.Desktop.UI.WinForms.SiticoneTextBox siticoneTextBox2;
+        private Siticone.Desktop.UI.WinForms.SiticoneTextBox section_box;
         private FontAwesome.Sharp.IconButton iconButton1;
         private Siticone.Desktop.UI.WinForms.SiticoneComboBox departments_combo;
+        private System.Windows.Forms.DateTimePicker birthday_date;
     }
 }

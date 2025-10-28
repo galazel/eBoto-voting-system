@@ -20,7 +20,7 @@ namespace eBoto
         public string Position { get; set; }
         public string Motto { get; set; }
         public string Image { get; set; }
-        public int DepartmentId { get; set; }
+        public Nullable<int> DepartmentId { get; set; }
     
         public virtual Department Department { get; set; }
     }

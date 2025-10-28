@@ -29,15 +29,30 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminDashboard));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label19 = new System.Windows.Forms.Label();
             this.dashboard = new System.Windows.Forms.TabPage();
+            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.siticonePanel6 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.siticonePanel5 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.siticonePanel3 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.siticonePanel4 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.greetings_label = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.profile_button = new FontAwesome.Sharp.IconButton();
@@ -54,6 +69,14 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.Settings = new System.Windows.Forms.TabPage();
+            this.update_position = new Siticone.Desktop.UI.WinForms.SiticoneButton();
+            this.delete_position = new Siticone.Desktop.UI.WinForms.SiticoneButton();
+            this.add_position = new Siticone.Desktop.UI.WinForms.SiticoneButton();
+            this.update_department = new Siticone.Desktop.UI.WinForms.SiticoneButton();
+            this.delete_department = new Siticone.Desktop.UI.WinForms.SiticoneButton();
+            this.add_department = new Siticone.Desktop.UI.WinForms.SiticoneButton();
+            this.positions_grid = new System.Windows.Forms.DataGridView();
+            this.departments_grid = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.siticoneBorderlessForm1 = new Siticone.Desktop.UI.WinForms.SiticoneBorderlessForm(this.components);
@@ -61,23 +84,14 @@
             this.siticonePanel2 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
             this.siticonePanel1 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
             this.electionsTableAdapter = new eBoto.eBotoDBDataSetTableAdapters.ElectionsTableAdapter();
-            this.siticonePanel4 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
-            this.siticonePanel3 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
-            this.siticonePanel5 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
-            this.siticonePanel6 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.siticoneAnimateWindow1 = new Siticone.Desktop.UI.WinForms.SiticoneAnimateWindow(this.components);
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.dashboard.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            this.siticonePanel6.SuspendLayout();
+            this.siticonePanel5.SuspendLayout();
+            this.siticonePanel3.SuspendLayout();
+            this.siticonePanel4.SuspendLayout();
             this.ended.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.electionsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eBotoDBDataSet)).BeginInit();
@@ -85,14 +99,10 @@
             this.elections.SuspendLayout();
             this.ongoing.SuspendLayout();
             this.Settings.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.positions_grid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.departments_grid)).BeginInit();
             this.siticonePanel2.SuspendLayout();
             this.siticonePanel1.SuspendLayout();
-            this.siticonePanel4.SuspendLayout();
-            this.siticonePanel3.SuspendLayout();
-            this.siticonePanel5.SuspendLayout();
-            this.siticonePanel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
             this.SuspendLayout();
             // 
             // label19
@@ -128,6 +138,194 @@
             this.dashboard.TabIndex = 0;
             this.dashboard.Text = "Dashboard";
             this.dashboard.UseVisualStyleBackColor = true;
+            // 
+            // chart2
+            // 
+            this.chart2.BackColor = System.Drawing.Color.Gray;
+            chartArea3.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chart2.Legends.Add(legend3);
+            this.chart2.Location = new System.Drawing.Point(612, 350);
+            this.chart2.Name = "chart2";
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.chart2.Series.Add(series3);
+            this.chart2.Size = new System.Drawing.Size(568, 367);
+            this.chart2.TabIndex = 14;
+            this.chart2.Text = "chart2";
+            // 
+            // chart1
+            // 
+            this.chart1.BackColor = System.Drawing.Color.Gray;
+            chartArea4.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.chart1.Legends.Add(legend4);
+            this.chart1.Location = new System.Drawing.Point(24, 350);
+            this.chart1.Name = "chart1";
+            series4.ChartArea = "ChartArea1";
+            series4.Legend = "Legend1";
+            series4.Name = "Series1";
+            this.chart1.Series.Add(series4);
+            this.chart1.Size = new System.Drawing.Size(568, 367);
+            this.chart1.TabIndex = 13;
+            this.chart1.Text = "chart1";
+            // 
+            // siticonePanel6
+            // 
+            this.siticonePanel6.BackColor = System.Drawing.Color.Transparent;
+            this.siticonePanel6.BorderColor = System.Drawing.Color.Gainsboro;
+            this.siticonePanel6.BorderRadius = 20;
+            this.siticonePanel6.BorderThickness = 2;
+            this.siticonePanel6.Controls.Add(this.label10);
+            this.siticonePanel6.Controls.Add(this.label12);
+            this.siticonePanel6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
+            this.siticonePanel6.Location = new System.Drawing.Point(908, 86);
+            this.siticonePanel6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.siticonePanel6.Name = "siticonePanel6";
+            this.siticonePanel6.Size = new System.Drawing.Size(272, 203);
+            this.siticonePanel6.TabIndex = 10;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(55, 139);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(162, 13);
+            this.label10.TabIndex = 14;
+            this.label10.Text = "Total number of registered voters";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Tahoma", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.label12.Location = new System.Drawing.Point(100, 50);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(74, 77);
+            this.label12.TabIndex = 13;
+            this.label12.Text = "0";
+            // 
+            // siticonePanel5
+            // 
+            this.siticonePanel5.BackColor = System.Drawing.Color.Transparent;
+            this.siticonePanel5.BorderColor = System.Drawing.Color.Gainsboro;
+            this.siticonePanel5.BorderRadius = 20;
+            this.siticonePanel5.BorderThickness = 2;
+            this.siticonePanel5.Controls.Add(this.label8);
+            this.siticonePanel5.Controls.Add(this.label9);
+            this.siticonePanel5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
+            this.siticonePanel5.Location = new System.Drawing.Point(615, 86);
+            this.siticonePanel5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.siticonePanel5.Name = "siticonePanel5";
+            this.siticonePanel5.Size = new System.Drawing.Size(272, 203);
+            this.siticonePanel5.TabIndex = 9;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(55, 139);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(162, 13);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "Total number of registered voters";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Tahoma", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.label9.Location = new System.Drawing.Point(100, 50);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(74, 77);
+            this.label9.TabIndex = 13;
+            this.label9.Text = "0";
+            // 
+            // siticonePanel3
+            // 
+            this.siticonePanel3.BackColor = System.Drawing.Color.Transparent;
+            this.siticonePanel3.BorderColor = System.Drawing.Color.Gainsboro;
+            this.siticonePanel3.BorderRadius = 20;
+            this.siticonePanel3.BorderThickness = 2;
+            this.siticonePanel3.Controls.Add(this.label5);
+            this.siticonePanel3.Controls.Add(this.label6);
+            this.siticonePanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
+            this.siticonePanel3.Location = new System.Drawing.Point(320, 86);
+            this.siticonePanel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.siticonePanel3.Name = "siticonePanel3";
+            this.siticonePanel3.Size = new System.Drawing.Size(272, 203);
+            this.siticonePanel3.TabIndex = 8;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(55, 139);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(162, 13);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "Total number of registered voters";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Tahoma", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.label6.Location = new System.Drawing.Point(100, 50);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(74, 77);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "0";
+            // 
+            // siticonePanel4
+            // 
+            this.siticonePanel4.BackColor = System.Drawing.Color.Transparent;
+            this.siticonePanel4.BorderColor = System.Drawing.Color.Gainsboro;
+            this.siticonePanel4.BorderRadius = 20;
+            this.siticonePanel4.BorderThickness = 2;
+            this.siticonePanel4.Controls.Add(this.label3);
+            this.siticonePanel4.Controls.Add(this.label7);
+            this.siticonePanel4.Controls.Add(this.label4);
+            this.siticonePanel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
+            this.siticonePanel4.Location = new System.Drawing.Point(24, 86);
+            this.siticonePanel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.siticonePanel4.Name = "siticonePanel4";
+            this.siticonePanel4.Size = new System.Drawing.Size(272, 203);
+            this.siticonePanel4.TabIndex = 7;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(53, 145);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(162, 13);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Total number of registered voters";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(119, 248);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(162, 13);
+            this.label7.TabIndex = 10;
+            this.label7.Text = "Total number of registered voters";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Tahoma", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.label4.Location = new System.Drawing.Point(98, 56);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(74, 77);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "0";
             // 
             // greetings_label
             // 
@@ -329,6 +527,14 @@
             // Settings
             // 
             this.Settings.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Settings.Controls.Add(this.update_position);
+            this.Settings.Controls.Add(this.delete_position);
+            this.Settings.Controls.Add(this.add_position);
+            this.Settings.Controls.Add(this.update_department);
+            this.Settings.Controls.Add(this.delete_department);
+            this.Settings.Controls.Add(this.add_department);
+            this.Settings.Controls.Add(this.positions_grid);
+            this.Settings.Controls.Add(this.departments_grid);
             this.Settings.Controls.Add(this.label1);
             this.Settings.ImageKey = "settings.png";
             this.Settings.Location = new System.Drawing.Point(184, 4);
@@ -337,6 +543,131 @@
             this.Settings.TabIndex = 6;
             this.Settings.Text = "Settings";
             this.Settings.UseVisualStyleBackColor = true;
+            // 
+            // update_position
+            // 
+            this.update_position.BorderRadius = 10;
+            this.update_position.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.update_position.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.update_position.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.update_position.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.update_position.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.update_position.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.update_position.ForeColor = System.Drawing.Color.White;
+            this.update_position.Location = new System.Drawing.Point(785, 492);
+            this.update_position.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.update_position.Name = "update_position";
+            this.update_position.Size = new System.Drawing.Size(115, 36);
+            this.update_position.TabIndex = 15;
+            this.update_position.Text = "UPDATE";
+            // 
+            // delete_position
+            // 
+            this.delete_position.BorderRadius = 10;
+            this.delete_position.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.delete_position.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.delete_position.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.delete_position.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.delete_position.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.delete_position.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.delete_position.ForeColor = System.Drawing.Color.White;
+            this.delete_position.Location = new System.Drawing.Point(785, 448);
+            this.delete_position.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.delete_position.Name = "delete_position";
+            this.delete_position.Size = new System.Drawing.Size(115, 36);
+            this.delete_position.TabIndex = 14;
+            this.delete_position.Text = "DELETE";
+            this.delete_position.Click += new System.EventHandler(this.delete_position_Click);
+            // 
+            // add_position
+            // 
+            this.add_position.BorderRadius = 10;
+            this.add_position.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.add_position.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.add_position.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.add_position.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.add_position.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.add_position.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.add_position.ForeColor = System.Drawing.Color.White;
+            this.add_position.Location = new System.Drawing.Point(785, 404);
+            this.add_position.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.add_position.Name = "add_position";
+            this.add_position.Size = new System.Drawing.Size(115, 36);
+            this.add_position.TabIndex = 13;
+            this.add_position.Text = "ADD";
+            this.add_position.Click += new System.EventHandler(this.add_position_Click);
+            // 
+            // update_department
+            // 
+            this.update_department.BorderRadius = 10;
+            this.update_department.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.update_department.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.update_department.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.update_department.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.update_department.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.update_department.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.update_department.ForeColor = System.Drawing.Color.White;
+            this.update_department.Location = new System.Drawing.Point(785, 198);
+            this.update_department.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.update_department.Name = "update_department";
+            this.update_department.Size = new System.Drawing.Size(115, 36);
+            this.update_department.TabIndex = 12;
+            this.update_department.Text = "UPDATE";
+            // 
+            // delete_department
+            // 
+            this.delete_department.BorderRadius = 10;
+            this.delete_department.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.delete_department.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.delete_department.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.delete_department.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.delete_department.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.delete_department.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.delete_department.ForeColor = System.Drawing.Color.White;
+            this.delete_department.Location = new System.Drawing.Point(785, 154);
+            this.delete_department.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.delete_department.Name = "delete_department";
+            this.delete_department.Size = new System.Drawing.Size(115, 36);
+            this.delete_department.TabIndex = 11;
+            this.delete_department.Text = "DELETE";
+            this.delete_department.Click += new System.EventHandler(this.delete_department_Click);
+            // 
+            // add_department
+            // 
+            this.add_department.BorderRadius = 10;
+            this.add_department.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.add_department.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.add_department.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.add_department.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.add_department.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.add_department.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.add_department.ForeColor = System.Drawing.Color.White;
+            this.add_department.Location = new System.Drawing.Point(785, 110);
+            this.add_department.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.add_department.Name = "add_department";
+            this.add_department.Size = new System.Drawing.Size(115, 36);
+            this.add_department.TabIndex = 10;
+            this.add_department.Text = "ADD";
+            this.add_department.Click += new System.EventHandler(this.add_department_Click);
+            // 
+            // positions_grid
+            // 
+            this.positions_grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.positions_grid.Location = new System.Drawing.Point(313, 402);
+            this.positions_grid.Name = "positions_grid";
+            this.positions_grid.Size = new System.Drawing.Size(453, 220);
+            this.positions_grid.TabIndex = 9;
+            this.positions_grid.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.positions_grid_CellEndEdit);
+            // 
+            // departments_grid
+            // 
+            this.departments_grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.departments_grid.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
+            this.departments_grid.Location = new System.Drawing.Point(313, 112);
+            this.departments_grid.Name = "departments_grid";
+            this.departments_grid.Size = new System.Drawing.Size(453, 220);
+            this.departments_grid.TabIndex = 8;
+            this.departments_grid.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.departments_grid_CellEndEdit);
             // 
             // label1
             // 
@@ -407,194 +738,6 @@
             // 
             this.electionsTableAdapter.ClearBeforeFill = true;
             // 
-            // siticonePanel4
-            // 
-            this.siticonePanel4.BackColor = System.Drawing.Color.Transparent;
-            this.siticonePanel4.BorderColor = System.Drawing.Color.Gainsboro;
-            this.siticonePanel4.BorderRadius = 20;
-            this.siticonePanel4.BorderThickness = 2;
-            this.siticonePanel4.Controls.Add(this.label3);
-            this.siticonePanel4.Controls.Add(this.label7);
-            this.siticonePanel4.Controls.Add(this.label4);
-            this.siticonePanel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
-            this.siticonePanel4.Location = new System.Drawing.Point(24, 86);
-            this.siticonePanel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.siticonePanel4.Name = "siticonePanel4";
-            this.siticonePanel4.Size = new System.Drawing.Size(272, 203);
-            this.siticonePanel4.TabIndex = 7;
-            // 
-            // siticonePanel3
-            // 
-            this.siticonePanel3.BackColor = System.Drawing.Color.Transparent;
-            this.siticonePanel3.BorderColor = System.Drawing.Color.Gainsboro;
-            this.siticonePanel3.BorderRadius = 20;
-            this.siticonePanel3.BorderThickness = 2;
-            this.siticonePanel3.Controls.Add(this.label5);
-            this.siticonePanel3.Controls.Add(this.label6);
-            this.siticonePanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
-            this.siticonePanel3.Location = new System.Drawing.Point(320, 86);
-            this.siticonePanel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.siticonePanel3.Name = "siticonePanel3";
-            this.siticonePanel3.Size = new System.Drawing.Size(272, 203);
-            this.siticonePanel3.TabIndex = 8;
-            // 
-            // siticonePanel5
-            // 
-            this.siticonePanel5.BackColor = System.Drawing.Color.Transparent;
-            this.siticonePanel5.BorderColor = System.Drawing.Color.Gainsboro;
-            this.siticonePanel5.BorderRadius = 20;
-            this.siticonePanel5.BorderThickness = 2;
-            this.siticonePanel5.Controls.Add(this.label8);
-            this.siticonePanel5.Controls.Add(this.label9);
-            this.siticonePanel5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
-            this.siticonePanel5.Location = new System.Drawing.Point(615, 86);
-            this.siticonePanel5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.siticonePanel5.Name = "siticonePanel5";
-            this.siticonePanel5.Size = new System.Drawing.Size(272, 203);
-            this.siticonePanel5.TabIndex = 9;
-            // 
-            // siticonePanel6
-            // 
-            this.siticonePanel6.BackColor = System.Drawing.Color.Transparent;
-            this.siticonePanel6.BorderColor = System.Drawing.Color.Gainsboro;
-            this.siticonePanel6.BorderRadius = 20;
-            this.siticonePanel6.BorderThickness = 2;
-            this.siticonePanel6.Controls.Add(this.label10);
-            this.siticonePanel6.Controls.Add(this.label12);
-            this.siticonePanel6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
-            this.siticonePanel6.Location = new System.Drawing.Point(908, 86);
-            this.siticonePanel6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.siticonePanel6.Name = "siticonePanel6";
-            this.siticonePanel6.Size = new System.Drawing.Size(272, 203);
-            this.siticonePanel6.TabIndex = 10;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(119, 248);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(162, 13);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "Total number of registered voters";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            this.label4.Location = new System.Drawing.Point(98, 56);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 77);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "0";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(53, 145);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(162, 13);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "Total number of registered voters";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(55, 139);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(162, 13);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "Total number of registered voters";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Tahoma", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            this.label6.Location = new System.Drawing.Point(100, 50);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(74, 77);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "0";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(55, 139);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(162, 13);
-            this.label8.TabIndex = 14;
-            this.label8.Text = "Total number of registered voters";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Tahoma", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            this.label9.Location = new System.Drawing.Point(100, 50);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(74, 77);
-            this.label9.TabIndex = 13;
-            this.label9.Text = "0";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(55, 139);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(162, 13);
-            this.label10.TabIndex = 14;
-            this.label10.Text = "Total number of registered voters";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Tahoma", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            this.label12.Location = new System.Drawing.Point(100, 50);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(74, 77);
-            this.label12.TabIndex = 13;
-            this.label12.Text = "0";
-            // 
-            // chart1
-            // 
-            this.chart1.BackColor = System.Drawing.Color.Gray;
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
-            this.chart1.Location = new System.Drawing.Point(24, 350);
-            this.chart1.Name = "chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart1.Series.Add(series2);
-            this.chart1.Size = new System.Drawing.Size(568, 367);
-            this.chart1.TabIndex = 13;
-            this.chart1.Text = "chart1";
-            // 
-            // chart2
-            // 
-            this.chart2.BackColor = System.Drawing.Color.Gray;
-            chartArea1.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart2.Legends.Add(legend1);
-            this.chart2.Location = new System.Drawing.Point(612, 350);
-            this.chart2.Name = "chart2";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart2.Series.Add(series1);
-            this.chart2.Size = new System.Drawing.Size(568, 367);
-            this.chart2.TabIndex = 14;
-            this.chart2.Text = "chart2";
-            // 
             // AdminDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -609,6 +752,16 @@
             this.Load += new System.EventHandler(this.AdminDashboard_Load);
             this.dashboard.ResumeLayout(false);
             this.dashboard.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            this.siticonePanel6.ResumeLayout(false);
+            this.siticonePanel6.PerformLayout();
+            this.siticonePanel5.ResumeLayout(false);
+            this.siticonePanel5.PerformLayout();
+            this.siticonePanel3.ResumeLayout(false);
+            this.siticonePanel3.PerformLayout();
+            this.siticonePanel4.ResumeLayout(false);
+            this.siticonePanel4.PerformLayout();
             this.ended.ResumeLayout(false);
             this.ended.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.electionsBindingSource)).EndInit();
@@ -620,19 +773,11 @@
             this.ongoing.PerformLayout();
             this.Settings.ResumeLayout(false);
             this.Settings.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.positions_grid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.departments_grid)).EndInit();
             this.siticonePanel2.ResumeLayout(false);
             this.siticonePanel1.ResumeLayout(false);
             this.siticonePanel1.PerformLayout();
-            this.siticonePanel4.ResumeLayout(false);
-            this.siticonePanel4.PerformLayout();
-            this.siticonePanel3.ResumeLayout(false);
-            this.siticonePanel3.PerformLayout();
-            this.siticonePanel5.ResumeLayout(false);
-            this.siticonePanel5.PerformLayout();
-            this.siticonePanel6.ResumeLayout(false);
-            this.siticonePanel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -679,5 +824,13 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private Siticone.Desktop.UI.WinForms.SiticoneAnimateWindow siticoneAnimateWindow1;
+        private System.Windows.Forms.DataGridView positions_grid;
+        private System.Windows.Forms.DataGridView departments_grid;
+        private Siticone.Desktop.UI.WinForms.SiticoneButton update_department;
+        private Siticone.Desktop.UI.WinForms.SiticoneButton delete_department;
+        private Siticone.Desktop.UI.WinForms.SiticoneButton add_department;
+        private Siticone.Desktop.UI.WinForms.SiticoneButton update_position;
+        private Siticone.Desktop.UI.WinForms.SiticoneButton delete_position;
+        private Siticone.Desktop.UI.WinForms.SiticoneButton add_position;
     }
 }

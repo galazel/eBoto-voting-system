@@ -13,10 +13,10 @@ namespace eBoto
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class eBotoDBEntities : DbContext
+    public partial class eBotoDBEntities1 : DbContext
     {
-        public eBotoDBEntities()
-            : base("name=eBotoDBEntities")
+        public eBotoDBEntities1()
+            : base("name=eBotoDBEntities1")
         {
         }
     

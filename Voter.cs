@@ -29,8 +29,8 @@ namespace eBoto
         public string Username { get; set; }
         public string Password { get; set; }
         public bool Status { get; set; }
-        public int DepartmentId { get; set; }
-        public int VotedCandidatesId { get; set; }
+        public Nullable<int> DepartmentId { get; set; }
+        public Nullable<int> VotedCandidatesId { get; set; }
     
         public virtual Department Department { get; set; }
         public virtual VotedCandidate VotedCandidate { get; set; }

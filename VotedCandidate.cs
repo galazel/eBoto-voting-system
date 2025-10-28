@@ -21,7 +21,7 @@ namespace eBoto
         }
     
         public int VotedCandidatesId { get; set; }
-        public int VoterId { get; set; }
+        public Nullable<int> VoterId { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Voter> Voters { get; set; }
