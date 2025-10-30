@@ -41,18 +41,18 @@
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.siticonePanel6 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.no_of_voters_voted = new System.Windows.Forms.Label();
+            this.no_voted = new System.Windows.Forms.Label();
             this.siticonePanel5 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.no_of_candidates = new System.Windows.Forms.Label();
+            this.no_candidates = new System.Windows.Forms.Label();
             this.siticonePanel3 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.no_of_elections = new System.Windows.Forms.Label();
+            this.no_elections = new System.Windows.Forms.Label();
             this.siticonePanel4 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
             this.label3 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.no_of_registered = new System.Windows.Forms.Label();
             this.greetings_label = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.profile_button = new FontAwesome.Sharp.IconButton();
@@ -177,8 +177,8 @@
             this.siticonePanel6.BorderColor = System.Drawing.Color.Gainsboro;
             this.siticonePanel6.BorderRadius = 20;
             this.siticonePanel6.BorderThickness = 2;
-            this.siticonePanel6.Controls.Add(this.label10);
-            this.siticonePanel6.Controls.Add(this.label12);
+            this.siticonePanel6.Controls.Add(this.no_of_voters_voted);
+            this.siticonePanel6.Controls.Add(this.no_voted);
             this.siticonePanel6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
             this.siticonePanel6.Location = new System.Drawing.Point(908, 86);
             this.siticonePanel6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -186,26 +186,26 @@
             this.siticonePanel6.Size = new System.Drawing.Size(272, 203);
             this.siticonePanel6.TabIndex = 10;
             // 
-            // label10
+            // no_of_voters_voted
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(55, 139);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(162, 13);
-            this.label10.TabIndex = 14;
-            this.label10.Text = "Total number of registered voters";
+            this.no_of_voters_voted.AutoSize = true;
+            this.no_of_voters_voted.Location = new System.Drawing.Point(86, 139);
+            this.no_of_voters_voted.Name = "no_of_voters_voted";
+            this.no_of_voters_voted.Size = new System.Drawing.Size(100, 13);
+            this.no_of_voters_voted.TabIndex = 14;
+            this.no_of_voters_voted.Text = "No. of Voters Voted";
             // 
-            // label12
+            // no_voted
             // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Tahoma", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            this.label12.Location = new System.Drawing.Point(100, 50);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(74, 77);
-            this.label12.TabIndex = 13;
-            this.label12.Text = "0";
+            this.no_voted.AutoSize = true;
+            this.no_voted.BackColor = System.Drawing.Color.Transparent;
+            this.no_voted.Font = new System.Drawing.Font("Tahoma", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.no_voted.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.no_voted.Location = new System.Drawing.Point(100, 50);
+            this.no_voted.Name = "no_voted";
+            this.no_voted.Size = new System.Drawing.Size(74, 77);
+            this.no_voted.TabIndex = 13;
+            this.no_voted.Text = "0";
             // 
             // siticonePanel5
             // 
@@ -213,8 +213,8 @@
             this.siticonePanel5.BorderColor = System.Drawing.Color.Gainsboro;
             this.siticonePanel5.BorderRadius = 20;
             this.siticonePanel5.BorderThickness = 2;
-            this.siticonePanel5.Controls.Add(this.label8);
-            this.siticonePanel5.Controls.Add(this.label9);
+            this.siticonePanel5.Controls.Add(this.no_of_candidates);
+            this.siticonePanel5.Controls.Add(this.no_candidates);
             this.siticonePanel5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
             this.siticonePanel5.Location = new System.Drawing.Point(615, 86);
             this.siticonePanel5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -222,26 +222,26 @@
             this.siticonePanel5.Size = new System.Drawing.Size(272, 203);
             this.siticonePanel5.TabIndex = 9;
             // 
-            // label8
+            // no_of_candidates
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(55, 139);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(162, 13);
-            this.label8.TabIndex = 14;
-            this.label8.Text = "Total number of registered voters";
+            this.no_of_candidates.AutoSize = true;
+            this.no_of_candidates.Location = new System.Drawing.Point(94, 139);
+            this.no_of_candidates.Name = "no_of_candidates";
+            this.no_of_candidates.Size = new System.Drawing.Size(92, 13);
+            this.no_of_candidates.TabIndex = 14;
+            this.no_of_candidates.Text = "No. of Candidates";
             // 
-            // label9
+            // no_candidates
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Tahoma", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            this.label9.Location = new System.Drawing.Point(100, 50);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(74, 77);
-            this.label9.TabIndex = 13;
-            this.label9.Text = "0";
+            this.no_candidates.AutoSize = true;
+            this.no_candidates.BackColor = System.Drawing.Color.Transparent;
+            this.no_candidates.Font = new System.Drawing.Font("Tahoma", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.no_candidates.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.no_candidates.Location = new System.Drawing.Point(100, 50);
+            this.no_candidates.Name = "no_candidates";
+            this.no_candidates.Size = new System.Drawing.Size(74, 77);
+            this.no_candidates.TabIndex = 13;
+            this.no_candidates.Text = "0";
             // 
             // siticonePanel3
             // 
@@ -249,8 +249,8 @@
             this.siticonePanel3.BorderColor = System.Drawing.Color.Gainsboro;
             this.siticonePanel3.BorderRadius = 20;
             this.siticonePanel3.BorderThickness = 2;
-            this.siticonePanel3.Controls.Add(this.label5);
-            this.siticonePanel3.Controls.Add(this.label6);
+            this.siticonePanel3.Controls.Add(this.no_of_elections);
+            this.siticonePanel3.Controls.Add(this.no_elections);
             this.siticonePanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
             this.siticonePanel3.Location = new System.Drawing.Point(320, 86);
             this.siticonePanel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -258,26 +258,26 @@
             this.siticonePanel3.Size = new System.Drawing.Size(272, 203);
             this.siticonePanel3.TabIndex = 8;
             // 
-            // label5
+            // no_of_elections
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(55, 139);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(162, 13);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "Total number of registered voters";
+            this.no_of_elections.AutoSize = true;
+            this.no_of_elections.Location = new System.Drawing.Point(92, 139);
+            this.no_of_elections.Name = "no_of_elections";
+            this.no_of_elections.Size = new System.Drawing.Size(82, 13);
+            this.no_of_elections.TabIndex = 14;
+            this.no_of_elections.Text = "No. of Elections";
             // 
-            // label6
+            // no_elections
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Tahoma", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            this.label6.Location = new System.Drawing.Point(100, 50);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(74, 77);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "0";
+            this.no_elections.AutoSize = true;
+            this.no_elections.BackColor = System.Drawing.Color.Transparent;
+            this.no_elections.Font = new System.Drawing.Font("Tahoma", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.no_elections.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.no_elections.Location = new System.Drawing.Point(100, 50);
+            this.no_elections.Name = "no_elections";
+            this.no_elections.Size = new System.Drawing.Size(74, 77);
+            this.no_elections.TabIndex = 13;
+            this.no_elections.Text = "0";
             // 
             // siticonePanel4
             // 
@@ -287,7 +287,7 @@
             this.siticonePanel4.BorderThickness = 2;
             this.siticonePanel4.Controls.Add(this.label3);
             this.siticonePanel4.Controls.Add(this.label7);
-            this.siticonePanel4.Controls.Add(this.label4);
+            this.siticonePanel4.Controls.Add(this.no_of_registered);
             this.siticonePanel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
             this.siticonePanel4.Location = new System.Drawing.Point(24, 86);
             this.siticonePanel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -298,11 +298,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(53, 145);
+            this.label3.Location = new System.Drawing.Point(75, 139);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(162, 13);
+            this.label3.Size = new System.Drawing.Size(123, 13);
             this.label3.TabIndex = 12;
-            this.label3.Text = "Total number of registered voters";
+            this.label3.Text = "No. of Registered Voters";
             // 
             // label7
             // 
@@ -313,17 +313,17 @@
             this.label7.TabIndex = 10;
             this.label7.Text = "Total number of registered voters";
             // 
-            // label4
+            // no_of_registered
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            this.label4.Location = new System.Drawing.Point(98, 56);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 77);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "0";
+            this.no_of_registered.AutoSize = true;
+            this.no_of_registered.BackColor = System.Drawing.Color.Transparent;
+            this.no_of_registered.Font = new System.Drawing.Font("Tahoma", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.no_of_registered.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.no_of_registered.Location = new System.Drawing.Point(98, 56);
+            this.no_of_registered.Name = "no_of_registered";
+            this.no_of_registered.Size = new System.Drawing.Size(74, 77);
+            this.no_of_registered.TabIndex = 11;
+            this.no_of_registered.Text = "0";
             // 
             // greetings_label
             // 
@@ -775,13 +775,13 @@
         private Siticone.Desktop.UI.WinForms.SiticonePanel siticonePanel3;
         private Siticone.Desktop.UI.WinForms.SiticonePanel siticonePanel4;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label no_of_registered;
+        private System.Windows.Forms.Label no_of_voters_voted;
+        private System.Windows.Forms.Label no_voted;
+        private System.Windows.Forms.Label no_of_candidates;
+        private System.Windows.Forms.Label no_candidates;
+        private System.Windows.Forms.Label no_of_elections;
+        private System.Windows.Forms.Label no_elections;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;

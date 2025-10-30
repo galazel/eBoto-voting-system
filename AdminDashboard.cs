@@ -16,7 +16,20 @@ namespace eBoto
             InitializeComponent();
             siticoneTabControl1.SelectedIndexChanged += TabChanged;
             LoadData();
+            LoadStatistics();
 
+        }
+        private void LoadStatistics()
+        {
+            using (var db = new eBotoDBEntities1())
+            {
+                int registeredVotersCount = db.Voters.Count();
+                int electionsCount = db.Elections.Count();
+                int candidatesCount = db.Candidates.Count();
+                no_of_registered.Text = registeredVotersCount.ToString();
+                no_elections.Text = electionsCount.ToString();
+                no_candidates.Text = candidatesCount.ToString();
+            }
         }
 
         private void LoadData()
