@@ -117,7 +117,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_Election_Department1">
+        <Association Name="FK_Election_Department">
           <End Role="Department" Type="Self.Department" Multiplicity="1" />
           <End Role="Election" Type="Self.Election" Multiplicity="*" />
           <ReferentialConstraint>
@@ -126,6 +126,18 @@
             </Principal>
             <Dependent Role="Election">
               <PropertyRef Name="DepartmentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_VotedCandidates_Voter">
+          <End Role="Voter" Type="Self.Voter" Multiplicity="0..1" />
+          <End Role="VotedCandidates" Type="Self.VotedCandidates" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Voter">
+              <PropertyRef Name="VoterId" />
+            </Principal>
+            <Dependent Role="VotedCandidates">
+              <PropertyRef Name="VoterId" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -173,9 +185,13 @@
             <End Role="Position" EntitySet="Position" />
             <End Role="Candidate" EntitySet="Candidate" />
           </AssociationSet>
-          <AssociationSet Name="FK_Election_Department1" Association="Self.FK_Election_Department1">
+          <AssociationSet Name="FK_Election_Department" Association="Self.FK_Election_Department">
             <End Role="Department" EntitySet="Department" />
             <End Role="Election" EntitySet="Election" />
+          </AssociationSet>
+          <AssociationSet Name="FK_VotedCandidates_Voter" Association="Self.FK_VotedCandidates_Voter">
+            <End Role="Voter" EntitySet="Voter" />
+            <End Role="VotedCandidates" EntitySet="VotedCandidates" />
           </AssociationSet>
           <AssociationSet Name="FK_Voter_Department" Association="Self.FK_Voter_Department">
             <End Role="Department" EntitySet="Department" />
@@ -214,7 +230,7 @@
           <Property Name="DepartmentId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="DepartmentName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="Candidates" Relationship="Self.FK_Candidate_Department" FromRole="Department" ToRole="Candidate" />
-          <NavigationProperty Name="Elections" Relationship="Self.FK_Election_Department1" FromRole="Department" ToRole="Election" />
+          <NavigationProperty Name="Elections" Relationship="Self.FK_Election_Department" FromRole="Department" ToRole="Election" />
           <NavigationProperty Name="Voters" Relationship="Self.FK_Voter_Department" FromRole="Department" ToRole="Voter" />
         </EntityType>
         <EntityType Name="Election">
@@ -227,7 +243,7 @@
           <Property Name="Status" Type="Boolean" Nullable="false" />
           <Property Name="DepartmentId" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Candidates" Relationship="Self.FK_Candidate_Election" FromRole="Election" ToRole="Candidate" />
-          <NavigationProperty Name="Department" Relationship="Self.FK_Election_Department1" FromRole="Election" ToRole="Department" />
+          <NavigationProperty Name="Department" Relationship="Self.FK_Election_Department" FromRole="Election" ToRole="Department" />
         </EntityType>
         <EntityType Name="Position">
           <Key>
@@ -253,6 +269,7 @@
           </Key>
           <Property Name="VotedCandidatesId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="VoterId" Type="Int32" />
+          <NavigationProperty Name="Voter" Relationship="Self.FK_VotedCandidates_Voter" FromRole="VotedCandidates" ToRole="Voter" />
           <NavigationProperty Name="Voters" Relationship="Self.FK_Voter_VotedCandidates" FromRole="VotedCandidates" ToRole="Voter" />
         </EntityType>
         <EntityType Name="Voter">
@@ -277,6 +294,7 @@
           <Property Name="DepartmentId" Type="Int32" />
           <Property Name="VotedCandidatesId" Type="Int32" />
           <NavigationProperty Name="Department" Relationship="Self.FK_Voter_Department" FromRole="Voter" ToRole="Department" />
+          <NavigationProperty Name="VotedCandidates" Relationship="Self.FK_VotedCandidates_Voter" FromRole="Voter" ToRole="VotedCandidates" />
           <NavigationProperty Name="VotedCandidate" Relationship="Self.FK_Voter_VotedCandidates" FromRole="Voter" ToRole="VotedCandidates" />
         </EntityType>
         <Association Name="FK_Candidate_Department">
@@ -315,7 +333,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_Election_Department1">
+        <Association Name="FK_Election_Department">
           <End Role="Department" Type="Self.Department" Multiplicity="1" />
           <End Role="Election" Type="Self.Election" Multiplicity="*" />
           <ReferentialConstraint>
@@ -339,6 +357,18 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_VotedCandidates_Voter">
+          <End Role="Voter" Type="Self.Voter" Multiplicity="0..1" />
+          <End Role="VotedCandidates" Type="Self.VotedCandidate" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Voter">
+              <PropertyRef Name="VoterId" />
+            </Principal>
+            <Dependent Role="VotedCandidates">
+              <PropertyRef Name="VoterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_Voter_VotedCandidates">
           <End Role="VotedCandidates" Type="Self.VotedCandidate" Multiplicity="0..1" />
           <End Role="Voter" Type="Self.Voter" Multiplicity="*" />
@@ -351,7 +381,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="eBotoDBEntities1" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="eBotoDBEntities2" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Candidates" EntityType="Self.Candidate" />
           <EntitySet Name="Departments" EntityType="Self.Department" />
           <EntitySet Name="Elections" EntityType="Self.Election" />
@@ -371,13 +401,17 @@
             <End Role="Position" EntitySet="Positions" />
             <End Role="Candidate" EntitySet="Candidates" />
           </AssociationSet>
-          <AssociationSet Name="FK_Election_Department1" Association="Self.FK_Election_Department1">
+          <AssociationSet Name="FK_Election_Department" Association="Self.FK_Election_Department">
             <End Role="Department" EntitySet="Departments" />
             <End Role="Election" EntitySet="Elections" />
           </AssociationSet>
           <AssociationSet Name="FK_Voter_Department" Association="Self.FK_Voter_Department">
             <End Role="Department" EntitySet="Departments" />
             <End Role="Voter" EntitySet="Voters" />
+          </AssociationSet>
+          <AssociationSet Name="FK_VotedCandidates_Voter" Association="Self.FK_VotedCandidates_Voter">
+            <End Role="Voter" EntitySet="Voters" />
+            <End Role="VotedCandidates" EntitySet="VotedCandidates" />
           </AssociationSet>
           <AssociationSet Name="FK_Voter_VotedCandidates" Association="Self.FK_Voter_VotedCandidates">
             <End Role="VotedCandidates" EntitySet="VotedCandidates" />
@@ -389,7 +423,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="eBotoDBModelStoreContainer" CdmEntityContainer="eBotoDBEntities1">
+        <EntityContainerMapping StorageEntityContainer="eBotoDBModelStoreContainer" CdmEntityContainer="eBotoDBEntities2">
           <EntitySetMapping Name="Candidates">
             <EntityTypeMapping TypeName="eBotoDBModel.Candidate">
               <MappingFragment StoreEntitySet="Candidate">

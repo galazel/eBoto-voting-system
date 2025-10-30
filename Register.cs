@@ -17,7 +17,7 @@ namespace eBoto
         {
             InitializeComponent();
             departments_combo.Items.Clear();
-            using (var db = new eBotoDBEntities1())
+            using (var db = new eBotoDBEntities2())
             {
                 var departments = db.Departments.Select(d => d.DepartmentName).ToList();
                 departments_combo.Items.AddRange(departments.ToArray());
@@ -38,8 +38,17 @@ namespace eBoto
                 MessageBox.Show("Please agree to the terms and conditions");
                 return;
             }else
-                using (var db = new eBotoDBEntities1())
+                using (var db = new eBotoDBEntities2())
                 {
+                    var users = db.Voters.ToList();
+                    foreach (var usr in users)
+                    {
+                        if (username_box.Text == usr.Username || email_box.Text == usr.Email)
+                        {
+                            MessageBox.Show("Account already existed.");
+                            return;
+                        }
+                    }
                     var user = new Voter
                     {
                         FirstName = firstname_box.Text,

@@ -14,6 +14,12 @@ namespace eBoto
     
     public partial class Voter
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Voter()
+        {
+            this.VotedCandidates = new HashSet<VotedCandidate>();
+        }
+    
         public int VoterId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -33,6 +39,8 @@ namespace eBoto
         public Nullable<int> VotedCandidatesId { get; set; }
     
         public virtual Department Department { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<VotedCandidate> VotedCandidates { get; set; }
         public virtual VotedCandidate VotedCandidate { get; set; }
     }
 }

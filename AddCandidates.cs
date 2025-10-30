@@ -21,7 +21,7 @@ namespace eBoto
             positions_bombo.Items.Clear();
             this.flow = flow;
 
-            using (var db = new eBotoDBEntities1())
+            using (var db = new eBotoDBEntities2())
             {
                 positions_bombo.DataSource = db.Positions
                                                  .Select(d => d.PositionName)

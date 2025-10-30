@@ -30,7 +30,7 @@ namespace eBoto
             positionTable.Columns.Add("PositionID", typeof(int));
             positionTable.Columns.Add("PositionName", typeof(string));
 
-            using (var db = new eBotoDBEntities1())
+            using (var db = new eBotoDBEntities2())
             {
             
                 foreach (var dept in db.Departments)
@@ -98,8 +98,14 @@ namespace eBoto
             string departmentName = Interaction.InputBox("Enter Department Name:", "Add Department", "");
             if(departmentName.Trim() != "")
             {
-                using (var db = new eBotoDBEntities1())
+                using (var db = new eBotoDBEntities2())
                 {
+                    var departmentExists = db.Departments.Any(d => d.DepartmentName == departmentName.ToUpper());
+                    if (departmentExists)
+                    {
+                        MessageBox.Show("Department already exists.");
+                        return;
+                    }
                     var newDepartment = new Department
                     {
                         DepartmentName = departmentName.ToUpper()
@@ -127,7 +133,7 @@ namespace eBoto
         }
         private void Delete(int index, string tableName)
         {
-            using(var db = new eBotoDBEntities1())
+            using(var db = new eBotoDBEntities2())
             {
                 if(tableName == "Departments")
                 {
@@ -157,8 +163,14 @@ namespace eBoto
             string positionName = Interaction.InputBox("Enter Position Name:", "Add Position", "");
             if(positionName.Trim() != "")
             {
-                          using (var db = new eBotoDBEntities1())
+            using (var db = new eBotoDBEntities2())
             {
+                var positionExists = db.Positions.Any(p => p.PositionName == positionName.ToUpper());
+                if (positionExists)
+                {
+                   MessageBox.Show("Position already exists.");
+                   return;
+                }
                 var newPosition = new Position
                 {
                     PositionName = positionName.ToUpper()
@@ -186,7 +198,7 @@ namespace eBoto
 
         private void departments_grid_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
-            using (var db = new eBotoDBEntities1())
+            using (var db = new eBotoDBEntities2())
             {
                 foreach (DataGridViewRow row in departments_grid.Rows)
                 {
@@ -205,7 +217,7 @@ namespace eBoto
 
         private void positions_grid_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
-            using (var db = new eBotoDBEntities1())
+            using (var db = new eBotoDBEntities2())
             {
                 foreach (DataGridViewRow row in positions_grid.Rows)
                 {

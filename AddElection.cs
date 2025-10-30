@@ -14,7 +14,7 @@ namespace eBoto
             this.flow = flow;
 
             departments_combo.Items.Clear();
-            using (var db = new eBotoDBEntities1())
+            using (var db = new eBotoDBEntities2())
             {
                 departments_combo.DataSource = db.Departments
                                                  .Select(d => d.DepartmentName)
@@ -24,18 +24,6 @@ namespace eBoto
         }
         private void add_candidate_Click(object sender, EventArgs e)
         {
-            using(var db = new eBotoDBEntities1())
-            {
-                var election = db.Elections.ToList();
-
-                foreach (var elec in election)
-                {
-                    Elec.DepartmentId = elec.DepartmentId;
-                    Elec.ElectionId = elec.ElectionId;
-                }
-
-                MessageBox.Show("Department: " + Elec.DepartmentId + "\nElection: " + Elec.ElectionId);
-            }
             new AddCandidates(this.candidates_flow).ShowDialog();
         }
 
@@ -45,8 +33,17 @@ namespace eBoto
                 MessageBox.Show("Please input the required fields");
             else
             {
-                using(var db = new eBotoDBEntities1())
+                using (var db = new eBotoDBEntities2())
                 {
+                    var elections = db.Elections.ToList();
+                    foreach (var elec in elections)
+                    {
+                        if (electionName_box.Text == elec.ElectionName)
+                        {
+                            MessageBox.Show("Election already exists. Please wait for it to end");
+                            return;
+                        }
+                    }
                     var election = new Election
                     {
                         ElectionName = electionName_box.Text,
@@ -75,7 +72,7 @@ namespace eBoto
                         };
                         db.Candidates.Add(newCandidate);
                     }
-                   
+
                     db.SaveChanges();
                 }
 

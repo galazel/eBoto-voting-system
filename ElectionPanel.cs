@@ -27,7 +27,7 @@ namespace eBoto
         {
             string candidatesView = "";
 
-            using (var db = new eBotoDBEntities1())
+            using (var db = new eBotoDBEntities2())
             {
                foreach (var candidate in this.candidates)
                    candidatesView += "- " + candidate.CandidateName + " (" + db.Positions.FirstOrDefault(p => p.PositionId == candidate.PositionId).PositionName + ")\n";
@@ -39,7 +39,7 @@ namespace eBoto
 
         private void start_Click(object sender, EventArgs e)
         {
-            using(var db = new eBotoDBEntities1())
+            using(var db = new eBotoDBEntities2())
             {
                 var elections = db.Elections.ToList();
                 foreach(var election in elections)

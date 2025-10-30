@@ -28,7 +28,26 @@ namespace eBoto
             }else if (username_box.Text.Equals("") || password_box.Text.Equals(""))
                 MessageBox.Show("Please input the required fields");
             else
-                new VotersDashboard().ShowDialog();
+            { 
+                using (var db = new eBotoDBEntities2())
+                {
+                    Boolean isFound = false;
+                    var users = db.Voters.ToList();
+                    foreach (var usr in users)
+                    {
+                        if (username_box.Text == usr.Username && password_box.Text == usr.Password)
+                        {
+                            this.Hide();
+                            isFound = true;
+                            new VotersDashboard().ShowDialog();
+                            return;
+                        }
+                    }
+                    if(!isFound)
+                        MessageBox.Show("Invalid username or password.");
+                }
+             }
+
         }
 
         private void register_here_Click(object sender, EventArgs e)

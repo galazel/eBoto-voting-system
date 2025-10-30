@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea13 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend13 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series13 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea14 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend14 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminDashboard));
             this.label19 = new System.Windows.Forms.Label();
             this.dashboard = new System.Windows.Forms.TabPage();
@@ -57,7 +57,7 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.profile_button = new FontAwesome.Sharp.IconButton();
             this.ended = new System.Windows.Forms.TabPage();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.ended_flow = new System.Windows.Forms.FlowLayoutPanel();
             this.electionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.eBotoDBDataSet = new eBoto.eBotoDBDataSet();
             this.siticoneTabControl1 = new Siticone.Desktop.UI.WinForms.SiticoneTabControl();
@@ -66,7 +66,7 @@
             this.create_button = new Siticone.Desktop.UI.WinForms.SiticoneButton();
             this.label11 = new System.Windows.Forms.Label();
             this.ongoing = new System.Windows.Forms.TabPage();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.ongoing_flow = new System.Windows.Forms.FlowLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.settings = new System.Windows.Forms.TabPage();
             this.delete_position = new Siticone.Desktop.UI.WinForms.SiticoneButton();
@@ -140,16 +140,16 @@
             // chart2
             // 
             this.chart2.BackColor = System.Drawing.Color.Gray;
-            chartArea13.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea13);
-            legend13.Name = "Legend1";
-            this.chart2.Legends.Add(legend13);
+            chartArea1.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart2.Legends.Add(legend1);
             this.chart2.Location = new System.Drawing.Point(612, 350);
             this.chart2.Name = "chart2";
-            series13.ChartArea = "ChartArea1";
-            series13.Legend = "Legend1";
-            series13.Name = "Series1";
-            this.chart2.Series.Add(series13);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart2.Series.Add(series1);
             this.chart2.Size = new System.Drawing.Size(568, 367);
             this.chart2.TabIndex = 14;
             this.chart2.Text = "chart2";
@@ -157,16 +157,16 @@
             // chart1
             // 
             this.chart1.BackColor = System.Drawing.Color.Gray;
-            chartArea14.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea14);
-            legend14.Name = "Legend1";
-            this.chart1.Legends.Add(legend14);
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
             this.chart1.Location = new System.Drawing.Point(24, 350);
             this.chart1.Name = "chart1";
-            series14.ChartArea = "ChartArea1";
-            series14.Legend = "Legend1";
-            series14.Name = "Series1";
-            this.chart1.Series.Add(series14);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(568, 367);
             this.chart1.TabIndex = 13;
             this.chart1.Text = "chart1";
@@ -361,7 +361,7 @@
             // ended
             // 
             this.ended.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.ended.Controls.Add(this.flowLayoutPanel2);
+            this.ended.Controls.Add(this.ended_flow);
             this.ended.Controls.Add(this.label19);
             this.ended.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.ended.ImageKey = "vote.png";
@@ -374,14 +374,14 @@
             this.ended.Text = "Ended";
             this.ended.UseVisualStyleBackColor = true;
             // 
-            // flowLayoutPanel2
+            // ended_flow
             // 
-            this.flowLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
-            this.flowLayoutPanel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(23, 96);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(1161, 685);
-            this.flowLayoutPanel2.TabIndex = 11;
+            this.ended_flow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
+            this.ended_flow.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.ended_flow.Location = new System.Drawing.Point(23, 96);
+            this.ended_flow.Name = "ended_flow";
+            this.ended_flow.Size = new System.Drawing.Size(1161, 685);
+            this.ended_flow.TabIndex = 11;
             // 
             // electionsBindingSource
             // 
@@ -496,7 +496,7 @@
             // ongoing
             // 
             this.ongoing.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.ongoing.Controls.Add(this.flowLayoutPanel1);
+            this.ongoing.Controls.Add(this.ongoing_flow);
             this.ongoing.Controls.Add(this.label2);
             this.ongoing.ImageKey = "position.png";
             this.ongoing.Location = new System.Drawing.Point(184, 4);
@@ -506,14 +506,14 @@
             this.ongoing.Text = "Ongoing";
             this.ongoing.UseVisualStyleBackColor = true;
             // 
-            // flowLayoutPanel1
+            // ongoing_flow
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
-            this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(23, 97);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1161, 685);
-            this.flowLayoutPanel1.TabIndex = 10;
+            this.ongoing_flow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
+            this.ongoing_flow.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.ongoing_flow.Location = new System.Drawing.Point(23, 97);
+            this.ongoing_flow.Name = "ongoing_flow";
+            this.ongoing_flow.Size = new System.Drawing.Size(1161, 685);
+            this.ongoing_flow.TabIndex = 10;
             // 
             // label2
             // 
@@ -619,9 +619,9 @@
             // positions_grid
             // 
             this.positions_grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.positions_grid.Location = new System.Drawing.Point(313, 402);
+            this.positions_grid.Location = new System.Drawing.Point(28, 402);
             this.positions_grid.Name = "positions_grid";
-            this.positions_grid.Size = new System.Drawing.Size(453, 220);
+            this.positions_grid.Size = new System.Drawing.Size(738, 220);
             this.positions_grid.TabIndex = 9;
             this.positions_grid.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.positions_grid_CellEndEdit);
             // 
@@ -629,9 +629,9 @@
             // 
             this.departments_grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.departments_grid.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
-            this.departments_grid.Location = new System.Drawing.Point(313, 112);
+            this.departments_grid.Location = new System.Drawing.Point(28, 112);
             this.departments_grid.Name = "departments_grid";
-            this.departments_grid.Size = new System.Drawing.Size(453, 220);
+            this.departments_grid.Size = new System.Drawing.Size(738, 220);
             this.departments_grid.TabIndex = 8;
             this.departments_grid.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.departments_grid_CellEndEdit);
             // 
@@ -770,8 +770,8 @@
         private System.Windows.Forms.BindingSource electionsBindingSource;
         private eBotoDBDataSetTableAdapters.ElectionsTableAdapter electionsTableAdapter;
         private FontAwesome.Sharp.IconButton profile_button;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private System.Windows.Forms.FlowLayoutPanel ongoing_flow;
+        private System.Windows.Forms.FlowLayoutPanel ended_flow;
         private System.Windows.Forms.Label label1;
         private Siticone.Desktop.UI.WinForms.SiticonePanel siticonePanel6;
         private Siticone.Desktop.UI.WinForms.SiticonePanel siticonePanel5;

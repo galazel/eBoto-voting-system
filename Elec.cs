@@ -17,7 +17,7 @@ namespace eBoto
         public static Boolean isCreated = false;
         public static void LoadStatistics(Label label1, Label label2, Label label3)
         {
-            using (var db = new eBotoDBEntities1())
+            using (var db = new eBotoDBEntities2())
             {
                 int registeredVotersCount = db.Voters.Count();
                 int electionsCount = db.Elections.Count();
@@ -29,7 +29,7 @@ namespace eBoto
         }
         public static void LoadElections(FlowLayoutPanel flow)
         {
-            using (var db = new eBotoDBEntities1())
+            using (var db = new eBotoDBEntities2())
             {
                 var elections = db.Elections.ToList();
                 foreach (var election in elections)
