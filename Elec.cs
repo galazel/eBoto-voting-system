@@ -34,52 +34,14 @@ namespace eBoto
                 var elections = db.Elections.ToList();
                 foreach (var election in elections)
                 {
-                    Panel panel = new Panel
-                    {
-                        Width = 1100,
-                        Height = 100,
-                        BorderStyle = BorderStyle.FixedSingle,
-                        Margin = new Padding(10)
-                    };
-                    Label electionNameLabel = new Label
-                    {
-                        Text = election.ElectionName,
-                        Font = new System.Drawing.Font("Segoe UI", 14, System.Drawing.FontStyle.Bold),
-                        Location = new System.Drawing.Point(10, 10),
-                        AutoSize = true
-                    };
-                    Label descriptionLabel = new Label
-                    {
-                        Text = election.Description,
-                        Font = new System.Drawing.Font("Segoe UI", 10),
-                        Location = new System.Drawing.Point(10, 40),
-                        AutoSize = true
-                    };
-                    Label statusLabel = new Label
-                    {
-                        Text = election.Status ? "Ongoing" : "Not Started",
-                        Font = new System.Drawing.Font("Segoe UI", 10, System.Drawing.FontStyle.Italic),
-                        Location = new System.Drawing.Point(10, 70),
-                        AutoSize = true
-                    };
-                    Button viewCandidates = new Button
-                    {
-                        Text = "View Candidates",
-                        Location = new System.Drawing.Point(900, 35),
-                        AutoSize = true
-                    };
-                    Button startElection = new Button
-                    {
-                        Text = "Start Election",
-                        Location = new System.Drawing.Point(780, 35),
-                        AutoSize = true
-                    };
-                    panel.Controls.Add(electionNameLabel);
-                    panel.Controls.Add(descriptionLabel);
-                    panel.Controls.Add(statusLabel);
-                    panel.Controls.Add(viewCandidates);
-                    panel.Controls.Add(startElection);
-                    flow.Controls.Add(panel);
+                    string departmentName = db.Departments
+                                            .Where(d => d.DepartmentId == election.DepartmentId)
+                                            .Select(d => d.DepartmentName)
+                                            .FirstOrDefault();
+                    int electionId = election.ElectionId;
+                    string status = election.Status ? "Ongoing" : "Not Started";
+                    var candidates =  db.Candidates.Where(c => c.ElectionId == electionId).ToList();
+                    flow.Controls.Add(new ElectionPanel(election.ElectionName, departmentName, candidates, status));
                 }
             }
         }

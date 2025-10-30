@@ -260,6 +260,18 @@
     <Compile Include="Election.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="ElectionDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ElectionDetails.Designer.cs">
+      <DependentUpon>ElectionDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ElectionPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ElectionPanel.Designer.cs">
+      <DependentUpon>ElectionPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -351,6 +363,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EditProfile.resx">
       <DependentUpon>EditProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ElectionDetails.resx">
+      <DependentUpon>ElectionDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ElectionPanel.resx">
+      <DependentUpon>ElectionPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

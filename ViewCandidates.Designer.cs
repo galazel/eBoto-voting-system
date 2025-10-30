@@ -142,7 +142,7 @@
             this.siticoneControlBox1.CustomIconSize = 50F;
             this.siticoneControlBox1.FillColor = System.Drawing.Color.White;
             this.siticoneControlBox1.IconColor = System.Drawing.Color.Red;
-            this.siticoneControlBox1.Location = new System.Drawing.Point(970, 17);
+            this.siticoneControlBox1.Location = new System.Drawing.Point(1064, 20);
             this.siticoneControlBox1.Name = "siticoneControlBox1";
             this.siticoneControlBox1.PressedDepth = 50;
             this.siticoneControlBox1.Size = new System.Drawing.Size(45, 29);
