@@ -14,14 +14,20 @@ namespace eBoto
     
     public partial class Election
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Election()
+        {
+            this.Candidates = new HashSet<Candidate>();
+        }
+    
         public int ElectionId { get; set; }
         public string ElectionName { get; set; }
         public string Description { get; set; }
         public bool Status { get; set; }
         public int DepartmentId { get; set; }
-        public int CandidateId { get; set; }
     
-        public virtual Candidate Candidate { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Candidate> Candidates { get; set; }
         public virtual Department Department { get; set; }
     }
 }

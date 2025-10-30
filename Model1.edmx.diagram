@@ -4,16 +4,17 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="8efc2064721e48a0859e70699447316c" Name="Diagram1">
-        <EntityTypeShape EntityType="eBotoDBModel.Candidate" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="eBotoDBModel.Department" Width="1.5" PointX="0.75" PointY="4.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="eBotoDBModel.Election" Width="1.5" PointX="3" PointY="3.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="eBotoDBModel.Position" Width="1.5" PointX="1.5" PointY="7.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="eBotoDBModel.sysdiagram" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="eBotoDBModel.VotedCandidate" Width="1.5" PointX="3.75" PointY="1.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="eBotoDBModel.Voter" Width="1.5" PointX="6" PointY="2.875" IsExpanded="true" />
+      <Diagram DiagramId="178e443d44ba4638b94b84b2a3fd906b" Name="Diagram1">
+        <EntityTypeShape EntityType="eBotoDBModel.Candidate" Width="1.5" PointX="5.25" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="eBotoDBModel.Department" Width="1.5" PointX="0.75" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="eBotoDBModel.Election" Width="1.5" PointX="3" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="eBotoDBModel.Position" Width="1.5" PointX="3" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="eBotoDBModel.sysdiagram" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="eBotoDBModel.VotedCandidate" Width="1.5" PointX="0.75" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="eBotoDBModel.Voter" Width="1.5" PointX="3" PointY="3.875" IsExpanded="true" />
+        <AssociationConnector Association="eBotoDBModel.FK_Candidate_Department" ManuallyRouted="false" />
+        <AssociationConnector Association="eBotoDBModel.FK_Candidate_Election" ManuallyRouted="false" />
         <AssociationConnector Association="eBotoDBModel.FK_Candidate_Position" ManuallyRouted="false" />
-        <AssociationConnector Association="eBotoDBModel.FK_Election_Candidate" ManuallyRouted="false" />
         <AssociationConnector Association="eBotoDBModel.FK_Election_Department1" ManuallyRouted="false" />
         <AssociationConnector Association="eBotoDBModel.FK_Voter_Department" ManuallyRouted="false" />
         <AssociationConnector Association="eBotoDBModel.FK_Voter_VotedCandidates" ManuallyRouted="false" />

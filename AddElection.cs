@@ -1,20 +1,13 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Controls;
 using System.Windows.Forms;
 
 namespace eBoto
 {
     public partial class AddElection : Form
     {
+       
         public AddElection()
         {
             InitializeComponent();
@@ -25,19 +18,65 @@ namespace eBoto
                                                  .Select(d => d.DepartmentName)
                                                  .ToList();
             }
+            
         }
         private void add_candidate_Click(object sender, EventArgs e)
         {
-            new AddCandidates().ShowDialog();
+            using(var db = new eBotoDBEntities1())
+            {
+                var election = db.Elections.ToList();
+
+                foreach (var elec in election)
+                {
+                    Elec.DepartmentId = elec.DepartmentId;
+                    Elec.ElectionId = elec.ElectionId;
+                }
+
+                MessageBox.Show("Department: " + Elec.DepartmentId + "\nElection: " + Elec.ElectionId);
+            }
+            new AddCandidates(this.candidates_flow).ShowDialog();
         }
 
         private void create_election_Click(object sender, EventArgs e)
         {
-       
             if (electionName_box.Text.Equals("") || description_box.Text.Equals("") || departments_combo.Text.Equals("") || candidates_flow.Controls.Count == 0)
                 MessageBox.Show("Please input the required fields");
             else
             {
+                using(var db = new eBotoDBEntities1())
+                {
+                    var election = new Election
+                    {
+                        ElectionName = electionName_box.Text,
+                        Description = description_box.Text,
+                        Status = false,
+                        Department = db.Departments.FirstOrDefault(d => d.DepartmentName == departments_combo.Text)
+                    };
+                    db.Elections.Add(election);
+                    db.SaveChanges();
+                    foreach (var candidate in Elec._list)
+                    {
+                        int positionId = db.Positions
+                                           .Where(p => p.PositionName == candidate.Position)
+                                           .Select(p => p.PositionId)
+                                           .FirstOrDefault();
+
+                        var newCandidate = new Candidate
+                        {
+                            CandidateName = candidate.CandidateName,
+                            Partylist = candidate.Partylist,
+                            PositionId = positionId,
+                            Motto = candidate.Motto,
+                            Image = candidate.Image,
+                            DepartmentId = election.DepartmentId,
+                            ElectionId = election.ElectionId
+                        };
+                        db.Candidates.Add(newCandidate);
+                    }
+                   
+                    db.SaveChanges();
+                }
+
                 MessageBox.Show("Election Created Successfully");
                 this.Hide();
             }

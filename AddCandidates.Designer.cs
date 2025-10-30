@@ -172,6 +172,7 @@
             resources.ApplyResources(this.photo, "photo");
             this.photo.Name = "photo";
             this.photo.TabStop = false;
+            this.photo.Click += new System.EventHandler(this.photo_Click);
             // 
             // label3
             // 

@@ -39,11 +39,11 @@
             this.label20 = new System.Windows.Forms.Label();
             this.departmentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.eBotoDBDataSet1 = new eBoto.eBotoDBDataSet1();
-            this.candidates_flow = new System.Windows.Forms.FlowLayoutPanel();
             this.create_election = new Siticone.Desktop.UI.WinForms.SiticoneButton();
             this.departmentsTableAdapter = new eBoto.eBotoDBDataSet1TableAdapters.DepartmentsTableAdapter();
             this.siticoneControlBox1 = new Siticone.Desktop.UI.WinForms.SiticoneControlBox();
             this.departments_combo = new Siticone.Desktop.UI.WinForms.SiticoneComboBox();
+            this.candidates_flow = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.departmentsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eBotoDBDataSet1)).BeginInit();
             this.SuspendLayout();
@@ -177,15 +177,6 @@
             this.eBotoDBDataSet1.DataSetName = "eBotoDBDataSet1";
             this.eBotoDBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // candidates_flow
-            // 
-            this.candidates_flow.AutoScroll = true;
-            this.candidates_flow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
-            this.candidates_flow.Location = new System.Drawing.Point(23, 453);
-            this.candidates_flow.Name = "candidates_flow";
-            this.candidates_flow.Size = new System.Drawing.Size(473, 258);
-            this.candidates_flow.TabIndex = 67;
-            // 
             // create_election
             // 
             this.create_election.BorderRadius = 20;
@@ -240,6 +231,17 @@
             this.departments_combo.Size = new System.Drawing.Size(473, 36);
             this.departments_combo.TabIndex = 69;
             // 
+            // candidates_flow
+            // 
+            this.candidates_flow.AutoScroll = true;
+            this.candidates_flow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
+            this.candidates_flow.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.candidates_flow.Location = new System.Drawing.Point(23, 453);
+            this.candidates_flow.Name = "candidates_flow";
+            this.candidates_flow.Size = new System.Drawing.Size(473, 258);
+            this.candidates_flow.TabIndex = 67;
+            this.candidates_flow.WrapContents = false;
+            // 
             // AddElection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -282,11 +284,11 @@
         private Siticone.Desktop.UI.WinForms.SiticoneButton add_candidate;
         private System.Windows.Forms.Label label20;
         private Siticone.Desktop.UI.WinForms.SiticoneButton create_election;
-        private System.Windows.Forms.FlowLayoutPanel candidates_flow;
         private eBotoDBDataSet1 eBotoDBDataSet1;
         private System.Windows.Forms.BindingSource departmentsBindingSource;
         private eBotoDBDataSet1TableAdapters.DepartmentsTableAdapter departmentsTableAdapter;
         private Siticone.Desktop.UI.WinForms.SiticoneControlBox siticoneControlBox1;
         private Siticone.Desktop.UI.WinForms.SiticoneComboBox departments_combo;
+        public System.Windows.Forms.FlowLayoutPanel candidates_flow;
     }
 }

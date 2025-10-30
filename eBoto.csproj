@@ -204,6 +204,7 @@
     <Compile Include="Candidate.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="CandidateModel.cs" />
     <Compile Include="ContactUs.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -255,6 +256,7 @@
     <Compile Include="EditProfile.Designer.cs">
       <DependentUpon>EditProfile.cs</DependentUpon>
     </Compile>
+    <Compile Include="Elec.cs" />
     <Compile Include="Election.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
