@@ -16,22 +16,10 @@ namespace eBoto
             InitializeComponent();
             siticoneTabControl1.SelectedIndexChanged += TabChanged;
             LoadData();
-            LoadStatistics();
-
+            Elec.LoadStatistics(this.no_of_registered,this.no_elections,this.no_candidates);
+            Elec.LoadElections(this.elections_flow);
         }
-        private void LoadStatistics()
-        {
-            using (var db = new eBotoDBEntities1())
-            {
-                int registeredVotersCount = db.Voters.Count();
-                int electionsCount = db.Elections.Count();
-                int candidatesCount = db.Candidates.Count();
-                no_of_registered.Text = registeredVotersCount.ToString();
-                no_elections.Text = electionsCount.ToString();
-                no_candidates.Text = candidatesCount.ToString();
-            }
-        }
-
+        
         private void LoadData()
         {
             DataTable departmentTable = new DataTable();
@@ -69,12 +57,16 @@ namespace eBoto
             //    return;
             //switch (selectedTab.Text)
             //{
-            //    case "Candidates":
-            //        LoadData("SELECT Candidates.CandidateID, Candidates.FullName, Candidates.PartylistName, Departments.DepartmentName FROM Candidates INNER JOIN Departments ON Candidates.DepartmentID = Departments.DepartmentID", candidates_dataview);
+            //    case "Elections":
+                    
+            //            break;
+
+            //    case "Ongoing":
+                 
             //        break;
 
-            //    case "Voters":
-            //        LoadData("SELECT VoterID, Username FROM Voters", voters_dataview);
+            //    case "Ended":
+                                        
             //        break;
             //}
             //Console.WriteLine($"Selected Tab: {selectedTab.Text}");
@@ -86,7 +78,7 @@ namespace eBoto
 
         private void create_button_Click(object sender, EventArgs e)
         {
-            new AddElection().ShowDialog();
+            new AddElection(this.elections_flow).ShowDialog();
         }
 
         private void elections_flow_Paint(object sender, PaintEventArgs e)

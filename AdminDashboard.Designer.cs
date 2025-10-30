@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend9 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend10 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminDashboard));
             this.label19 = new System.Windows.Forms.Label();
             this.dashboard = new System.Windows.Forms.TabPage();
@@ -68,7 +68,7 @@
             this.ongoing = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
-            this.Settings = new System.Windows.Forms.TabPage();
+            this.settings = new System.Windows.Forms.TabPage();
             this.delete_position = new Siticone.Desktop.UI.WinForms.SiticoneButton();
             this.add_position = new Siticone.Desktop.UI.WinForms.SiticoneButton();
             this.delete_department = new Siticone.Desktop.UI.WinForms.SiticoneButton();
@@ -96,7 +96,7 @@
             this.siticoneTabControl1.SuspendLayout();
             this.elections.SuspendLayout();
             this.ongoing.SuspendLayout();
-            this.Settings.SuspendLayout();
+            this.settings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.positions_grid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.departments_grid)).BeginInit();
             this.siticonePanel2.SuspendLayout();
@@ -140,16 +140,16 @@
             // chart2
             // 
             this.chart2.BackColor = System.Drawing.Color.Gray;
-            chartArea1.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart2.Legends.Add(legend1);
+            chartArea9.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea9);
+            legend9.Name = "Legend1";
+            this.chart2.Legends.Add(legend9);
             this.chart2.Location = new System.Drawing.Point(612, 350);
             this.chart2.Name = "chart2";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart2.Series.Add(series1);
+            series9.ChartArea = "ChartArea1";
+            series9.Legend = "Legend1";
+            series9.Name = "Series1";
+            this.chart2.Series.Add(series9);
             this.chart2.Size = new System.Drawing.Size(568, 367);
             this.chart2.TabIndex = 14;
             this.chart2.Text = "chart2";
@@ -157,16 +157,16 @@
             // chart1
             // 
             this.chart1.BackColor = System.Drawing.Color.Gray;
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
+            chartArea10.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea10);
+            legend10.Name = "Legend1";
+            this.chart1.Legends.Add(legend10);
             this.chart1.Location = new System.Drawing.Point(24, 350);
             this.chart1.Name = "chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart1.Series.Add(series2);
+            series10.ChartArea = "ChartArea1";
+            series10.Legend = "Legend1";
+            series10.Name = "Series1";
+            this.chart1.Series.Add(series10);
             this.chart1.Size = new System.Drawing.Size(568, 367);
             this.chart1.TabIndex = 13;
             this.chart1.Text = "chart1";
@@ -371,7 +371,7 @@
             this.ended.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ended.Size = new System.Drawing.Size(1211, 828);
             this.ended.TabIndex = 1;
-            this.ended.Text = "Ended Elections";
+            this.ended.Text = "Ended";
             this.ended.UseVisualStyleBackColor = true;
             // 
             // flowLayoutPanel2
@@ -400,7 +400,7 @@
             this.siticoneTabControl1.Controls.Add(this.elections);
             this.siticoneTabControl1.Controls.Add(this.ongoing);
             this.siticoneTabControl1.Controls.Add(this.ended);
-            this.siticoneTabControl1.Controls.Add(this.Settings);
+            this.siticoneTabControl1.Controls.Add(this.settings);
             this.siticoneTabControl1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.siticoneTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.siticoneTabControl1.ImageList = this.imageList1;
@@ -452,12 +452,15 @@
             // 
             // elections_flow
             // 
+            this.elections_flow.AutoScroll = true;
             this.elections_flow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
             this.elections_flow.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.elections_flow.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.elections_flow.Location = new System.Drawing.Point(23, 97);
             this.elections_flow.Name = "elections_flow";
             this.elections_flow.Size = new System.Drawing.Size(1154, 685);
             this.elections_flow.TabIndex = 8;
+            this.elections_flow.WrapContents = false;
             this.elections_flow.Paint += new System.Windows.Forms.PaintEventHandler(this.elections_flow_Paint);
             // 
             // create_button
@@ -499,7 +502,7 @@
             this.ongoing.Name = "ongoing";
             this.ongoing.Size = new System.Drawing.Size(1211, 828);
             this.ongoing.TabIndex = 4;
-            this.ongoing.Text = "Ongoing Elections";
+            this.ongoing.Text = "Ongoing";
             this.ongoing.UseVisualStyleBackColor = true;
             // 
             // flowLayoutPanel1
@@ -522,23 +525,23 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "ONGOING ELECTIONS";
             // 
-            // Settings
+            // settings
             // 
-            this.Settings.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Settings.Controls.Add(this.delete_position);
-            this.Settings.Controls.Add(this.add_position);
-            this.Settings.Controls.Add(this.delete_department);
-            this.Settings.Controls.Add(this.add_department);
-            this.Settings.Controls.Add(this.positions_grid);
-            this.Settings.Controls.Add(this.departments_grid);
-            this.Settings.Controls.Add(this.label1);
-            this.Settings.ImageKey = "settings.png";
-            this.Settings.Location = new System.Drawing.Point(184, 4);
-            this.Settings.Name = "Settings";
-            this.Settings.Size = new System.Drawing.Size(1211, 828);
-            this.Settings.TabIndex = 6;
-            this.Settings.Text = "Settings";
-            this.Settings.UseVisualStyleBackColor = true;
+            this.settings.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.settings.Controls.Add(this.delete_position);
+            this.settings.Controls.Add(this.add_position);
+            this.settings.Controls.Add(this.delete_department);
+            this.settings.Controls.Add(this.add_department);
+            this.settings.Controls.Add(this.positions_grid);
+            this.settings.Controls.Add(this.departments_grid);
+            this.settings.Controls.Add(this.label1);
+            this.settings.ImageKey = "settings.png";
+            this.settings.Location = new System.Drawing.Point(184, 4);
+            this.settings.Name = "settings";
+            this.settings.Size = new System.Drawing.Size(1211, 828);
+            this.settings.TabIndex = 6;
+            this.settings.Text = "Settings";
+            this.settings.UseVisualStyleBackColor = true;
             // 
             // delete_position
             // 
@@ -733,8 +736,8 @@
             this.elections.PerformLayout();
             this.ongoing.ResumeLayout(false);
             this.ongoing.PerformLayout();
-            this.Settings.ResumeLayout(false);
-            this.Settings.PerformLayout();
+            this.settings.ResumeLayout(false);
+            this.settings.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.positions_grid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.departments_grid)).EndInit();
             this.siticonePanel2.ResumeLayout(false);
@@ -752,7 +755,7 @@
         private Siticone.Desktop.UI.WinForms.SiticoneTabControl siticoneTabControl1;
         private System.Windows.Forms.TabPage elections;
         private System.Windows.Forms.TabPage ongoing;
-        private System.Windows.Forms.TabPage Settings;
+        private System.Windows.Forms.TabPage settings;
         private System.Windows.Forms.ImageList imageList1;
         private Siticone.Desktop.UI.WinForms.SiticoneBorderlessForm siticoneBorderlessForm1;
         private Siticone.Desktop.UI.WinForms.SiticonePanel siticonePanel2;
@@ -766,7 +769,6 @@
         private System.Windows.Forms.BindingSource electionsBindingSource;
         private eBotoDBDataSetTableAdapters.ElectionsTableAdapter electionsTableAdapter;
         private FontAwesome.Sharp.IconButton profile_button;
-        private System.Windows.Forms.FlowLayoutPanel elections_flow;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Label label1;
@@ -792,5 +794,6 @@
         private Siticone.Desktop.UI.WinForms.SiticoneButton add_department;
         private Siticone.Desktop.UI.WinForms.SiticoneButton delete_position;
         private Siticone.Desktop.UI.WinForms.SiticoneButton add_position;
+        public System.Windows.Forms.FlowLayoutPanel elections_flow;
     }
 }

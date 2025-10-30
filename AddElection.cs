@@ -7,10 +7,12 @@ namespace eBoto
 {
     public partial class AddElection : Form
     {
-       
-        public AddElection()
+       private FlowLayoutPanel flow;
+        public AddElection(FlowLayoutPanel flow)
         {
             InitializeComponent();
+            this.flow = flow;
+
             departments_combo.Items.Clear();
             using (var db = new eBotoDBEntities1())
             {
@@ -79,9 +81,10 @@ namespace eBoto
 
                 MessageBox.Show("Election Created Successfully");
                 this.Hide();
+                Elec.LoadElections(flow);
+
             }
         }
-
         private void AddElection_Load(object sender, EventArgs e)
         {
             
