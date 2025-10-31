@@ -13,14 +13,24 @@ namespace eBoto
     public partial class ElectionPanel : UserControl
     {
         private string status;
+        private int electionId;
         private IList<Candidate> candidates;
-        public ElectionPanel(string electionName, string electionDepartment, IList<Candidate> candidates, string status)
+        public ElectionPanel(int electionId,string electionName, string electionDepartment, IList<Candidate> candidates, string status)
         {
             InitializeComponent();
+            this.electionId = electionId;
             this.election_title.Text = electionName;
             this.department.Text = electionDepartment;
-            this.status = status;
+            
+            if(status == "Ongoing")
+            {
+                this.start.FillColor = Color.IndianRed;
+                this.start.Text = "Stop";
+            }else
+                this.status = status;
+
             this.candidates = candidates;
+
         }
 
         private void view_details_Click(object sender, EventArgs e)
@@ -32,24 +42,30 @@ namespace eBoto
                foreach (var candidate in this.candidates)
                    candidatesView += "- " + candidate.CandidateName + " (" + db.Positions.FirstOrDefault(p => p.PositionId == candidate.PositionId).PositionName + ")\n";
             }
-
-
             MessageBox.Show("Election Name: "+election_title.Text +"\nDepartment: "+department.Text+"\nStatus: "+status+"\nCandidates: \n"+candidatesView);
         }
 
         private void start_Click(object sender, EventArgs e)
         {
-            using(var db = new eBotoDBEntities2())
+            using (var db = new eBotoDBEntities2())
             {
-                var elections = db.Elections.ToList();
-                foreach(var election in elections)
+                if(start.FillColor == Color.IndianRed)
                 {
-                   if(election.ElectionName == election_title.Text)
-                   {
-                       election.Status = true;
-                       db.SaveChanges();
-                       MessageBox.Show("Election Started!");
-                    }
+                    start.Enabled = false;
+                    var endedElection = new EndedElection
+                    {
+                        ElectionId = this.electionId
+                    };
+                    db.EndedElections.Add(endedElection);
+                    db.SaveChanges();
+                    MessageBox.Show("Election Ended.");
+                }else
+                {
+                    var election = db.Elections.FirstOrDefault(el => el.ElectionId == electionId);
+                    election.Status = true;
+                    db.SaveChanges();
+                    start.FillColor = Color.IndianRed;
+
                 }
             }
         }

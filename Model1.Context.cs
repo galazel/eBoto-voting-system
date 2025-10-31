@@ -32,5 +32,7 @@ namespace eBoto
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<VotedCandidate> VotedCandidates { get; set; }
         public virtual DbSet<Voter> Voters { get; set; }
+        public virtual DbSet<EndedElection> EndedElections { get; set; }
+        public virtual DbSet<OngoingElection> OngoingElections { get; set; }
     }
 }

@@ -29,6 +29,7 @@ namespace eBoto
         }
         public static void LoadElections(FlowLayoutPanel flow)
         {
+            flow.Controls.Clear();
             using (var db = new eBotoDBEntities2())
             {
                 var elections = db.Elections.ToList();
@@ -41,7 +42,10 @@ namespace eBoto
                     int electionId = election.ElectionId;
                     string status = election.Status ? "Ongoing" : "Not Started";
                     var candidates =  db.Candidates.Where(c => c.ElectionId == electionId).ToList();
-                    flow.Controls.Add(new ElectionPanel(election.ElectionName, departmentName, candidates, status));
+
+                    var endedElection = db.EndedElections.FirstOrDefault(ee => ee.ElectionId == electionId);   
+                    if(endedElection == null)
+                        flow.Controls.Add(new ElectionPanel(electionId, election.ElectionName, departmentName, candidates, status));
                 }
             }
         }

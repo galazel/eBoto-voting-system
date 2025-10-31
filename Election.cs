@@ -18,6 +18,8 @@ namespace eBoto
         public Election()
         {
             this.Candidates = new HashSet<Candidate>();
+            this.EndedElections = new HashSet<EndedElection>();
+            this.OngoingElections = new HashSet<OngoingElection>();
         }
     
         public int ElectionId { get; set; }
@@ -29,5 +31,9 @@ namespace eBoto
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Candidate> Candidates { get; set; }
         public virtual Department Department { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<EndedElection> EndedElections { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<OngoingElection> OngoingElections { get; set; }
     }
 }

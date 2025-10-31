@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="eBotoDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="eBotoDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Candidate">
           <Key>
             <PropertyRef Name="CandidateId" />
@@ -34,6 +34,20 @@
           <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
           <Property Name="Status" Type="bit" Nullable="false" />
           <Property Name="DepartmentId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="EndedElections">
+          <Key>
+            <PropertyRef Name="EndedId" />
+          </Key>
+          <Property Name="EndedId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ElectionId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="OngoingElections">
+          <Key>
+            <PropertyRef Name="OngoingId" />
+          </Key>
+          <Property Name="OngoingId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ElectionId" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="Position">
           <Key>
@@ -129,6 +143,30 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_EndedElections_Election">
+          <End Role="Election" Type="Self.Election" Multiplicity="1" />
+          <End Role="EndedElections" Type="Self.EndedElections" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Election">
+              <PropertyRef Name="ElectionId" />
+            </Principal>
+            <Dependent Role="EndedElections">
+              <PropertyRef Name="ElectionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OngoingElections_Election">
+          <End Role="Election" Type="Self.Election" Multiplicity="1" />
+          <End Role="OngoingElections" Type="Self.OngoingElections" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Election">
+              <PropertyRef Name="ElectionId" />
+            </Principal>
+            <Dependent Role="OngoingElections">
+              <PropertyRef Name="ElectionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_VotedCandidates_Voter">
           <End Role="Voter" Type="Self.Voter" Multiplicity="0..1" />
           <End Role="VotedCandidates" Type="Self.VotedCandidates" Multiplicity="*" />
@@ -169,6 +207,8 @@
           <EntitySet Name="Candidate" EntityType="Self.Candidate" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Department" EntityType="Self.Department" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Election" EntityType="Self.Election" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EndedElections" EntityType="Self.EndedElections" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="OngoingElections" EntityType="Self.OngoingElections" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Position" EntityType="Self.Position" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="VotedCandidates" EntityType="Self.VotedCandidates" Schema="dbo" store:Type="Tables" />
@@ -189,6 +229,14 @@
             <End Role="Department" EntitySet="Department" />
             <End Role="Election" EntitySet="Election" />
           </AssociationSet>
+          <AssociationSet Name="FK_EndedElections_Election" Association="Self.FK_EndedElections_Election">
+            <End Role="Election" EntitySet="Election" />
+            <End Role="EndedElections" EntitySet="EndedElections" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OngoingElections_Election" Association="Self.FK_OngoingElections_Election">
+            <End Role="Election" EntitySet="Election" />
+            <End Role="OngoingElections" EntitySet="OngoingElections" />
+          </AssociationSet>
           <AssociationSet Name="FK_VotedCandidates_Voter" Association="Self.FK_VotedCandidates_Voter">
             <End Role="Voter" EntitySet="Voter" />
             <End Role="VotedCandidates" EntitySet="VotedCandidates" />
@@ -202,8 +250,7 @@
             <End Role="Voter" EntitySet="Voter" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="eBotoDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -244,6 +291,8 @@
           <Property Name="DepartmentId" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Candidates" Relationship="Self.FK_Candidate_Election" FromRole="Election" ToRole="Candidate" />
           <NavigationProperty Name="Department" Relationship="Self.FK_Election_Department" FromRole="Election" ToRole="Department" />
+          <NavigationProperty Name="EndedElections" Relationship="eBotoDBModel.FK_EndedElections_Election" FromRole="Election" ToRole="EndedElection" />
+          <NavigationProperty Name="OngoingElections" Relationship="eBotoDBModel.FK_OngoingElections_Election" FromRole="Election" ToRole="OngoingElection" />
         </EntityType>
         <EntityType Name="Position">
           <Key>
@@ -417,7 +466,57 @@
             <End Role="VotedCandidates" EntitySet="VotedCandidates" />
             <End Role="Voter" EntitySet="Voters" />
           </AssociationSet>
+          <EntitySet Name="EndedElections" EntityType="eBotoDBModel.EndedElection" />
+          <EntitySet Name="OngoingElections" EntityType="eBotoDBModel.OngoingElection" />
+          <AssociationSet Name="FK_EndedElections_Election" Association="eBotoDBModel.FK_EndedElections_Election">
+            <End Role="Election" EntitySet="Elections" />
+            <End Role="EndedElection" EntitySet="EndedElections" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OngoingElections_Election" Association="eBotoDBModel.FK_OngoingElections_Election">
+            <End Role="Election" EntitySet="Elections" />
+            <End Role="OngoingElection" EntitySet="OngoingElections" />
+          </AssociationSet>
         </EntityContainer>
+        <EntityType Name="EndedElection">
+          <Key>
+            <PropertyRef Name="EndedId" />
+          </Key>
+          <Property Name="EndedId" Type="Int32" Nullable="false" />
+          <Property Name="ElectionId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Election" Relationship="eBotoDBModel.FK_EndedElections_Election" FromRole="EndedElection" ToRole="Election" />
+        </EntityType>
+        <EntityType Name="OngoingElection">
+          <Key>
+            <PropertyRef Name="OngoingId" />
+          </Key>
+          <Property Name="OngoingId" Type="Int32" Nullable="false" />
+          <Property Name="ElectionId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Election" Relationship="eBotoDBModel.FK_OngoingElections_Election" FromRole="OngoingElection" ToRole="Election" />
+        </EntityType>
+        <Association Name="FK_EndedElections_Election">
+          <End Type="eBotoDBModel.Election" Role="Election" Multiplicity="1" />
+          <End Type="eBotoDBModel.EndedElection" Role="EndedElection" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Election">
+              <PropertyRef Name="ElectionId" />
+            </Principal>
+            <Dependent Role="EndedElection">
+              <PropertyRef Name="ElectionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OngoingElections_Election">
+          <End Type="eBotoDBModel.Election" Role="Election" Multiplicity="1" />
+          <End Type="eBotoDBModel.OngoingElection" Role="OngoingElection" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Election">
+              <PropertyRef Name="ElectionId" />
+            </Principal>
+            <Dependent Role="OngoingElection">
+              <PropertyRef Name="ElectionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -504,6 +603,22 @@
                 <ScalarProperty Name="Status" ColumnName="Status" />
                 <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
                 <ScalarProperty Name="VotedCandidatesId" ColumnName="VotedCandidatesId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EndedElections">
+            <EntityTypeMapping TypeName="eBotoDBModel.EndedElection">
+              <MappingFragment StoreEntitySet="EndedElections">
+                <ScalarProperty Name="ElectionId" ColumnName="ElectionId" />
+                <ScalarProperty Name="EndedId" ColumnName="EndedId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OngoingElections">
+            <EntityTypeMapping TypeName="eBotoDBModel.OngoingElection">
+              <MappingFragment StoreEntitySet="OngoingElections">
+                <ScalarProperty Name="ElectionId" ColumnName="ElectionId" />
+                <ScalarProperty Name="OngoingId" ColumnName="OngoingId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

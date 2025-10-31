@@ -36,7 +36,6 @@
             System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminDashboard));
-            this.label19 = new System.Windows.Forms.Label();
             this.dashboard = new System.Windows.Forms.TabPage();
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -56,8 +55,6 @@
             this.greetings_label = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.profile_button = new FontAwesome.Sharp.IconButton();
-            this.ended = new System.Windows.Forms.TabPage();
-            this.ended_flow = new System.Windows.Forms.FlowLayoutPanel();
             this.electionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.eBotoDBDataSet = new eBoto.eBotoDBDataSet();
             this.siticoneTabControl1 = new Siticone.Desktop.UI.WinForms.SiticoneTabControl();
@@ -65,8 +62,8 @@
             this.elections_flow = new System.Windows.Forms.FlowLayoutPanel();
             this.create_button = new Siticone.Desktop.UI.WinForms.SiticoneButton();
             this.label11 = new System.Windows.Forms.Label();
-            this.ongoing = new System.Windows.Forms.TabPage();
-            this.ongoing_flow = new System.Windows.Forms.FlowLayoutPanel();
+            this.ended = new System.Windows.Forms.TabPage();
+            this.ended_flow = new System.Windows.Forms.FlowLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.settings = new System.Windows.Forms.TabPage();
             this.delete_position = new Siticone.Desktop.UI.WinForms.SiticoneButton();
@@ -90,29 +87,17 @@
             this.siticonePanel5.SuspendLayout();
             this.siticonePanel3.SuspendLayout();
             this.siticonePanel4.SuspendLayout();
-            this.ended.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.electionsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eBotoDBDataSet)).BeginInit();
             this.siticoneTabControl1.SuspendLayout();
             this.elections.SuspendLayout();
-            this.ongoing.SuspendLayout();
+            this.ended.SuspendLayout();
             this.settings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.positions_grid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.departments_grid)).BeginInit();
             this.siticonePanel2.SuspendLayout();
             this.siticonePanel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            this.label19.Location = new System.Drawing.Point(17, 20);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(274, 33);
-            this.label19.TabIndex = 3;
-            this.label19.Text = "ENDED ELECTIONS";
             // 
             // dashboard
             // 
@@ -358,31 +343,6 @@
             this.profile_button.UseVisualStyleBackColor = false;
             this.profile_button.Click += new System.EventHandler(this.profile_button_Click);
             // 
-            // ended
-            // 
-            this.ended.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.ended.Controls.Add(this.ended_flow);
-            this.ended.Controls.Add(this.label19);
-            this.ended.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.ended.ImageKey = "vote.png";
-            this.ended.Location = new System.Drawing.Point(184, 4);
-            this.ended.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ended.Name = "ended";
-            this.ended.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ended.Size = new System.Drawing.Size(1211, 828);
-            this.ended.TabIndex = 1;
-            this.ended.Text = "Ended";
-            this.ended.UseVisualStyleBackColor = true;
-            // 
-            // ended_flow
-            // 
-            this.ended_flow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
-            this.ended_flow.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.ended_flow.Location = new System.Drawing.Point(23, 96);
-            this.ended_flow.Name = "ended_flow";
-            this.ended_flow.Size = new System.Drawing.Size(1161, 685);
-            this.ended_flow.TabIndex = 11;
-            // 
             // electionsBindingSource
             // 
             this.electionsBindingSource.DataMember = "Elections";
@@ -398,7 +358,6 @@
             this.siticoneTabControl1.Alignment = System.Windows.Forms.TabAlignment.Left;
             this.siticoneTabControl1.Controls.Add(this.dashboard);
             this.siticoneTabControl1.Controls.Add(this.elections);
-            this.siticoneTabControl1.Controls.Add(this.ongoing);
             this.siticoneTabControl1.Controls.Add(this.ended);
             this.siticoneTabControl1.Controls.Add(this.settings);
             this.siticoneTabControl1.Cursor = System.Windows.Forms.Cursors.Arrow;
@@ -493,27 +452,27 @@
             this.label11.TabIndex = 2;
             this.label11.Text = "ELECTIONS";
             // 
-            // ongoing
+            // ended
             // 
-            this.ongoing.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.ongoing.Controls.Add(this.ongoing_flow);
-            this.ongoing.Controls.Add(this.label2);
-            this.ongoing.ImageKey = "position.png";
-            this.ongoing.Location = new System.Drawing.Point(184, 4);
-            this.ongoing.Name = "ongoing";
-            this.ongoing.Size = new System.Drawing.Size(1211, 828);
-            this.ongoing.TabIndex = 4;
-            this.ongoing.Text = "Ongoing";
-            this.ongoing.UseVisualStyleBackColor = true;
+            this.ended.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.ended.Controls.Add(this.ended_flow);
+            this.ended.Controls.Add(this.label2);
+            this.ended.ImageKey = "position.png";
+            this.ended.Location = new System.Drawing.Point(184, 4);
+            this.ended.Name = "ended";
+            this.ended.Size = new System.Drawing.Size(1211, 828);
+            this.ended.TabIndex = 4;
+            this.ended.Text = "Ended";
+            this.ended.UseVisualStyleBackColor = true;
             // 
-            // ongoing_flow
+            // ended_flow
             // 
-            this.ongoing_flow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
-            this.ongoing_flow.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.ongoing_flow.Location = new System.Drawing.Point(23, 97);
-            this.ongoing_flow.Name = "ongoing_flow";
-            this.ongoing_flow.Size = new System.Drawing.Size(1161, 685);
-            this.ongoing_flow.TabIndex = 10;
+            this.ended_flow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
+            this.ended_flow.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.ended_flow.Location = new System.Drawing.Point(23, 97);
+            this.ended_flow.Name = "ended_flow";
+            this.ended_flow.Size = new System.Drawing.Size(1161, 685);
+            this.ended_flow.TabIndex = 10;
             // 
             // label2
             // 
@@ -522,9 +481,9 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
             this.label2.Location = new System.Drawing.Point(17, 20);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(316, 33);
+            this.label2.Size = new System.Drawing.Size(274, 33);
             this.label2.TabIndex = 6;
-            this.label2.Text = "ONGOING ELECTIONS";
+            this.label2.Text = "ENDED ELECTIONS";
             // 
             // settings
             // 
@@ -728,15 +687,13 @@
             this.siticonePanel3.PerformLayout();
             this.siticonePanel4.ResumeLayout(false);
             this.siticonePanel4.PerformLayout();
-            this.ended.ResumeLayout(false);
-            this.ended.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.electionsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.eBotoDBDataSet)).EndInit();
             this.siticoneTabControl1.ResumeLayout(false);
             this.elections.ResumeLayout(false);
             this.elections.PerformLayout();
-            this.ongoing.ResumeLayout(false);
-            this.ongoing.PerformLayout();
+            this.ended.ResumeLayout(false);
+            this.ended.PerformLayout();
             this.settings.ResumeLayout(false);
             this.settings.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.positions_grid)).EndInit();
@@ -749,13 +706,11 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TabPage dashboard;
         private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.TabPage ended;
         private Siticone.Desktop.UI.WinForms.SiticoneTabControl siticoneTabControl1;
         private System.Windows.Forms.TabPage elections;
-        private System.Windows.Forms.TabPage ongoing;
+        private System.Windows.Forms.TabPage ended;
         private System.Windows.Forms.TabPage settings;
         private System.Windows.Forms.ImageList imageList1;
         private Siticone.Desktop.UI.WinForms.SiticoneBorderlessForm siticoneBorderlessForm1;
@@ -770,7 +725,6 @@
         private System.Windows.Forms.BindingSource electionsBindingSource;
         private eBotoDBDataSetTableAdapters.ElectionsTableAdapter electionsTableAdapter;
         private FontAwesome.Sharp.IconButton profile_button;
-        private System.Windows.Forms.FlowLayoutPanel ongoing_flow;
         private System.Windows.Forms.FlowLayoutPanel ended_flow;
         private System.Windows.Forms.Label label1;
         private Siticone.Desktop.UI.WinForms.SiticonePanel siticonePanel6;
