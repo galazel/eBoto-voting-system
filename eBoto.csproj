@@ -275,6 +275,12 @@
     <Compile Include="EndedElection.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="EndedElectionsView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EndedElectionsView.Designer.cs">
+      <DependentUpon>EndedElectionsView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -375,6 +381,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ElectionPanel.resx">
       <DependentUpon>ElectionPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EndedElectionsView.resx">
+      <DependentUpon>EndedElectionsView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

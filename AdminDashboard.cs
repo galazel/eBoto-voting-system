@@ -16,12 +16,13 @@ namespace eBoto
         {
             InitializeComponent();
             siticoneTabControl1.SelectedIndexChanged += TabChanged;
-            LoadData();
+            LoadTables();
+            LoadEndedElections();
             Elec.LoadStatistics(this.no_of_registered,this.no_elections,this.no_candidates);
             Elec.LoadElections(this.elections_flow);
         }
         
-        private void LoadData()
+        private void LoadTables()
         {
             DataTable departmentTable = new DataTable();
             departmentTable.Columns.Add("DepartmentID", typeof(int));
@@ -43,9 +44,14 @@ namespace eBoto
                 positions_grid.DataSource = positionTable;
 
             }
-
         }
+        private void LoadEndedElections()
+        {
+            using (var db = new eBotoDBEntities2())
+            {
 
+            }
+        }
         private void AdminDashboard_Load(object sender, EventArgs e)
         {
             
@@ -116,7 +122,7 @@ namespace eBoto
                     db.SaveChanges();
 
                 }
-                LoadData();
+                LoadTables();
             }
             
         }
@@ -129,7 +135,7 @@ namespace eBoto
                 var departmentId = departments_grid.Rows[selectedIndex].Cells["DepartmentID"].Value;
                 MessageBox.Show($"Deleting Department ID: {departmentId}");
                 Delete((int)departmentId,"Departments");    
-                LoadData();
+                LoadTables();
             }
 
         }
@@ -181,7 +187,7 @@ namespace eBoto
                 db.SaveChanges();
                 
             }
-            LoadData();
+            LoadTables();
             }
 
         }
@@ -194,7 +200,7 @@ namespace eBoto
                 var positionId = positions_grid.Rows[selectedIndex].Cells["PositionID"].Value;
                 MessageBox.Show($"Deleting Position ID: {positionId}");
                 Delete((int)positionId,"Positions");
-                LoadData();
+                LoadTables();
             }
         }
 
