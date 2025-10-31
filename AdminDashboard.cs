@@ -43,6 +43,7 @@ namespace eBoto
                 positions_grid.DataSource = positionTable;
 
             }
+
         }
 
         private void AdminDashboard_Load(object sender, EventArgs e)
