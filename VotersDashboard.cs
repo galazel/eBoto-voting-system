@@ -12,6 +12,8 @@ namespace eBoto
 {
     public partial class VotersDashboard : Form
     {
+        private string voterName;
+
         public VotersDashboard()
         {
             InitializeComponent();

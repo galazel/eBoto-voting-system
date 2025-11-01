@@ -31,20 +31,19 @@ namespace eBoto
             { 
                 using (var db = new eBotoDBEntities3())
                 {
-                    Boolean isFound = false;
-                    var users = db.Voters.ToList();
-                    foreach (var usr in users)
+                    var user = db.Voters.Where(u => u.Username.Equals(username_box.Text) && u.Password.Equals(password_box.Text)).ToList();
+                    if (user.Count() > 0)
                     {
-                        if (username_box.Text == usr.Username && password_box.Text == usr.Password)
-                        {
-                            this.Hide();
-                            isFound = true;
-                            new VotersDashboard().ShowDialog();
-                            return;
-                        }
-                    }
-                    if(!isFound)
+                        MessageBox.Show("Login Successful!");
+                        this.Hide();
+                        new VotersDashboard().ShowDialog();
+                        return;
+                    } else
+                    { 
                         MessageBox.Show("Invalid username or password.");
+                        username_box.Text = "";
+                        password_box.Text = "";
+                    }
                 }
              }
 

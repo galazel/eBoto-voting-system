@@ -40,16 +40,13 @@ namespace eBoto
             }else
                 using (var db = new eBotoDBEntities3())
                 {
-                    var users = db.Voters.ToList();
-                    foreach (var usr in users)
+                    var findUser = db.Voters.Where(u => u.Email.Equals(email_box.Text) && u.Password.Equals(password_box.Text)).ToList();
+                    if(findUser.Count > 0)
                     {
-                        if (username_box.Text == usr.Username || email_box.Text == usr.Email)
-                        {
-                            MessageBox.Show("Account already existed.");
-                            return;
-                        }
+                        MessageBox.Show("Account already existed.");
+                        return;
                     }
-                    var user = new Voter
+                    var voter = new Voter
                     {
                         FirstName = firstname_box.Text,
                         LastName = lastname_box.Text,
@@ -67,7 +64,7 @@ namespace eBoto
                         Password = password_box.Text,
                         Status = false
                     };
-                    db.Voters.Add(user);
+                    db.Voters.Add(voter);
                     db.SaveChanges();
                     MessageBox.Show("Registration Successful!");
                     this.Hide();
