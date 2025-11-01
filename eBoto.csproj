@@ -361,6 +361,9 @@
     <Compile Include="VotersDashboard.Designer.cs">
       <DependentUpon>VotersDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Winner.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddCandidates.dje-NE.resx">
       <DependentUpon>AddCandidates.cs</DependentUpon>
     </EmbeddedResource>

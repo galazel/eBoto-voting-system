@@ -17,7 +17,7 @@ namespace eBoto
         {
             InitializeComponent();
             departments_combo.Items.Clear();
-            using (var db = new eBotoDBEntities2())
+            using (var db = new eBotoDBEntities3())
             {
                 var departments = db.Departments.Select(d => d.DepartmentName).ToList();
                 departments_combo.Items.AddRange(departments.ToArray());
@@ -38,7 +38,7 @@ namespace eBoto
                 MessageBox.Show("Please agree to the terms and conditions");
                 return;
             }else
-                using (var db = new eBotoDBEntities2())
+                using (var db = new eBotoDBEntities3())
                 {
                     var users = db.Voters.ToList();
                     foreach (var usr in users)

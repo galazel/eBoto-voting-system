@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 using System.Windows.Forms;
 
 namespace eBoto
@@ -37,7 +35,7 @@ namespace eBoto
         {
             string candidatesView = "";
 
-            using (var db = new eBotoDBEntities2())
+            using (var db = new eBotoDBEntities3())
             {
                foreach (var candidate in this.candidates)
                    candidatesView += "- " + candidate.CandidateName + " (" + db.Positions.FirstOrDefault(p => p.PositionId == candidate.PositionId).PositionName + ")\n";
@@ -47,7 +45,7 @@ namespace eBoto
 
         private void start_Click(object sender, EventArgs e)
         {
-            using (var db = new eBotoDBEntities2())
+            using (var db = new eBotoDBEntities3())
             {
                 if(start.FillColor == Color.IndianRed)
                 {
@@ -59,12 +57,15 @@ namespace eBoto
                     db.EndedElections.Add(endedElection);
                     db.SaveChanges();
                     MessageBox.Show("Election Ended.");
-                }else
+                    Elec.LoadEndedElections();
+                }
+                else
                 {
                     var election = db.Elections.FirstOrDefault(el => el.ElectionId == electionId);
                     election.Status = true;
                     db.SaveChanges();
                     start.FillColor = Color.IndianRed;
+                    start.Text = "Stop";
 
                 }
             }

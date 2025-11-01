@@ -20,6 +20,7 @@ namespace eBoto
             this.Candidates = new HashSet<Candidate>();
             this.EndedElections = new HashSet<EndedElection>();
             this.OngoingElections = new HashSet<OngoingElection>();
+            this.Winners = new HashSet<Winner>();
         }
     
         public int ElectionId { get; set; }
@@ -35,5 +36,7 @@ namespace eBoto
         public virtual ICollection<EndedElection> EndedElections { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<OngoingElection> OngoingElections { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Winner> Winners { get; set; }
     }
 }

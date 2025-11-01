@@ -13,10 +13,10 @@ namespace eBoto
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class eBotoDBEntities2 : DbContext
+    public partial class eBotoDBEntities3 : DbContext
     {
-        public eBotoDBEntities2()
-            : base("name=eBotoDBEntities2")
+        public eBotoDBEntities3()
+            : base("name=eBotoDBEntities3")
         {
         }
     
@@ -28,11 +28,12 @@ namespace eBoto
         public virtual DbSet<Candidate> Candidates { get; set; }
         public virtual DbSet<Department> Departments { get; set; }
         public virtual DbSet<Election> Elections { get; set; }
+        public virtual DbSet<EndedElection> EndedElections { get; set; }
+        public virtual DbSet<OngoingElection> OngoingElections { get; set; }
         public virtual DbSet<Position> Positions { get; set; }
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<VotedCandidate> VotedCandidates { get; set; }
         public virtual DbSet<Voter> Voters { get; set; }
-        public virtual DbSet<EndedElection> EndedElections { get; set; }
-        public virtual DbSet<OngoingElection> OngoingElections { get; set; }
+        public virtual DbSet<Winner> Winners { get; set; }
     }
 }

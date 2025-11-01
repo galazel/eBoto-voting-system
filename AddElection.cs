@@ -14,7 +14,7 @@ namespace eBoto
             this.flow = flow;
 
             departments_combo.Items.Clear();
-            using (var db = new eBotoDBEntities2())
+            using (var db = new eBotoDBEntities3())
             {
                 departments_combo.DataSource = db.Departments
                                                  .Select(d => d.DepartmentName)
@@ -33,7 +33,7 @@ namespace eBoto
                 MessageBox.Show("Please input the required fields");
             else
             {
-                using (var db = new eBotoDBEntities2())
+                using (var db = new eBotoDBEntities3())
                 {
                     var elections = db.Elections.ToList();
                     foreach (var elec in elections)

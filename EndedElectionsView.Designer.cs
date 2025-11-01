@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.election_title = new System.Windows.Forms.Label();
-            this.view_details = new Siticone.Desktop.UI.WinForms.SiticoneButton();
+            this.view_winners = new Siticone.Desktop.UI.WinForms.SiticoneButton();
             this.SuspendLayout();
             // 
             // election_title
@@ -44,29 +44,29 @@
             this.election_title.TabIndex = 44;
             this.election_title.Text = "CREATE ELECTION";
             // 
-            // view_details
+            // view_winners
             // 
-            this.view_details.BorderRadius = 20;
-            this.view_details.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.view_details.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.view_details.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.view_details.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.view_details.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.view_details.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.view_details.ForeColor = System.Drawing.Color.White;
-            this.view_details.Location = new System.Drawing.Point(878, 39);
-            this.view_details.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.view_details.Name = "view_details";
-            this.view_details.Size = new System.Drawing.Size(132, 40);
-            this.view_details.TabIndex = 68;
-            this.view_details.Text = "View Details";
+            this.view_winners.BorderRadius = 20;
+            this.view_winners.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.view_winners.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.view_winners.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.view_winners.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.view_winners.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.view_winners.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.view_winners.ForeColor = System.Drawing.Color.White;
+            this.view_winners.Location = new System.Drawing.Point(878, 39);
+            this.view_winners.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.view_winners.Name = "view_winners";
+            this.view_winners.Size = new System.Drawing.Size(132, 40);
+            this.view_winners.TabIndex = 68;
+            this.view_winners.Text = "View Winners";
             // 
             // EndedElectionsView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.view_details);
+            this.Controls.Add(this.view_winners);
             this.Controls.Add(this.election_title);
             this.Name = "EndedElectionsView";
             this.Size = new System.Drawing.Size(1046, 111);
@@ -78,6 +78,6 @@
         #endregion
 
         private System.Windows.Forms.Label election_title;
-        private Siticone.Desktop.UI.WinForms.SiticoneButton view_details;
+        private Siticone.Desktop.UI.WinForms.SiticoneButton view_winners;
     }
 }

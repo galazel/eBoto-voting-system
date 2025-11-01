@@ -29,7 +29,7 @@ namespace eBoto
                 MessageBox.Show("Please input the required fields");
             else
             { 
-                using (var db = new eBotoDBEntities2())
+                using (var db = new eBotoDBEntities3())
                 {
                     Boolean isFound = false;
                     var users = db.Voters.ToList();

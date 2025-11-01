@@ -17,7 +17,7 @@ namespace eBoto
             InitializeComponent();
             siticoneTabControl1.SelectedIndexChanged += TabChanged;
             LoadTables();
-            LoadEndedElections();
+            Elec.LoadEndedElections();
             Elec.LoadStatistics(this.no_of_registered,this.no_elections,this.no_candidates);
             Elec.LoadElections(this.elections_flow);
         }
@@ -32,7 +32,7 @@ namespace eBoto
             positionTable.Columns.Add("PositionID", typeof(int));
             positionTable.Columns.Add("PositionName", typeof(string));
 
-            using (var db = new eBotoDBEntities2())
+            using (var db = new eBotoDBEntities3())
             {
             
                 foreach (var dept in db.Departments)
@@ -42,13 +42,6 @@ namespace eBoto
                 foreach (var pos in db.Positions)
                     positionTable.Rows.Add(pos.PositionId, pos.PositionName);
                 positions_grid.DataSource = positionTable;
-
-            }
-        }
-        private void LoadEndedElections()
-        {
-            using (var db = new eBotoDBEntities2())
-            {
 
             }
         }
@@ -106,7 +99,7 @@ namespace eBoto
             string departmentName = Interaction.InputBox("Enter Department Name:", "Add Department", "");
             if(departmentName.Trim() != "")
             {
-                using (var db = new eBotoDBEntities2())
+                using (var db = new eBotoDBEntities3())
                 {
                     var departmentExists = db.Departments.Any(d => d.DepartmentName == departmentName.ToUpper());
                     if (departmentExists)
@@ -141,7 +134,7 @@ namespace eBoto
         }
         private void Delete(int index, string tableName)
         {
-            using(var db = new eBotoDBEntities2())
+            using(var db = new eBotoDBEntities3())
             {
                 if(tableName == "Departments")
                 {
@@ -171,7 +164,7 @@ namespace eBoto
             string positionName = Interaction.InputBox("Enter Position Name:", "Add Position", "");
             if(positionName.Trim() != "")
             {
-            using (var db = new eBotoDBEntities2())
+            using (var db = new eBotoDBEntities3())
             {
                 var positionExists = db.Positions.Any(p => p.PositionName == positionName.ToUpper());
                 if (positionExists)
@@ -206,7 +199,7 @@ namespace eBoto
 
         private void departments_grid_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
-            using (var db = new eBotoDBEntities2())
+            using (var db = new eBotoDBEntities3())
             {
                 foreach (DataGridViewRow row in departments_grid.Rows)
                 {
@@ -225,7 +218,7 @@ namespace eBoto
 
         private void positions_grid_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
-            using (var db = new eBotoDBEntities2())
+            using (var db = new eBotoDBEntities3())
             {
                 foreach (DataGridViewRow row in positions_grid.Rows)
                 {

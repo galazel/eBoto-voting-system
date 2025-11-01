@@ -15,9 +15,10 @@ namespace eBoto
 
         public static IList<CandidateModel> _list = new List<CandidateModel>();
         public static Boolean isCreated = false;
+        public static IList<EndedElectionsView> endedElections = new List<EndedElectionsView>();
         public static void LoadStatistics(Label label1, Label label2, Label label3)
         {
-            using (var db = new eBotoDBEntities2())
+            using (var db = new eBotoDBEntities3())
             {
                 int registeredVotersCount = db.Voters.Count();
                 int electionsCount = db.Elections.Count();
@@ -30,7 +31,7 @@ namespace eBoto
         public static void LoadElections(FlowLayoutPanel flow)
         {
             flow.Controls.Clear();
-            using (var db = new eBotoDBEntities2())
+            using (var db = new eBotoDBEntities3())
             {
                 var elections = db.Elections.ToList();
                 foreach (var election in elections)
@@ -41,21 +42,21 @@ namespace eBoto
                                             .FirstOrDefault();
                     int electionId = election.ElectionId;
                     string status = election.Status ? "Ongoing" : "Not Started";
-                    var candidates =  db.Candidates.Where(c => c.ElectionId == electionId).ToList();
+                    var candidates = db.Candidates.Where(c => c.ElectionId == electionId).ToList();
 
-                    var endedElection = db.EndedElections.FirstOrDefault(ee => ee.ElectionId == electionId);   
-                    if(endedElection == null)
+                    var endedElection = db.EndedElections.FirstOrDefault(ee => ee.ElectionId == electionId);
+                    if (endedElection == null)
                         flow.Controls.Add(new ElectionPanel(electionId, election.ElectionName, departmentName, candidates, status));
                 }
             }
         }
-        public void LoadOngoing()
+        public static void LoadEndedElections()
         {
+            using (var db = new eBotoDBEntities3())
+            {
+               
 
-        }
-        public void LoadEnded()
-        {
-
+            };
         }
     }
     }
